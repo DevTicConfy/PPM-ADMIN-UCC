@@ -1,0 +1,769 @@
+﻿using MC.BaseService;
+using MC.BaseService.MessageBase.Type;
+using MC.BusinessService.DataTransferObject;
+using MC.BusinessService.Entities;
+using MC.BusinessService.Enums;
+using MC.DataService;
+using MC.LiquidacionService.Messages;
+using MC.LiquidacionService.ServiceContracts;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.ServiceModel;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace MC.LiquidacionService.ServiceImplementations
+{
+    [ServiceBehavior(InstanceContextMode = InstanceContextMode.PerCall)]
+    public class LiquidacionService : ServiceBase, ILiquidacionService
+    {
+        public static IDataService _DataService = new DataService.DataService();
+
+        public Liquidacion_Response getDatosLiquidacion(Liquidacion_Request request)
+        {
+            Liquidacion_Response response = new Liquidacion_Response();
+
+            DtoDatosLiquidacion oDtoDatosLiquidacion = new DtoDatosLiquidacion();
+            int HorasParking = 0;
+            double ValorHora = 0;
+            response.olstDtoLiquidacion = new List<DtoDatosLiquidacion>();
+
+            #region Test
+
+            //if (request.bMensualidad)
+            //{
+            //    //Logica para liquidar una mensualidad y retornar por ejemplo:
+
+            //    oDtoDatosLiquidacion.Iva = 50;
+            //    oDtoDatosLiquidacion.SubTotal = 20000;
+            //    oDtoDatosLiquidacion.Tipo = 3;
+            //    oDtoDatosLiquidacion.Total = 20050;
+
+            //    response.olstDtoLiquidacion = new List<DtoDatosLiquidacion>();
+            //    response.olstDtoLiquidacion.Add(oDtoDatosLiquidacion);
+
+            //}
+            //else
+            //{
+            //    //Logica para liquidar pago normal y/o reposiciones
+
+            //    oDtoDatosLiquidacion.Iva = 50;
+            //    oDtoDatosLiquidacion.SubTotal = 20000;
+            //    oDtoDatosLiquidacion.Tipo = 1;
+            //    oDtoDatosLiquidacion.Total = 20050;
+
+            //    response.olstDtoLiquidacion = new List<DtoDatosLiquidacion>();
+            //    response.olstDtoLiquidacion.Add(oDtoDatosLiquidacion);
+
+            //    if (request.bReposicion)
+            //    {
+            //        //En caso de que haya reposicion deberian venir dos items-> valor parqueadero y valor reposicion
+            //        DtoDatosLiquidacion oDtoDatosLiquidacion2 = new DtoDatosLiquidacion();
+            //        oDtoDatosLiquidacion2.Iva = 50;
+            //        oDtoDatosLiquidacion2.SubTotal = 20000;
+            //        oDtoDatosLiquidacion2.Tipo = 1;
+            //        oDtoDatosLiquidacion2.Total = 20050;
+
+            //        response.olstDtoLiquidacion.Add(oDtoDatosLiquidacion2);
+            //    }
+            //}
+
+            #endregion
+
+
+            #region REAL
+            if (request.bMensualidad)
+            {
+                //Logica para liquidar una mensualidad y retornar por ejemplo:
+
+                //request.sIdtarjeta = "EEF4C9CB";
+                //request.sIdtarjeta = "AEE8C8CB";
+
+                request.sIdtarjeta = request.sSecuencia;
+
+                ResultadoOperacion oResultadoOperacion = _DataService.ObtenerTipoVehiculoMensula(request.sIdtarjeta);
+
+                if (oResultadoOperacion.oEstado == TipoRespuesta.Exito)
+                {
+                    if (request.bReposicion)
+                    {
+                        //En caso de que haya reposicion deberian venir dos items-> valor parqueadero y valor reposicion
+                        oResultadoOperacion = _DataService.ObtenerDatosLiquidacion(15, 3, 1, 0, 0);
+
+                        DtoLiquidacion oDtoLiquidacion = (DtoLiquidacion)oResultadoOperacion.EntidadDatos;
+                        response.oDtoLiquidacion = oDtoLiquidacion;
+
+                        oDtoDatosLiquidacion = new DtoDatosLiquidacion();
+
+                        double VALOR2 = response.oDtoLiquidacion.Valor;
+                        double SUBTOTAL2 = Math.Round(VALOR2 / 1.19, 0);
+                        double IVA2 = VALOR2 - SUBTOTAL2;
+                        double TOTAL2 = VALOR2;
+
+
+                        oDtoDatosLiquidacion.Iva = IVA2;
+                        oDtoDatosLiquidacion.SubTotal = SUBTOTAL2;
+                        oDtoDatosLiquidacion.Tipo = 3;
+                        oDtoDatosLiquidacion.Total = VALOR2;
+
+                        response.olstDtoLiquidacion.Add(oDtoDatosLiquidacion);
+                    }
+                    else
+                    {
+                        string resul = oResultadoOperacion.EntidadDatos.ToString();
+
+                        string[] Rsl = resul.Split(';');
+
+                        string tipovehi = Rsl[0].ToString();
+                        string CodAutorizado = Rsl[1].ToString();
+                        string FechaIni = Rsl[3].ToString();
+                        //bool COBROTARJE = Convert.ToBoolean(Rsl[4]);
+                        TimeSpan Cal = new TimeSpan();
+                        bool sigue = false;
+
+                        if (FechaIni != string.Empty)
+                        {
+                            DateTime FechaI = Convert.ToDateTime(FechaIni);
+                            DateTime FechaAct = DateTime.Now;
+                            Cal = FechaAct - FechaI;
+
+                            if (Cal.TotalDays > 3)
+                            {
+                                sigue = true;
+                            }
+                            else
+                            {
+                                oDtoDatosLiquidacion.Iva = 0;
+                                oDtoDatosLiquidacion.SubTotal = 0;
+                                oDtoDatosLiquidacion.Tipo = 2;
+                                oDtoDatosLiquidacion.Total = 0;
+
+                                response.olstDtoLiquidacion = new List<DtoDatosLiquidacion>();
+                                response.olstDtoLiquidacion.Add(oDtoDatosLiquidacion);
+                            }
+                        }
+                        else
+                        {
+                            sigue = true;
+                        }
+
+                        if (sigue)
+                        {
+                            request.iTipoVehiculo = Convert.ToInt32(tipovehi);
+
+
+                            oResultadoOperacion = _DataService.ObtenerDatosLiquidacionAutorizacion(15, 2, request.iTipoVehiculo, Convert.ToInt64(CodAutorizado));
+
+                            DtoLiquidacion oDtoLiquidacion = (DtoLiquidacion)oResultadoOperacion.EntidadDatos;
+                            response.oDtoLiquidacion = oDtoLiquidacion;
+                            double ValorTarjeta = 0;
+
+                            //if (COBROTARJE)
+                            //{
+                            //    ValorTarjeta = 15000;
+                            //}
+
+
+                            double VALOR = response.oDtoLiquidacion.Valor + ValorTarjeta;
+                            double SUBTOTAL = Math.Round(VALOR / 1.19, 0);
+                            double IVA = VALOR - SUBTOTAL;
+                            double TOTAL = VALOR;
+
+
+                            oDtoDatosLiquidacion.Iva = IVA;
+                            oDtoDatosLiquidacion.SubTotal = SUBTOTAL;
+                            oDtoDatosLiquidacion.Tipo = 2;
+                            oDtoDatosLiquidacion.Total = VALOR;
+
+                            response.olstDtoLiquidacion = new List<DtoDatosLiquidacion>();
+                            response.olstDtoLiquidacion.Add(oDtoDatosLiquidacion);
+                        }
+                        else
+                        {
+
+                        }
+
+                    }
+                }
+                else
+                {
+                    oResultadoOperacion.oEstado = TipoRespuesta.Error;
+                    oResultadoOperacion.Mensaje = "El IdTarjeta no pertenece a un Autorizado";
+                }
+            }
+            else
+            {
+
+                ResultadoOperacion oResultadoOperacion = _DataService.ObtenerDatosTransaccion(request.sSecuencia);
+                if (oResultadoOperacion.oEstado == TipoRespuesta.Exito)
+                {
+
+                    double ValorCobro = 0;
+                    string FechaPago = string.Empty;
+                    bool repago = false;
+                    int HorasEvento = 0;
+                    DtoTransaccion oDtoTransaccion = (DtoTransaccion)oResultadoOperacion.EntidadDatos;
+                    response.oDtoTransaccion = oDtoTransaccion;
+
+                    //Logica para liquidar pago normal y/o reposiciones
+                    string Rest = string.Empty;
+                    ResultadoOperacion oResultadoOperacionEvento = _DataService.ObtenerDatosEvento(request.sSecuencia);
+                    if (oResultadoOperacionEvento.oEstado == TipoRespuesta.Exito)
+                    {
+
+                        DateTime FechaEntrada = new DateTime();
+                        DateTime FechaActual = new DateTime();
+                        bool COMPLETO = false;
+
+                        oResultadoOperacion = _DataService.ObtenerDatosPago(request.sSecuencia);
+                        if (oResultadoOperacion.oEstado == TipoRespuesta.Exito)
+                        {
+                            FechaPago = oResultadoOperacion.EntidadDatos.ToString();
+                        }
+
+                        if (FechaPago != string.Empty)
+                        {
+                            FechaEntrada = oDtoTransaccion.FechaEntrada;
+                            FechaActual = DateTime.Now;
+                        }
+                        else
+                        {
+                            FechaEntrada = response.oDtoTransaccion.FechaEntrada;
+                            FechaActual = DateTime.Now;
+                            COMPLETO = true;
+                        }
+
+                        ///////////////////////////////////////////////////
+
+                        TimeSpan Calculo = FechaActual - FechaEntrada;
+
+                        int TotalMinutes = Convert.ToInt32(Calculo.TotalMinutes);
+
+                        double valorConDecimal = Calculo.TotalHours;
+                        long valorSinDecimal = (long)valorConDecimal;
+                        double decimales = valorConDecimal - (double)valorSinDecimal;
+
+
+                        if (Calculo.Minutes > 0)
+                        {
+                            valorSinDecimal = valorSinDecimal + 1;
+                        }
+
+
+                        if (valorSinDecimal <= 0)
+                        {
+                            valorSinDecimal = 1;
+                        }
+
+
+                        double Casco = 0;
+                        ResultadoOperacion oResultadoOperacionCasco = _DataService.ObtenerDatosCasco(request.sSecuencia);
+                        if (oResultadoOperacionCasco.oEstado == TipoRespuesta.Exito)
+                        {
+                            oResultadoOperacion = _DataService.ObtenerDatosLiquidacion(response.oDtoTransaccion.IdEstacionamiento, 6, response.oDtoTransaccion.IdTipoVehiculo, 0, 0);
+                            DtoLiquidacion oDtoLiquidacionCasco = (DtoLiquidacion)oResultadoOperacion.EntidadDatos;
+                            response.oDtoLiquidacionCasco = oDtoLiquidacionCasco;
+                            Casco = response.oDtoLiquidacionCasco.Valor;
+                            int CAN = Convert.ToInt32(oResultadoOperacionCasco.EntidadDatos.ToString());
+                            Casco = Casco * CAN;
+                        }
+
+
+                        Rest = oResultadoOperacionEvento.EntidadDatos.ToString();
+
+                        string[] Result = Rest.Split(';');
+                        HorasEvento = Convert.ToInt32(Result[1]);
+
+                        long tiempofinal = valorSinDecimal - Convert.ToInt64(Result[1]);
+
+                        if (tiempofinal <= 0)
+                        {
+                            tiempofinal = 0;
+                        }
+
+                        int tipo = 0;
+                        if (tiempofinal > 0 && !COMPLETO)
+                        {
+                            ResultadoOperacion oResultadoOperacionLiqui = _DataService.ObtenerDatosLiquidacion(response.oDtoTransaccion.IdEstacionamiento, 1, response.oDtoTransaccion.IdTipoVehiculo, 0, 0);
+                            DtoLiquidacion oDtoLiquidacion = (DtoLiquidacion)oResultadoOperacionLiqui.EntidadDatos;
+                            response.oDtoLiquidacion = oDtoLiquidacion;
+                            tipo = 1;
+
+                            ValorCobro = response.oDtoLiquidacion.Valor;
+                            ValorCobro = ValorCobro * tiempofinal;
+
+
+                            double VALOR = ValorCobro;
+                            double SUBTOTAL = Math.Round(VALOR / 1.19, 0);
+                            double IVA = VALOR - SUBTOTAL;
+                            double TOTAL = VALOR;
+
+
+                            oDtoDatosLiquidacion.Iva = IVA;
+                            oDtoDatosLiquidacion.SubTotal = SUBTOTAL;
+                            oDtoDatosLiquidacion.Tipo = tipo;
+                            oDtoDatosLiquidacion.Total = VALOR;
+
+
+                            response.olstDtoLiquidacion.Add(oDtoDatosLiquidacion);
+                        }
+                        else if (tiempofinal > 0 && COMPLETO)
+                        {
+                            oResultadoOperacion = _DataService.ObtenerDatosLiquidacion(response.oDtoTransaccion.IdEstacionamiento, 1, response.oDtoTransaccion.IdTipoVehiculo, 0, 0);
+                            DtoLiquidacion oDtoLiquidacion = (DtoLiquidacion)oResultadoOperacion.EntidadDatos;
+                            response.oDtoLiquidacion = oDtoLiquidacion;
+                            tipo = 1;
+
+                            ValorCobro = response.oDtoLiquidacion.Valor;
+                            ValorCobro = ValorCobro * tiempofinal;
+
+
+                            double VALOR = ValorCobro;
+                            double SUBTOTAL = Math.Round(VALOR / 1.19, 0);
+                            double IVA = VALOR - SUBTOTAL;
+                            double TOTAL = VALOR;
+
+
+                            oDtoDatosLiquidacion.Iva = IVA;
+                            oDtoDatosLiquidacion.SubTotal = SUBTOTAL;
+                            oDtoDatosLiquidacion.Tipo = tipo;
+                            oDtoDatosLiquidacion.Total = VALOR;
+
+
+                            response.olstDtoLiquidacion.Add(oDtoDatosLiquidacion);
+
+
+                            oResultadoOperacion = _DataService.ObtenerDatosLiquidacion(response.oDtoTransaccion.IdEstacionamiento, 5, response.oDtoTransaccion.IdTipoVehiculo, 0, Convert.ToInt64(Result[0]));
+                            DtoLiquidacion oDtoLiquidacionEvento = (DtoLiquidacion)oResultadoOperacion.EntidadDatos;
+                            response.oDtoLiquidacion = oDtoLiquidacionEvento;
+                            tipo = 5;
+                            ValorCobro = response.oDtoLiquidacion.Valor;
+
+                            DtoDatosLiquidacion oDtoDatosLiquidacionEvento = new DtoDatosLiquidacion();
+
+                            VALOR = ValorCobro;
+                            SUBTOTAL = Math.Round(VALOR / 1.19, 0);
+                            IVA = VALOR - SUBTOTAL;
+                            TOTAL = VALOR;
+
+
+                            oDtoDatosLiquidacionEvento.Iva = IVA;
+                            oDtoDatosLiquidacionEvento.SubTotal = SUBTOTAL;
+                            oDtoDatosLiquidacionEvento.Tipo = tipo;
+                            oDtoDatosLiquidacionEvento.Total = VALOR;
+
+
+                            response.olstDtoLiquidacion.Add(oDtoDatosLiquidacionEvento);
+
+
+                        }
+                        else
+                        {
+                            if (FechaPago != string.Empty)
+                            {
+                                tipo = 5;
+                                ValorCobro = 0;
+
+                                double VALOR = ValorCobro;
+                                double SUBTOTAL = Math.Round(VALOR / 1.19, 0);
+                                double IVA = VALOR - SUBTOTAL;
+                                double TOTAL = VALOR;
+
+
+                                oDtoDatosLiquidacion.Iva = IVA;
+                                oDtoDatosLiquidacion.SubTotal = SUBTOTAL;
+                                oDtoDatosLiquidacion.Tipo = tipo;
+                                oDtoDatosLiquidacion.Total = VALOR;
+
+
+                                response.olstDtoLiquidacion.Add(oDtoDatosLiquidacion);
+
+                            }
+                            else
+                            {
+                                oResultadoOperacion = _DataService.ObtenerDatosLiquidacion(response.oDtoTransaccion.IdEstacionamiento, 5, response.oDtoTransaccion.IdTipoVehiculo, 0, Convert.ToInt64(Result[0]));
+                                DtoLiquidacion oDtoLiquidacionEvento = (DtoLiquidacion)oResultadoOperacion.EntidadDatos;
+                                response.oDtoLiquidacion = oDtoLiquidacionEvento;
+                                tipo = 5;
+                                ValorCobro = response.oDtoLiquidacion.Valor;
+
+
+                                double VALOR = ValorCobro;
+                                double SUBTOTAL = Math.Round(VALOR / 1.19, 0);
+                                double IVA = VALOR - SUBTOTAL;
+                                double TOTAL = VALOR;
+
+
+                                oDtoDatosLiquidacion.Iva = IVA;
+                                oDtoDatosLiquidacion.SubTotal = SUBTOTAL;
+                                oDtoDatosLiquidacion.Tipo = tipo;
+                                oDtoDatosLiquidacion.Total = VALOR;
+
+
+                                response.olstDtoLiquidacion.Add(oDtoDatosLiquidacion);
+                            }
+                        }
+
+                        if (Casco > 0)
+                        {
+                            oDtoDatosLiquidacion = new DtoDatosLiquidacion();
+
+                            double VALOR2 = Casco;
+                            double SUBTOTAL2 = Math.Round(VALOR2 / 1.19, 0);
+                            double IVA2 = VALOR2 - SUBTOTAL2;
+                            double TOTAL2 = VALOR2;
+
+
+                            oDtoDatosLiquidacion.Iva = IVA2;
+                            oDtoDatosLiquidacion.SubTotal = SUBTOTAL2;
+                            oDtoDatosLiquidacion.Tipo = 6;
+                            oDtoDatosLiquidacion.Total = VALOR2;
+
+                            response.olstDtoLiquidacion.Add(oDtoDatosLiquidacion);
+                        }
+
+                    }
+                    else if (response.oDtoTransaccion.IdAutorizado == 0)
+                    {
+
+                        oResultadoOperacion = _DataService.ObtenerDatosPago(request.sSecuencia);
+                        if (oResultadoOperacion.oEstado == TipoRespuesta.Exito)
+                        {
+                            if (oResultadoOperacion.EntidadDatos != string.Empty)
+                            {
+                                FechaPago = oResultadoOperacion.EntidadDatos.ToString();
+                                request.bReposicion = false;
+                                repago = true;
+                            }
+                        }
+
+                        long IdConvenio1 = 0;
+                        long IdConvenio2 = 0;
+                        long IdConvenio3 = 0;
+                        long IdConvenio4 = 0;
+
+                        oResultadoOperacion = _DataService.ObtenerDatosLiquidacion(response.oDtoTransaccion.IdEstacionamiento, 1, response.oDtoTransaccion.IdTipoVehiculo, IdConvenio1, 0);
+
+                        DtoLiquidacion oDtoLiquidacion = (DtoLiquidacion)oResultadoOperacion.EntidadDatos;
+                        response.oDtoLiquidacion = oDtoLiquidacion;
+                        ValorHora = response.oDtoLiquidacion.Valor;
+
+                        DateTime FechaEntrada = new DateTime();
+                        DateTime FechaActual = new DateTime();
+
+                        if (FechaPago != string.Empty)
+                        {
+                            FechaEntrada = Convert.ToDateTime(FechaPago);
+                            FechaActual = DateTime.Now;
+                        }
+                        else
+                        {
+                            FechaEntrada = response.oDtoTransaccion.FechaEntrada;
+                            FechaActual = DateTime.Now;
+                        }
+
+
+                        TimeSpan Calculo = FechaActual - FechaEntrada;
+                        long VALORCONVECINE = 0;
+                        double VALORTEMP = 0;
+                        if (repago)
+                        {
+
+                            oResultadoOperacion = _DataService.ObtenerParametros(response.oDtoTransaccion.IdEstacionamiento);
+                            int Rep = 0;
+                            List<DtoParametros> lstPara = (List<DtoParametros>)oResultadoOperacion.ListaEntidadDatos;
+                            for (int i = 0; i < lstPara.Count; i++)
+                            {
+                                if (lstPara[i].Codigo == "Repago")
+                                {
+                                    Rep = Convert.ToInt32(lstPara[i].Valor);
+                                    break;
+                                }
+                            }
+
+                            if (Calculo.TotalMinutes > Rep)
+                            {
+
+                                int TotalMinutes = Convert.ToInt32(Calculo.TotalMinutes);
+
+                                double valorConDecimal = Calculo.TotalHours;
+                                long valorSinDecimal = (long)valorConDecimal;
+                                double decimales = valorConDecimal - (double)valorSinDecimal;
+
+
+                                if (Calculo.TotalMinutes > 0)
+                                {
+                                    valorSinDecimal = valorSinDecimal + 1;
+                                }
+
+
+                                if (valorSinDecimal <= 0)
+                                {
+                                    valorSinDecimal = 1;
+                                }
+
+                                ValorCobro = response.oDtoLiquidacion.Valor;
+
+                                ValorCobro = ValorCobro * valorSinDecimal;
+
+                                if (oDtoTransaccion.Cortesia > 0)
+                                {
+                                    ValorCobro = 0;
+                                }
+
+                            }
+
+                            else
+                            {
+                                ValorCobro = 0;
+                            }
+                        }
+                        else
+                        {
+
+                            if (response.oDtoTransaccion.Convenio1 != 0)
+                            {
+                                IdConvenio1 = response.oDtoTransaccion.Convenio1;
+                            }
+                            else
+                            {
+                                IdConvenio1 = Convert.ToInt64(request.sConvenios);
+                            }
+
+
+                            int TotalMinutes = Convert.ToInt32(Calculo.TotalMinutes);
+
+                            double valorConDecimal = Calculo.TotalHours;
+                            long valorSinDecimal = (long)valorConDecimal;
+                            double decimales = valorConDecimal - (double)valorSinDecimal;
+
+
+                            if (Calculo.Minutes > 9)
+                            {
+                                valorSinDecimal = valorSinDecimal + 1;
+                            }
+
+                            if (Calculo.TotalMinutes < 10)
+                            {
+                                valorSinDecimal = 1;
+                            }
+
+
+                            if (valorSinDecimal <= 0)
+                            {
+                                valorSinDecimal = 1;
+                            }
+
+                            ValorCobro = response.oDtoLiquidacion.Valor;
+                            VALORTEMP = ValorCobro;
+                            //valorSinDecimal = valorSinDecimal - IdConvenio1;
+
+                            if (valorSinDecimal < 0)
+                            {
+                                valorSinDecimal = 0;
+                            }
+
+                            VALORCONVECINE = valorSinDecimal;
+                            ValorCobro = ValorCobro * valorSinDecimal;
+
+                            if (oDtoTransaccion.Cortesia > 0)
+                            {
+                                ValorCobro = 0;
+                            }
+                        }
+
+
+                        // no aplica para cabecera
+
+                        double ValorConvenio = 0;
+
+                        if (request.sConvenios != string.Empty && request.sConvenios != ";" && request.sConvenios != null)
+                        {
+                            // convenios bolsa
+                            ValorConvenio = IdConvenio1 * ValorHora;
+
+                            //normal
+                            //string[] Convenios = request.sConvenios.Split(';');
+
+                            //for (int i = 0; i < Convenios.Length; i++)
+                            //{
+
+
+                            //oResultadoOperacion = _DataService.ObtenerDatosLiquidacion(response.oDtoTransaccion.IdEstacionamiento, 4, response.oDtoTransaccion.IdTipoVehiculo, Convert.ToInt64(request.sConvenios), 0);
+                            //DtoLiquidacion oDtoLiquidacionConvenio = (DtoLiquidacion)oResultadoOperacion.EntidadDatos;
+                            //response.oDtoLiquidacion = oDtoLiquidacionConvenio;
+
+                            //ValorConvenio = oDtoLiquidacionConvenio.Valor;
+                            //}
+                        }
+                        else
+                        {
+                            string ConvenioTemp = IdConvenio1 + ";" + IdConvenio2 + ";" + IdConvenio3;
+                            if (ConvenioTemp != string.Empty && ConvenioTemp != ";")
+                            {
+                                // convenios bolsa
+                                ValorConvenio = IdConvenio1 * ValorHora;
+
+
+                                //normal
+                                //string[] Convenios = ConvenioTemp.Split(';');
+
+                                //for (int i = 0; i < Convenios.Length; i++)
+                                //{
+                                //    oResultadoOperacion = _DataService.ObtenerDatosLiquidacion(response.oDtoTransaccion.IdEstacionamiento, 4, response.oDtoTransaccion.IdTipoVehiculo, Convert.ToInt64(Convenios[i]), 0);
+                                //    DtoLiquidacion oDtoLiquidacionConvenio = (DtoLiquidacion)oResultadoOperacion.EntidadDatos;
+                                //    response.oDtoLiquidacion = oDtoLiquidacionConvenio;
+
+                                //    ValorConvenio = ValorConvenio + oDtoLiquidacionConvenio.Valor;
+
+                                //}
+                            }
+                        }
+
+                        oResultadoOperacion = _DataService.RegistrarConvenio(response.oDtoTransaccion.IdTransaccion, Convert.ToInt64(request.sConvenios), 0, 0);
+
+                        //OBTENER DATOS CASCO
+                        double Casco = 0;
+                        ResultadoOperacion oResultadoOperacionCasco = _DataService.ObtenerDatosCasco(request.sSecuencia);
+                        if (oResultadoOperacionCasco.oEstado == TipoRespuesta.Exito)
+                        {
+                            oResultadoOperacion = _DataService.ObtenerDatosLiquidacion(response.oDtoTransaccion.IdEstacionamiento, 6, response.oDtoTransaccion.IdTipoVehiculo, 0, 0);
+                            DtoLiquidacion oDtoLiquidacionCasco = (DtoLiquidacion)oResultadoOperacion.EntidadDatos;
+                            response.oDtoLiquidacionCasco = oDtoLiquidacionCasco;
+                            Casco = response.oDtoLiquidacionCasco.Valor;
+                            int CAN = Convert.ToInt32(oResultadoOperacionCasco.EntidadDatos.ToString());
+                            Casco = Casco * CAN;
+                        }
+
+
+                        //esto se habilita para otros parking menos cabecera
+                        if (ValorCobro != 0)
+                        {
+                            //if (VALORCONVECINE > 3 && request.sConvenios == "2")
+                            //{
+                            //    VALORCONVECINE = VALORCONVECINE - 3;
+                            //    ValorCobro = VALORTEMP;
+                            //    ValorCobro = ValorCobro * VALORCONVECINE;
+                            //    ValorCobro = ValorCobro + 1300;
+                            //}
+                            //else if (VALORCONVECINE <= 3 && request.sConvenios == "2")
+                            //{
+                            //    ValorCobro = 1300;
+                            //}
+
+                            //if (ValorCobro < 0)
+                            //{
+                            //    ValorCobro = 0;
+                            //}
+
+                            /////////////////////////////////////////////////////////////////////
+
+                            //if (VALORCONVECINE > 2  && request.sConvenios == "4")
+                            //{
+                            //    VALORCONVECINE = VALORCONVECINE - 2;
+                            //    ValorCobro = VALORTEMP;
+                            //    ValorCobro = ValorCobro * VALORCONVECINE;
+                            //    ValorCobro = ValorCobro + 800;
+                            //}
+                            //else if (VALORCONVECINE > 1 && VALORCONVECINE <= 2 && request.sConvenios == "4")
+                            //{
+                            //    ValorCobro = 800;
+                            //}
+                            //else if (VALORCONVECINE <= 1 && request.sConvenios == "4")
+                            //{
+                            //    ValorCobro = 0;
+                            //}
+                            //else
+                            //{
+                            ValorCobro = ValorCobro - ValorConvenio;
+                            //}
+
+                            //if (ValorCobro < 0)
+                            //{
+                            //    ValorCobro = 0;
+                            //}
+
+                            //if (request.sConvenios == "6" && Calculo.TotalMinutes < 16)
+                            //{
+                            //    ValorCobro = 0;
+                            //}
+
+
+                        }
+
+                        if (ValorCobro < 0)
+                        {
+                            ValorCobro = 0;
+                        }
+
+
+                        double VALOR = ValorCobro;
+                        double SUBTOTAL = Math.Round(VALOR / 1.19, 0);
+                        double IVA = VALOR - SUBTOTAL;
+                        double TOTAL = VALOR;
+
+
+                        oDtoDatosLiquidacion.Iva = IVA;
+                        oDtoDatosLiquidacion.SubTotal = SUBTOTAL;
+                        oDtoDatosLiquidacion.Tipo = 1;
+                        oDtoDatosLiquidacion.Total = VALOR;
+
+
+                        response.olstDtoLiquidacion.Add(oDtoDatosLiquidacion);
+
+                        if (Casco > 0)
+                        {
+                            oDtoDatosLiquidacion = new DtoDatosLiquidacion();
+
+                            double VALOR2 = Casco;
+                            double SUBTOTAL2 = Math.Round(VALOR2 / 1.19, 0);
+                            double IVA2 = VALOR2 - SUBTOTAL2;
+                            double TOTAL2 = VALOR2;
+
+
+                            oDtoDatosLiquidacion.Iva = IVA2;
+                            oDtoDatosLiquidacion.SubTotal = SUBTOTAL2;
+                            oDtoDatosLiquidacion.Tipo = 6;
+                            oDtoDatosLiquidacion.Total = VALOR2;
+
+                            response.olstDtoLiquidacion.Add(oDtoDatosLiquidacion);
+                        }
+
+
+                        if (request.bReposicion)
+                        {
+                            //En caso de que haya reposicion deberian venir dos items-> valor parqueadero y valor reposicion
+                            oResultadoOperacion = _DataService.ObtenerDatosLiquidacion(response.oDtoTransaccion.IdEstacionamiento, 3, response.oDtoTransaccion.IdTipoVehiculo, 0, 0);
+
+                            oDtoLiquidacion = (DtoLiquidacion)oResultadoOperacion.EntidadDatos;
+                            response.oDtoLiquidacion = oDtoLiquidacion;
+
+                            oDtoDatosLiquidacion = new DtoDatosLiquidacion();
+
+                            double VALOR2 = response.oDtoLiquidacion.Valor;
+                            double SUBTOTAL2 = Math.Round(VALOR2 / 1.19, 0);
+                            double IVA2 = VALOR2 - SUBTOTAL2;
+                            double TOTAL2 = VALOR2;
+
+
+                            oDtoDatosLiquidacion.Iva = IVA2;
+                            oDtoDatosLiquidacion.SubTotal = SUBTOTAL2;
+                            oDtoDatosLiquidacion.Tipo = 3;
+                            oDtoDatosLiquidacion.Total = VALOR2;
+
+                            response.olstDtoLiquidacion.Add(oDtoDatosLiquidacion);
+                        }
+                    }
+                }
+
+            }
+            #endregion
+
+            response.oDtoLiquidacion = null;
+            response.oDtoTransaccion = null;
+            return response;
+        }
+    }
+}
+
