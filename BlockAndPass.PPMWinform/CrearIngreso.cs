@@ -126,6 +126,8 @@ namespace BlockAndPass.PPMWinform
                             {
                                 chbAutorizado.Checked = true;
                                 chbAutorizado.Visible = true;
+                                chbAutorizado.Enabled = false;
+                                tbPlaca.Enabled = false;
                             }
                         }
                     }

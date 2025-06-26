@@ -85,40 +85,40 @@ namespace BlockAndPass.PPMWinform
         }
         private void tbRecibido_TextChanged(object sender, EventArgs e)
         {
-            //MessageBox.Show(tbCambio.Text);
-            Int64 pagar = Convert.ToInt64(tbValorPagar.Text.Replace("$", "").Replace(".", ""));
-            //Int64 recibido = Convert.ToInt64(tbRecibido.Text.Replace("$", ""));
-            Int64 cambio = Convert.ToInt64(tbCambio.Text.Replace("$", "").Replace(".", ""));
+                //MessageBox.Show(tbCambio.Text);
+                Int64 pagar = Convert.ToInt64(tbValorPagar.Text.Replace("$", "").Replace(".", ""));
+                //Int64 recibido = Convert.ToInt64(tbRecibido.Text.Replace("$", ""));
+                Int64 cambio = Convert.ToInt64(tbCambio.Text.Replace("$", "").Replace(".", ""));
 
-            Int64 recibido = 0;
-            try
-            {
-                if (Int64.TryParse(tbRecibido.Text.Replace("$", "").Replace(".", ""), out recibido))
+                Int64 recibido = 0;
+                try
                 {
-                    tbRecibido.Text = "$" + string.Format("{0:#,##0.##}", recibido);
-
-                    if (recibido > pagar)
+                    if (Int64.TryParse(tbRecibido.Text.Replace("$", "").Replace(".", ""), out recibido))
                     {
-                        //MessageBox.Show(recibido + " " + pagar);
-                        tbCambio.Text = "$" + string.Format("{0:#,##0.##}", (recibido - pagar));
+                        tbRecibido.Text = "$" + string.Format("{0:#,##0.##}", recibido);
+
+                        if (recibido > pagar)
+                        {
+                            //MessageBox.Show(recibido + " " + pagar);
+                            tbCambio.Text = "$" + string.Format("{0:#,##0.##}", (recibido - pagar));
+                        }
+                        else
+                        {
+                            tbCambio.Text = "$0";
+                        }
                     }
                     else
                     {
-                        tbCambio.Text = "$0";
+                        tbRecibido.Text = string.Empty;
                     }
                 }
-                else
+                catch (Exception exe)
                 {
-                    tbRecibido.Text = string.Empty;
+                    //MessageBox.Show(exe.InnerException.ToString() + " " + exe.Message + " " + );
                 }
-            }
-            catch (Exception exe)
-            {
-                //MessageBox.Show(exe.InnerException.ToString() + " " + exe.Message + " " + );
-            }
 
-            tbRecibido.SelectionStart = tbRecibido.Text.Length; // add some logic if length is 0
-            tbRecibido.SelectionLength = 0;
+                tbRecibido.SelectionStart = tbRecibido.Text.Length; // add some logic if length is 0
+                tbRecibido.SelectionLength = 0;
         }
         private void btn_Limpiar_Click(object sender, EventArgs e)
         {
@@ -157,7 +157,7 @@ namespace BlockAndPass.PPMWinform
                                 pagosFinal += item.Tipo + "-" + item.SubTotal + "-" + item.Iva + "-" + item.Total;
                             }
 
-                            InfoPagoNormalService pagoNormal = cliente.PagarClienteParticular(pagosFinal, cbEstacionamiento.SelectedValue.ToString(), tbIdTransaccion.Text, cbPPM.SelectedValue.ToString(), oCardResponse.fechaPago, sumTotalPagar.ToString());
+                            InfoPagoNormalService pagoNormal = cliente.PagarClienteParticular(pagosFinal, cbEstacionamiento.SelectedValue.ToString(), tbIdTransaccion.Text, cbPPM.SelectedValue.ToString(), oCardResponse.fechaPago, sumTotalPagar.ToString(), _DocumentoUsuario,0,0);
 
                             if (pagoNormal.Exito)
                             {
@@ -188,7 +188,7 @@ namespace BlockAndPass.PPMWinform
                             pagosFinal += item.Tipo + "-" + item.SubTotal + "-" + item.Iva + "-" + item.Total;
                         }
 
-                        InfoPagoMensualidadService pagoNormal = cliente.PagarMensualidad(pagosFinal, cbEstacionamiento.SelectedValue.ToString(), cbPPM.SelectedValue.ToString(), DateTime.Now.ToString(), sumTotalPagar.ToString(), tbIdTarjeta.Text);
+                        InfoPagoMensualidadService pagoNormal = cliente.PagarMensualidad(pagosFinal, cbEstacionamiento.SelectedValue.ToString(), cbPPM.SelectedValue.ToString(), DateTime.Now.ToString(), sumTotalPagar.ToString(), tbIdTarjeta.Text, _DocumentoUsuario,0,0);
 
                         if (pagoNormal.Exito)
                         {
@@ -752,7 +752,8 @@ namespace BlockAndPass.PPMWinform
                                 //InfoTransaccionService oInfoTransaccionService = cliente.ConsultarInfoTransaccion(cbEstacionamiento.SelectedValue.ToString(), oCardResponse.idCard, oCardResponse.moduloEntrada);
                                 if (oInfoTransaccionService.Exito)
                                 {
-                                    AplicarCortesiaResponse oAplicarCortesiaResponse = cliente.AplicarLaCortesia(cbEstacionamiento.SelectedValue.ToString(), popup.Observacion, popup.Motivo.ToString(), oInfoTransaccionService.IdTransaccion, _DocumentoUsuario);
+                                    //AplicarCortesiaResponse oAplicarCortesiaResponse = cliente.AplicarLaCortesia(cbEstacionamiento.SelectedValue.ToString(), popup.Observacion, popup.Motivo.ToString(), oInfoTransaccionService.IdTransaccion, _DocumentoUsuario);
+                                    AplicarCortesiaResponse oAplicarCortesiaResponse = new AplicarCortesiaResponse();
                                     if (oAplicarCortesiaResponse.Exito)
                                     {
                                         oCardResponse = AplicarCortesia(clave);
@@ -865,7 +866,7 @@ namespace BlockAndPass.PPMWinform
                      popup.ShowDialog();
                      if (popup.DialogResult == DialogResult.OK)
                      {
-                         ConfirmarArqueoResponse confirmacionArqueo = cliente.ConfirmarElArqueo(cbEstacionamiento.SelectedValue.ToString(), cbPPM.SelectedValue.ToString(), rgis.IdArqueo.ToString(), popup.Valor.ToString());
+                         ConfirmarArqueoResponse confirmacionArqueo = cliente.ConfirmarElArqueo(cbEstacionamiento.SelectedValue.ToString(), cbPPM.SelectedValue.ToString(), rgis.IdArqueo.ToString(), popup.Valor.ToString(), "");
                          if (confirmacionArqueo.Exito)
                          {
                              ImprimirArqueo(rgis.IdArqueo.ToString());
@@ -897,7 +898,8 @@ namespace BlockAndPass.PPMWinform
         }
         private void btn_Eventos_Click(object sender, EventArgs e)
         {
-            EventoPopUp popup = new EventoPopUp(cbEstacionamiento.SelectedValue.ToString(), _DocumentoUsuario);
+            int idtipovehiculo=0;
+            EventoPopUp popup = new EventoPopUp(cbEstacionamiento.SelectedValue.ToString(), _DocumentoUsuario, idtipovehiculo);
             popup.ShowDialog();
             if (popup.DialogResult == DialogResult.OK)
             {
@@ -1013,23 +1015,23 @@ namespace BlockAndPass.PPMWinform
         }
         private void btn_Copia_Click(object sender, EventArgs e)
         {
-            Cargando(true);
-            CopiaFactura popup = new CopiaFactura();
-            popup.ShowDialog();
-            if (popup.DialogResult == DialogResult.OK)
-            {
-                Cargando(false);
-            }
-            else if (popup.DialogResult == System.Windows.Forms.DialogResult.Cancel)
-            {
-                Cargando(false);
-                MessageBox.Show("Operacion cancelada por el usuario", "Copia de factura PPM", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-            else
-            {
-                Cargando(false);
-                MessageBox.Show("Error al procesar ventana copia de factura", "Copia de factura PPM", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            //Cargando(true);
+            //CopiaFactura popup = new CopiaFactura(Convert.ToString());
+            //popup.ShowDialog();
+            //if (popup.DialogResult == DialogResult.OK)
+            //{
+            //    Cargando(false);
+            //}
+            //else if (popup.DialogResult == System.Windows.Forms.DialogResult.Cancel)
+            //{
+            //    Cargando(false);
+            //    MessageBox.Show("Operacion cancelada por el usuario", "Copia de factura PPM", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            //}
+            //else
+            //{
+            //    Cargando(false);
+            //    MessageBox.Show("Error al procesar ventana copia de factura", "Copia de factura PPM", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            //}
             
         }
         #endregion
@@ -1192,7 +1194,7 @@ namespace BlockAndPass.PPMWinform
 
 
             return oCardResponse;
-        }
+        }   
         public CardResponse GetCardInfo(string sPass)
         {
             CardResponse oCardResponse = new CardResponse();
@@ -1713,7 +1715,7 @@ namespace BlockAndPass.PPMWinform
 
                 rowDatosFactura.Cambio = Convert.ToDouble(item.Cambio);
                 rowDatosFactura.Direccion = item.Direccion;
-                rowDatosFactura.Fecha = item.Fecha;
+                rowDatosFactura.Fecha = Convert.ToDateTime(item.Fecha).ToString("yyyy/MM/dd HH:mm tt");
                 rowDatosFactura.IdTransaccion = item.IdTransaccion;
                 rowDatosFactura.Informacion = "Esta infromacion esta quemada en el codigo, deberia obtenerse de algun lugar";
                 rowDatosFactura.Modulo = item.Modulo;
@@ -1729,7 +1731,7 @@ namespace BlockAndPass.PPMWinform
                 rowDatosFactura.Subtotal = Convert.ToDouble(item.Subtotal);
                 rowDatosFactura.Iva = Convert.ToDouble(item.Iva);
                 rowDatosFactura.TipoPago = item.Tipo;
-                rowDatosFactura.Fecha2 = item.FechaEntrada;
+                rowDatosFactura.Fecha2 = Convert.ToDateTime(item.FechaEntrada).ToString("yyyy/MM/dd HH:mm tt");
                 rowDatosFactura.Vehiculo = item.TipoVehiculo;
                 rowDatosFactura.VigenciaFactura = item.Vigencia;
 

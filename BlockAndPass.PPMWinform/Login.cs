@@ -23,14 +23,46 @@ namespace BlockAndPass.PPMWinform
             InitializeComponent();
         }
 
-        private void btn_Cancel_Click(object sender, EventArgs e)
-        {
-            this.Close();
-            Application.Exit();
-        }
-
         private void btn_Ok_Click(object sender, EventArgs e)
         {
+            #region Old
+            //LoginResponse oLogin = cliente.Loguearse(tbUser.Text);
+            //if (oLogin.Exito)
+            //{
+            //    if (Decrypt(oLogin.Clave) == tbClave.Text)
+            //    {
+            //        InfoPPMService oInfoPPMService = cliente.ObtenerDatosPPMxMac(GetLocalMACAddress());
+
+            //        if (oInfoPPMService.Exito)
+            //        {
+            //            PPM df = new PPM(oLogin.Documento, oInfoPPMService);
+
+            //            df.Show();
+
+            //            this.Close();
+            //        }
+            //        else
+            //        {
+            //            MessageBox.Show("No se reconoce punto de pago asociado para la MAC = " + GetLocalMACAddress(), "Error PPM", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            //            this.Close();
+            //            Application.Exit();
+            //        }
+            //    }
+            //    else
+            //    {
+            //        MessageBox.Show("Clave incorrecta", "Error Login", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            //        this.Close();
+            //        Application.Exit();
+            //    }
+            //}
+            //else
+            //{
+            //    MessageBox.Show(oLogin.ErrorMessage, "Error Login", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            //    this.Close();
+            //    Application.Exit();
+            //}
+            #endregion
+
             LoginResponse oLogin = cliente.Loguearse(tbUser.Text);
             if (oLogin.Exito)
             {
@@ -40,7 +72,7 @@ namespace BlockAndPass.PPMWinform
 
                     if (oInfoPPMService.Exito)
                     {
-                        PPM df = new PPM(oLogin.Documento, oInfoPPMService);
+                        Menu df = new Menu(oLogin.Documento, oLogin.Cargo, oInfoPPMService);
 
                         df.Show();
 
@@ -56,8 +88,7 @@ namespace BlockAndPass.PPMWinform
                 else
                 {
                     MessageBox.Show("Clave incorrecta", "Error Login", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    this.Close();
-                    Application.Exit();
+                   
                 }
             }
             else
@@ -95,14 +126,6 @@ namespace BlockAndPass.PPMWinform
 
         }
 
-        private void tbClave_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (e.KeyChar == (char)13)
-            {
-                btn_Ok_Click(btn_Ok, EventArgs.Empty);
-            }
-        }
-
         private string GetLocalMACAddress()
         {
             return GetMACAddress();
@@ -122,6 +145,70 @@ namespace BlockAndPass.PPMWinform
             }
             //return "00251161D626";
             return sMacAddress;
+        }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+            Imgen_FondoLogin.BackgroundImage = Image.FromFile(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"Media\Png\ImagenFondoLogin.Png"));
+
+            //Copyright
+
+            lblFooter.Text = "© " + DateTime.Now.Year + " - Parquearse Tecnología";
+        }
+
+        private void btn_Ok_Click_1(object sender, EventArgs e)
+        {
+            LoginResponse oLogin = cliente.Loguearse(tbUser.Text);
+            if (oLogin.Exito)
+            {
+                if (Decrypt(oLogin.Clave) == tbClave.Text)
+                {
+                    InfoPPMService oInfoPPMService = cliente.ObtenerDatosPPMxMac(GetLocalMACAddress());
+
+                    if (oInfoPPMService.Exito)
+                    {
+                        Menu df = new Menu(oLogin.Documento, oLogin.Cargo, oInfoPPMService);
+
+                        df.Show();
+
+                        this.Close();
+                    }
+                    else
+                    {
+                        MessageBox.Show("No se reconoce punto de pago asociado para la MAC = " + GetLocalMACAddress(), "Error PPM", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        this.Close();
+                        Application.Exit();
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Clave incorrecta", "Error Login", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                   
+                }
+            }
+            else
+            {
+                MessageBox.Show(oLogin.ErrorMessage, "Error Login", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                this.Close();
+                Application.Exit();
+            }
+        }
+
+        private void tbClave_KeyPress_1(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)13)
+            {
+                btn_Ok_Click(btn_Ok, EventArgs.Empty);
+            }
+        }
+
+        private void btn_Cancel_Click_1(object sender, EventArgs e)
+        {
+            btn_Cancel.BackgroundImage = Image.FromFile(@"Media\Png\btn_CancelarPresionado.png");
+            btn_Cancel.Text = "";
+            btn_Cancel.BackgroundImageLayout = ImageLayout.Stretch;
+            this.Close();
+            Application.Exit();
         }
     }
 }

@@ -321,6 +321,12 @@ namespace BlockAndPass.PPMWinform.Tickets {
             
             private global::System.Data.DataColumn columnVigenciaFactura;
             
+            private global::System.Data.DataColumn columnCUFE;
+            
+            private global::System.Data.DataColumn columnRazonSocial;
+            
+            private global::System.Data.DataColumn columnDocCliente;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public TablaTicketPagoDataTable() {
@@ -524,6 +530,30 @@ namespace BlockAndPass.PPMWinform.Tickets {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn CUFEColumn {
+                get {
+                    return this.columnCUFE;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn RazonSocialColumn {
+                get {
+                    return this.columnRazonSocial;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn DocClienteColumn {
+                get {
+                    return this.columnDocCliente;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -580,7 +610,10 @@ namespace BlockAndPass.PPMWinform.Tickets {
                         double TotalFinal, 
                         string Fecha2, 
                         string Vehiculo, 
-                        string VigenciaFactura) {
+                        string VigenciaFactura, 
+                        string CUFE, 
+                        string RazonSocial, 
+                        string DocCliente) {
                 TablaTicketPagoRow rowTablaTicketPagoRow = ((TablaTicketPagoRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         Telefono,
@@ -603,7 +636,10 @@ namespace BlockAndPass.PPMWinform.Tickets {
                         TotalFinal,
                         Fecha2,
                         Vehiculo,
-                        VigenciaFactura};
+                        VigenciaFactura,
+                        CUFE,
+                        RazonSocial,
+                        DocCliente};
                 rowTablaTicketPagoRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowTablaTicketPagoRow);
                 return rowTablaTicketPagoRow;
@@ -647,6 +683,9 @@ namespace BlockAndPass.PPMWinform.Tickets {
                 this.columnFecha2 = base.Columns["Fecha2"];
                 this.columnVehiculo = base.Columns["Vehiculo"];
                 this.columnVigenciaFactura = base.Columns["VigenciaFactura"];
+                this.columnCUFE = base.Columns["CUFE"];
+                this.columnRazonSocial = base.Columns["RazonSocial"];
+                this.columnDocCliente = base.Columns["DocCliente"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -694,6 +733,12 @@ namespace BlockAndPass.PPMWinform.Tickets {
                 base.Columns.Add(this.columnVehiculo);
                 this.columnVigenciaFactura = new global::System.Data.DataColumn("VigenciaFactura", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnVigenciaFactura);
+                this.columnCUFE = new global::System.Data.DataColumn("CUFE", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCUFE);
+                this.columnRazonSocial = new global::System.Data.DataColumn("RazonSocial", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnRazonSocial);
+                this.columnDocCliente = new global::System.Data.DataColumn("DocCliente", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnDocCliente);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1173,6 +1218,54 @@ namespace BlockAndPass.PPMWinform.Tickets {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string CUFE {
+                get {
+                    try {
+                        return ((string)(this[this.tableTablaTicketPago.CUFEColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'CUFE\' de la tabla \'TablaTicketPago\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableTablaTicketPago.CUFEColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string RazonSocial {
+                get {
+                    try {
+                        return ((string)(this[this.tableTablaTicketPago.RazonSocialColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'RazonSocial\' de la tabla \'TablaTicketPago\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableTablaTicketPago.RazonSocialColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string DocCliente {
+                get {
+                    try {
+                        return ((string)(this[this.tableTablaTicketPago.DocClienteColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'DocCliente\' de la tabla \'TablaTicketPago\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableTablaTicketPago.DocClienteColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool IsTelefonoNull() {
                 return this.IsNull(this.tableTablaTicketPago.TelefonoColumn);
             }
@@ -1421,6 +1514,42 @@ namespace BlockAndPass.PPMWinform.Tickets {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SetVigenciaFacturaNull() {
                 this[this.tableTablaTicketPago.VigenciaFacturaColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsCUFENull() {
+                return this.IsNull(this.tableTablaTicketPago.CUFEColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetCUFENull() {
+                this[this.tableTablaTicketPago.CUFEColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsRazonSocialNull() {
+                return this.IsNull(this.tableTablaTicketPago.RazonSocialColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetRazonSocialNull() {
+                this[this.tableTablaTicketPago.RazonSocialColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsDocClienteNull() {
+                return this.IsNull(this.tableTablaTicketPago.DocClienteColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetDocClienteNull() {
+                this[this.tableTablaTicketPago.DocClienteColumn] = global::System.Convert.DBNull;
             }
         }
         

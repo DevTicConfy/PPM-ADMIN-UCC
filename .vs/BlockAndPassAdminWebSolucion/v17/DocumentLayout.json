@@ -1,0 +1,53 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\PROYECTOS\\FACTURACI\u00D3N ELECTRONICA\\DESARROLLOS\\Parquearse\\UstaFlorida\\ADMIN\u0026PPM - copia\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0C5B487E-30CA-485C-9F76-FECD8931CC7D}|BlockAndPass.PPMWinform\\BlockAndPass.PPMWinform.csproj|d:\\proyectos\\facturaci\u00F3n electronica\\desarrollos\\parquearse\\ustaflorida\\admin\u0026ppm - copia\\blockandpass.ppmwinform\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0C5B487E-30CA-485C-9F76-FECD8931CC7D}|BlockAndPass.PPMWinform\\BlockAndPass.PPMWinform.csproj|solutionrelative:blockandpass.ppmwinform\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C5B487E-30CA-485C-9F76-FECD8931CC7D}|BlockAndPass.PPMWinform\\BlockAndPass.PPMWinform.csproj|d:\\proyectos\\facturaci\u00F3n electronica\\desarrollos\\parquearse\\ustaflorida\\admin\u0026ppm - copia\\blockandpass.ppmwinform\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{0C5B487E-30CA-485C-9F76-FECD8931CC7D}|BlockAndPass.PPMWinform\\BlockAndPass.PPMWinform.csproj|solutionrelative:blockandpass.ppmwinform\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Menu.cs",
+              "DocumentMoniker": "D:\\PROYECTOS\\FACTURACI\u00D3N ELECTRONICA\\DESARROLLOS\\Parquearse\\UstaFlorida\\ADMIN\u0026PPM - copia\\BlockAndPass.PPMWinform\\Menu.cs",
+              "RelativeDocumentMoniker": "BlockAndPass.PPMWinform\\Menu.cs",
+              "ToolTip": "D:\\PROYECTOS\\FACTURACI\u00D3N ELECTRONICA\\DESARROLLOS\\Parquearse\\UstaFlorida\\ADMIN\u0026PPM - copia\\BlockAndPass.PPMWinform\\Menu.cs",
+              "RelativeToolTip": "BlockAndPass.PPMWinform\\Menu.cs",
+              "ViewState": "AQIAABwQAAAAAAAAAAAAACwQAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-16T14:09:46.036Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Menu.cs [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\PROYECTOS\\FACTURACI\u00D3N ELECTRONICA\\DESARROLLOS\\Parquearse\\UstaFlorida\\ADMIN\u0026PPM - copia\\BlockAndPass.PPMWinform\\Menu.cs",
+              "RelativeDocumentMoniker": "BlockAndPass.PPMWinform\\Menu.cs",
+              "ToolTip": "D:\\PROYECTOS\\FACTURACI\u00D3N ELECTRONICA\\DESARROLLOS\\Parquearse\\UstaFlorida\\ADMIN\u0026PPM - copia\\BlockAndPass.PPMWinform\\Menu.cs [Dise\u00F1o]",
+              "RelativeToolTip": "BlockAndPass.PPMWinform\\Menu.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-16T14:09:42.666Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

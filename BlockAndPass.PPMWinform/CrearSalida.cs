@@ -24,6 +24,7 @@ namespace BlockAndPass.PPMWinform
         }
 
         ServicesByP cliente = new ServicesByP();
+        AutorizadoxPlacaResponse respuesta = new AutorizadoxPlacaResponse();
 
         public CrearSalida(string iIdEstacionamiento)
         {
@@ -47,7 +48,7 @@ namespace BlockAndPass.PPMWinform
                     DialogResult result3 = MessageBox.Show("¿Esta seguro que desea crear la salida para la placa: " + tbPlaca.Text, "Crear Salida", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2);
                     if (result3 == DialogResult.Yes)
                     {
-                        CreaSalidaResponse resp = cliente.CrearSalida(_IdEstacionamiento.ToString(), tbPlaca.Text);
+                        CreaSalidaResponse resp = cliente.CrearSalida(_IdEstacionamiento.ToString(), tbPlaca.Text, respuesta.IdTarjeta);
 
                         if (resp.Exito)
                         {
@@ -92,9 +93,9 @@ namespace BlockAndPass.PPMWinform
         {
             bool bResultado = false;
 
-            AutorizadoxPlacaResponse resp = cliente.BuscarAutorizadoxPlaca(tbPlaca.Text);
+            respuesta = cliente.BuscarAutorizadoxPlaca(tbPlaca.Text);
 
-            if (resp.Exito)
+            if (respuesta.Exito)
             {
                 bResultado = true;
             }

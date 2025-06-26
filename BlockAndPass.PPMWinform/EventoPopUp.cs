@@ -23,11 +23,11 @@ namespace BlockAndPass.PPMWinform
             set { _Evento = value; }
         }
 
-        public EventoPopUp(string idEstacionamiento, string sUsuario)
+        public EventoPopUp(string idEstacionamiento, string sUsuario, int idTipoVehiculo)
         {
             InitializeComponent();
 
-            EventosResponse oInfo = cliente.ObtenerListaEventosXEstacionamientoXUsuario(idEstacionamiento, sUsuario);
+            EventosResponse oInfo = cliente.ObtenerListaEventosXEstacionamientoXUsuario(idEstacionamiento, sUsuario, idTipoVehiculo);
             if (!oInfo.Exito)
             {
                 this.DialogResult = DialogResult.None;
@@ -61,5 +61,6 @@ namespace BlockAndPass.PPMWinform
             this.DialogResult = DialogResult.Cancel;
             this.Close();
         }
+
     }
 }

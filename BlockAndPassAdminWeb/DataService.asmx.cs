@@ -8380,7 +8380,7 @@ namespace BlockAndPass.AdminWeb
             query = "select f.Prefijo + '-' + p.NumeroFactura, e.Nombre, e.TelefonoContacto, e.Direccion, c.IdModulo, p.FechaPago, p.IdTransaccion, t.PlacaEntrada, tp.TipoPago, p.Total, t.ValorRecibido, t.Cambio, p.Subtotal, p.Iva, f.NumeroResolucion + ' ' + f.FechaResolucion + ' DEL ' + f.FacturaInicial + ' AL ' + f.FacturaFinal , t.FechaEntrada, tv.TipoVehiculo,"
                     + " (select count(cantidad) from (select count(*) as cantidad"
 								+ " from T_Pagos"
-								+ " where IdTransaccion='2017040609064312'"
+								+ " where IdTransaccion='"+idTransaccion+"'"
 								+ " group by(NumeroFactura)) as myTable)"
                     + " from T_Pagos as p"
                     + " inner join T_Estacionamientos as e"

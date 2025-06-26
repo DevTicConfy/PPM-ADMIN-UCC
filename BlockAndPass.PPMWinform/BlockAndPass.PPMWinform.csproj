@@ -67,8 +67,16 @@
     <Reference Include="EGlobalT.Device.Tools">
       <HintPath>..\BlockAndPass.Library\EGlobalT.Device.Tools.dll</HintPath>
     </Reference>
+    <Reference Include="FontAwesome.Sharp, Version=4.5.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\FontAwesome.Sharp.4.5.1\lib\net40\FontAwesome.Sharp.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="QRCoder, Version=1.5.1.0, Culture=neutral, PublicKeyToken=c4ed5b9ae8358a28, processorArchitecture=MSIL">
+      <HintPath>..\packages\QRCoder.1.5.1\lib\net40\QRCoder.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
@@ -79,6 +87,7 @@
     <Reference Include="System.Web" />
     <Reference Include="System.Web.Helpers, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
     <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xaml" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Data" />
@@ -86,6 +95,7 @@
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CasilleroCasco.cs">
@@ -111,6 +121,18 @@
     </Compile>
     <Compile Include="ArqueoPopUp.Designer.cs">
       <DependentUpon>ArqueoPopUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MensajePopUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MensajePopUp.Designer.cs">
+      <DependentUpon>MensajePopUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegistroManualPopUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistroManualPopUp.Designer.cs">
+      <DependentUpon>RegistroManualPopUp.cs</DependentUpon>
     </Compile>
     <Compile Include="CopiaFacturaM.cs">
       <SubType>Form</SubType>
@@ -148,11 +170,35 @@
     <Compile Include="CortesiaPopUp.Designer.cs">
       <DependentUpon>CortesiaPopUp.cs</DependentUpon>
     </Compile>
+    <Compile Include="FacturaContingencia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FacturaContingencia.Designer.cs">
+      <DependentUpon>FacturaContingencia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FacturaElectronica.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FacturaElectronica.Designer.cs">
+      <DependentUpon>FacturaElectronica.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu.Designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MotivosCortesias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MotivosCortesias.Designer.cs">
+      <DependentUpon>MotivosCortesias.cs</DependentUpon>
     </Compile>
     <Compile Include="PPM.cs">
       <SubType>Form</SubType>
@@ -162,11 +208,44 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReporteDePatios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReporteDePatios.Designer.cs">
+      <DependentUpon>ReporteDePatios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReposicionMensualidadPopUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReposicionMensualidadPopUp.Designer.cs">
+      <DependentUpon>ReposicionMensualidadPopUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReposicionPopup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReposicionPopup.Designer.cs">
+      <DependentUpon>ReposicionPopup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SaldoEnLinea.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SaldoEnLinea.Designer.cs">
+      <DependentUpon>SaldoEnLinea.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tickets\DataSetCopia.cs">
+      <DependentUpon>DataSetCopia.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Tickets\DataSetCopia.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DataSetCopia.xsd</DependentUpon>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Tickets\DataSetReportes.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetReportes.xsd</DependentUpon>
     </Compile>
     <Compile Include="Tickets\DataSetTicketArqueo.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -180,6 +259,7 @@
     </Compile>
     <Compile Include="Tickets\DataSetTicketPago.cs">
       <DependentUpon>DataSetTicketPago.xsd</DependentUpon>
+      <SubType>Component</SubType>
     </Compile>
     <Compile Include="Tickets\DataSetTicketPago.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -188,6 +268,7 @@
     </Compile>
     <Compile Include="Tickets\DataSetTicketPagoMensualidad.cs">
       <DependentUpon>DataSetTicketPagoMensualidad.xsd</DependentUpon>
+      <SubType>Component</SubType>
     </Compile>
     <Compile Include="Tickets\DataSetTicketPagoMensualidad.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -214,6 +295,12 @@
     <EmbeddedResource Include="ArqueoPopUp.resx">
       <DependentUpon>ArqueoPopUp.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MensajePopUp.resx">
+      <DependentUpon>MensajePopUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegistroManualPopUp.resx">
+      <DependentUpon>RegistroManualPopUp.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CopiaFacturaM.resx">
       <DependentUpon>CopiaFacturaM.cs</DependentUpon>
     </EmbeddedResource>
@@ -232,8 +319,20 @@
     <EmbeddedResource Include="CortesiaPopUp.resx">
       <DependentUpon>CortesiaPopUp.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FacturaContingencia.resx">
+      <DependentUpon>FacturaContingencia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FacturaElectronica.resx">
+      <DependentUpon>FacturaElectronica.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MotivosCortesias.resx">
+      <DependentUpon>MotivosCortesias.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PPM.resx">
       <DependentUpon>PPM.cs</DependentUpon>
@@ -249,10 +348,29 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="ReporteDePatios.resx">
+      <DependentUpon>ReporteDePatios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReposicionMensualidadPopUp.resx">
+      <DependentUpon>ReposicionMensualidadPopUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReposicionPopup.resx">
+      <DependentUpon>ReposicionPopup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SaldoEnLinea.resx">
+      <DependentUpon>SaldoEnLinea.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Tickets\CopiaFactura.rdlc">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
     <EmbeddedResource Include="Tickets\CopiaFacturaM.rdlc" />
+    <EmbeddedResource Include="Tickets\CopiaFacturaMPorPlaca.rdlc" />
+    <EmbeddedResource Include="Tickets\CopiaFacturaPorPlaca.rdlc" />
+    <EmbeddedResource Include="Tickets\ReportePatios.rdlc" />
+    <EmbeddedResource Include="Tickets\ReporteSaldoEnLinea.rdlc" />
+    <EmbeddedResource Include="Tickets\TicketContingenciaFE.rdlc" />
+    <EmbeddedResource Include="Tickets\ticketPagoFE.rdlc" />
+    <EmbeddedResource Include="Tickets\ticketPagoMFE.rdlc" />
     <EmbeddedResource Include="Tickets\ticketPagoSimplificado.rdlc">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
@@ -274,6 +392,7 @@
     <None Include="app.config">
       <SubType>Designer</SubType>
     </None>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -296,6 +415,17 @@
     <None Include="Tickets\DataSetCopia.xss">
       <DependentUpon>DataSetCopia.xsd</DependentUpon>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Tickets\DataSetReportes.xsc">
+      <DependentUpon>DataSetReportes.xsd</DependentUpon>
+    </None>
+    <None Include="Tickets\DataSetReportes.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetReportes.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Tickets\DataSetReportes.xss">
+      <DependentUpon>DataSetReportes.xsd</DependentUpon>
     </None>
     <None Include="Tickets\DataSetTicketArqueo.xsc">
       <DependentUpon>DataSetTicketArqueo.xsd</DependentUpon>
@@ -359,6 +489,9 @@
     <None Include="Web References\ByPServices\AplicarMotoResponse.datasource">
       <DependentUpon>Reference.map</DependentUpon>
     </None>
+    <None Include="Web References\ByPServices\AutorizadoRecargaxPlacaResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
     <None Include="Web References\ByPServices\AutorizadoxPlacaResponse.datasource">
       <DependentUpon>Reference.map</DependentUpon>
     </None>
@@ -375,6 +508,9 @@
       <DependentUpon>Reference.map</DependentUpon>
     </None>
     <None Include="Web References\ByPServices\ConveniosResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ByPServices\CreaEntradaRecargaResponse.datasource">
       <DependentUpon>Reference.map</DependentUpon>
     </None>
     <None Include="Web References\ByPServices\CreaEntradaResponse.datasource">
@@ -395,19 +531,43 @@
     <None Include="Web References\ByPServices\InfoArqueoResponse.datasource">
       <DependentUpon>Reference.map</DependentUpon>
     </None>
+    <None Include="Web References\ByPServices\InfoCantidadMotosActualesResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ByPServices\InfoCantidadVehiculosActualesResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
     <None Include="Web References\ByPServices\InfoCargaResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ByPServices\InfoClienteFacturaElectronicaResponse.datasource">
       <DependentUpon>Reference.map</DependentUpon>
     </None>
     <None Include="Web References\ByPServices\InfoFacturaResponse.datasource">
       <DependentUpon>Reference.map</DependentUpon>
     </None>
+    <None Include="Web References\ByPServices\InfoFacturaResponseFE.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
     <None Include="Web References\ByPServices\InfoPagoMensualidadService.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ByPServices\InfoPagoMensualidadServiceFE.datasource">
       <DependentUpon>Reference.map</DependentUpon>
     </None>
     <None Include="Web References\ByPServices\InfoPagoNormalService.datasource">
       <DependentUpon>Reference.map</DependentUpon>
     </None>
+    <None Include="Web References\ByPServices\InfoPagoNormalServiceFE.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ByPServices\InfoPagoRegistroManualResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
     <None Include="Web References\ByPServices\InfoPPMService.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ByPServices\InfoTransaccionResponse.datasource">
       <DependentUpon>Reference.map</DependentUpon>
     </None>
     <None Include="Web References\ByPServices\InfoTransaccionService.datasource">
@@ -422,7 +582,13 @@
     <None Include="Web References\ByPServices\LoginResponse.datasource">
       <DependentUpon>Reference.map</DependentUpon>
     </None>
+    <None Include="Web References\ByPServices\ModulosResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
     <None Include="Web References\ByPServices\MotivosCortesiaResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ByPServices\MotivosRegistroManuales.datasource">
       <DependentUpon>Reference.map</DependentUpon>
     </None>
     <None Include="Web References\ByPServices\Reference.map">
@@ -442,10 +608,16 @@
       <DependentUpon>Reference.map</DependentUpon>
     </None>
     <None Include="Web References\ByPServices\ServicesByP.wsdl" />
+    <None Include="Web References\ByPServices\TarjetasResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
     <None Include="Web References\ByPServices\VehiculosEnValetResponse.datasource">
       <DependentUpon>Reference.map</DependentUpon>
     </None>
     <None Include="Web References\ByPServices\VerificaTransaccionAbiertaAutorizadoResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ByPServices\VerificaVigenciaAutorizadoRecargaResponse.datasource">
       <DependentUpon>Reference.map</DependentUpon>
     </None>
     <None Include="Web References\ByPServices\VerificaVigenciaAutorizadoResponse.datasource">
@@ -500,6 +672,7 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Media\Png\btnPlaca.png" />
+    <None Include="Resources\usuario.png" />
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
@@ -521,9 +694,17 @@
     </WebReferenceUrl>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\BlockAndPass.ValetWinform\BlockAndPass.ValetWinform.csproj">
+      <Project>{A2940323-C19A-4712-8375-60E837D586EA}</Project>
+      <Name>BlockAndPass.ValetWinform</Name>
+    </ProjectReference>
     <ProjectReference Include="..\BlockAndPass.WebServiceLocalReader\BlockAndPass.WebServiceLocalReader.csproj">
       <Project>{A67B3ECF-83C7-42DD-B9CC-68E0E90448E8}</Project>
       <Name>BlockAndPass.WebServiceLocalReader</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BlockAndPass.WebService\BlockAndPass.WebService.csproj">
+      <Project>{B5BAA89E-F97E-493A-83FD-677414C3B901}</Project>
+      <Name>BlockAndPass.WebService</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -40,3 +40,31 @@ C:\Proyectos\SANTOTO\BlockAndPass.WebService\bin\BlockAndPass.WebService.pdb
 C:\Proyectos\SANTOTO\BlockAndPass.WebService\obj\Debug\BlockAndPass.WebService.dll
 C:\Proyectos\SANTOTO\BlockAndPass.WebService\obj\Debug\BlockAndPass.WebService.pdb
 C:\Proyectos\SANTOTO\BlockAndPass.WebService\obj\Debug\BlockAndPass.WebService.csprojResolveAssemblyReference.cache
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM\BlockAndPass.WebService\bin\BlockAndPass.WebService.dll
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM\BlockAndPass.WebService\bin\BlockAndPass.WebService.pdb
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM\BlockAndPass.WebService\obj\Debug\BlockAndPass.WebService.dll
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM\BlockAndPass.WebService\obj\Debug\BlockAndPass.WebService.pdb
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.WebService\bin\BlockAndPass.WebService.dll
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.WebService\bin\BlockAndPass.WebService.pdb
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.WebService\obj\Debug\BlockAndPass.WebService.dll
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.WebService\obj\Debug\BlockAndPass.WebService.pdb
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.WebService\obj\Debug\BlockAndPass.WebService.csprojResolveAssemblyReference.cache
+E:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.WebService\bin\BlockAndPass.WebService.dll
+E:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.WebService\bin\BlockAndPass.WebService.pdb
+E:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.WebService\obj\Debug\BlockAndPass.WebService.dll
+E:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.WebService\obj\Debug\BlockAndPass.WebService.pdb
+E:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.WebService\obj\Debug\BlockAndPass.WebService.csprojResolveAssemblyReference.cache
+D:\PROYECTOS\PARQUEARSE\FORMULARIO FACTURA ELECTRONICA\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.WebService\bin\BlockAndPass.WebService.dll
+D:\PROYECTOS\PARQUEARSE\FORMULARIO FACTURA ELECTRONICA\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.WebService\bin\BlockAndPass.WebService.pdb
+D:\PROYECTOS\PARQUEARSE\FORMULARIO FACTURA ELECTRONICA\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.WebService\obj\Debug\BlockAndPass.WebService.csprojResolveAssemblyReference.cache
+D:\PROYECTOS\PARQUEARSE\FORMULARIO FACTURA ELECTRONICA\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.WebService\obj\Debug\BlockAndPass.WebService.dll
+D:\PROYECTOS\PARQUEARSE\FORMULARIO FACTURA ELECTRONICA\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.WebService\obj\Debug\BlockAndPass.WebService.pdb
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.WebService\bin\BlockAndPass.WebService.dll
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.WebService\bin\BlockAndPass.WebService.pdb
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.WebService\obj\Debug\BlockAndPass.WebService.dll
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.WebService\obj\Debug\BlockAndPass.WebService.pdb
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\Ucc\ADMIN&PPM - copia\BlockAndPass.WebService\bin\BlockAndPass.WebService.dll
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\Ucc\ADMIN&PPM - copia\BlockAndPass.WebService\bin\BlockAndPass.WebService.pdb
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\Ucc\ADMIN&PPM - copia\BlockAndPass.WebService\obj\Debug\BlockAndPass.WebService.dll
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\Ucc\ADMIN&PPM - copia\BlockAndPass.WebService\obj\Debug\BlockAndPass.WebService.pdb
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\Ucc\ADMIN&PPM - copia\BlockAndPass.WebService\obj\Debug\BlockAndPass.WebService.csprojResolveAssemblyReference.cache

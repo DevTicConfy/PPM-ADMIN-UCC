@@ -40,3 +40,18 @@ D:\PROYECTOS\PARQUEARSE\OLIVOS\ADMIN&PPM\BlockAndPassAdminWeb\obj\Debug\BlockAnd
 D:\PROYECTOS\PARQUEARSE\OLIVOS\ADMIN&PPM\BlockAndPassAdminWeb\obj\Debug\BlockAndPass.AdminWeb.pdb
 D:\PROYECTOS\PARQUEARSE\OLIVOS\ADMIN&PPM\BlockAndPassAdminWeb\bin\BlockAndPass.AdminWeb.dll
 D:\PROYECTOS\PARQUEARSE\OLIVOS\ADMIN&PPM\BlockAndPassAdminWeb\bin\BlockAndPass.AdminWeb.pdb
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM\BlockAndPassAdminWeb\bin\BlockAndPass.AdminWeb.dll
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM\BlockAndPassAdminWeb\bin\BlockAndPass.AdminWeb.pdb
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM\BlockAndPassAdminWeb\obj\Debug\BlockAndPass.AdminWeb.csprojResolveAssemblyReference.cache
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM\BlockAndPassAdminWeb\obj\Debug\BlockAndPass.AdminWeb.dll
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM\BlockAndPassAdminWeb\obj\Debug\BlockAndPass.AdminWeb.pdb
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPassAdminWeb\bin\BlockAndPass.AdminWeb.dll
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPassAdminWeb\bin\BlockAndPass.AdminWeb.pdb
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPassAdminWeb\obj\Debug\BlockAndPass.AdminWeb.csprojResolveAssemblyReference.cache
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPassAdminWeb\obj\Debug\BlockAndPass.AdminWeb.dll
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPassAdminWeb\obj\Debug\BlockAndPass.AdminWeb.pdb
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\UstaFlorida\ADMIN&PPM - copia\BlockAndPassAdminWeb\bin\BlockAndPass.AdminWeb.dll
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\UstaFlorida\ADMIN&PPM - copia\BlockAndPassAdminWeb\bin\BlockAndPass.AdminWeb.pdb
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\UstaFlorida\ADMIN&PPM - copia\BlockAndPassAdminWeb\obj\Debug\BlockAndPass.AdminWeb.csprojResolveAssemblyReference.cache
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\UstaFlorida\ADMIN&PPM - copia\BlockAndPassAdminWeb\obj\Debug\BlockAndPass.AdminWeb.dll
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\UstaFlorida\ADMIN&PPM - copia\BlockAndPassAdminWeb\obj\Debug\BlockAndPass.AdminWeb.pdb

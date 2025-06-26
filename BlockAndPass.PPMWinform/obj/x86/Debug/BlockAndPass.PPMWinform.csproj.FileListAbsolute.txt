@@ -456,3 +456,392 @@ D:\PROYECTOS\PARQUEARSE\OLIVOS\ADMIN&PPM\BlockAndPass.PPMWinform\obj\x86\Debug\B
 D:\PROYECTOS\PARQUEARSE\OLIVOS\ADMIN&PPM\BlockAndPass.PPMWinform\obj\x86\Debug\BlockAndPass.PPMWinform.csproj.GenerateResource.Cache
 D:\PROYECTOS\PARQUEARSE\OLIVOS\ADMIN&PPM\BlockAndPass.PPMWinform\obj\x86\Debug\RdlCompile.cache
 D:\PROYECTOS\PARQUEARSE\OLIVOS\ADMIN&PPM\BlockAndPass.PPMWinform\obj\x86\Debug\RdlCompile.compiled
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM\BlockAndPass.PPMWinform\bin\x86\Debug\BlockAndPass.PPMWinform.exe.config
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM\BlockAndPass.PPMWinform\obj\x86\Debug\BlockAndPass.PPMWinform.exe
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM\BlockAndPass.PPMWinform\obj\x86\Debug\BlockAndPass.PPMWinform.pdb
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM\BlockAndPass.PPMWinform\bin\x86\Debug\Tickets\ticketPagoM.rdlc
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM\BlockAndPass.PPMWinform\bin\x86\Debug\Tickets\ticketCarga.rdlc
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM\BlockAndPass.PPMWinform\bin\x86\Debug\Tickets\ticketArqueo.rdlc
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM\BlockAndPass.PPMWinform\bin\x86\Debug\Tickets\ticketPago.rdlc
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM\BlockAndPass.PPMWinform\bin\x86\Debug\Media\Png\bnCard.png
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM\BlockAndPass.PPMWinform\bin\x86\Debug\Media\Png\btnBag.png
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM\BlockAndPass.PPMWinform\bin\x86\Debug\Media\Png\btnCalendar.png
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM\BlockAndPass.PPMWinform\bin\x86\Debug\Media\Png\btnCard.png
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM\BlockAndPass.PPMWinform\bin\x86\Debug\Media\Png\btnClean.png
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM\BlockAndPass.PPMWinform\bin\x86\Debug\Media\Png\btnClose.png
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM\BlockAndPass.PPMWinform\bin\x86\Debug\Media\Png\btnCourtesy.png
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM\BlockAndPass.PPMWinform\bin\x86\Debug\Media\Png\btnDownArrow.png
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM\BlockAndPass.PPMWinform\bin\x86\Debug\Media\Png\btnEntry.png
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM\BlockAndPass.PPMWinform\bin\x86\Debug\Media\Png\btnFav.png
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM\BlockAndPass.PPMWinform\bin\x86\Debug\Media\Png\btnFuel.png
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM\BlockAndPass.PPMWinform\bin\x86\Debug\Media\Png\btnHelmet.png
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM\BlockAndPass.PPMWinform\bin\x86\Debug\Media\Png\btnMoto.png
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM\BlockAndPass.PPMWinform\bin\x86\Debug\Media\Png\btnPay.png
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM\BlockAndPass.PPMWinform\bin\x86\Debug\Tickets\CopiaFactura.rdlc
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM\BlockAndPass.PPMWinform\bin\x86\Debug\Tickets\ticketPagoSimplificado.rdlc
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM\BlockAndPass.PPMWinform\bin\x86\Debug\Tickets\ticketPagoMSimplificado.rdlc
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM\BlockAndPass.PPMWinform\bin\x86\Debug\Tickets\DataSetCopia.Designer.cs
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM\BlockAndPass.PPMWinform\bin\x86\Debug\Tickets\DataSetCopia.xsc
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM\BlockAndPass.PPMWinform\bin\x86\Debug\Tickets\DataSetCopia.xsd
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM\BlockAndPass.PPMWinform\bin\x86\Debug\Tickets\DataSetCopia.xss
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM\BlockAndPass.PPMWinform\bin\x86\Debug\BlockAndPass.PPMWinform.exe
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM\BlockAndPass.PPMWinform\bin\x86\Debug\BlockAndPass.PPMWinform.pdb
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM\BlockAndPass.PPMWinform\bin\x86\Debug\BlockAndPass.WebServiceLocalReader.dll
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM\BlockAndPass.PPMWinform\bin\x86\Debug\EGlobalT.Device.SmartCard.dll
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM\BlockAndPass.PPMWinform\bin\x86\Debug\EGlobalT.Device.SmartCardFeeders.dll
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM\BlockAndPass.PPMWinform\bin\x86\Debug\EGlobalT.Device.SmartCardReaders.dll
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM\BlockAndPass.PPMWinform\bin\x86\Debug\EGlobalT.Device.Tools.dll
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM\BlockAndPass.PPMWinform\bin\x86\Debug\BlockAndPass.WebServiceLocalReader.pdb
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM\BlockAndPass.PPMWinform\obj\x86\Debug\BlockAndPass.PPMWinform.csprojResolveAssemblyReference.cache
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM\BlockAndPass.PPMWinform\obj\x86\Debug\BlockAndPass.PPMWinform.CasilleroCasco.resources
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM\BlockAndPass.PPMWinform\obj\x86\Debug\BlockAndPass.PPMWinform.ConvenioPopUp.resources
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM\BlockAndPass.PPMWinform\obj\x86\Debug\BlockAndPass.PPMWinform.CargaPopUp.resources
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM\BlockAndPass.PPMWinform\obj\x86\Debug\BlockAndPass.PPMWinform.ArqueoPopUp.resources
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM\BlockAndPass.PPMWinform\obj\x86\Debug\BlockAndPass.PPMWinform.CopiaFacturaM.resources
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM\BlockAndPass.PPMWinform\obj\x86\Debug\BlockAndPass.PPMWinform.CopiaFactura.resources
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM\BlockAndPass.PPMWinform\obj\x86\Debug\BlockAndPass.PPMWinform.CrearSalida.resources
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM\BlockAndPass.PPMWinform\obj\x86\Debug\BlockAndPass.PPMWinform.CrearIngreso.resources
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM\BlockAndPass.PPMWinform\obj\x86\Debug\BlockAndPass.PPMWinform.EventoPopUp.resources
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM\BlockAndPass.PPMWinform\obj\x86\Debug\BlockAndPass.PPMWinform.CortesiaPopUp.resources
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM\BlockAndPass.PPMWinform\obj\x86\Debug\BlockAndPass.PPMWinform.Login.resources
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM\BlockAndPass.PPMWinform\obj\x86\Debug\BlockAndPass.PPMWinform.PPM.resources
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM\BlockAndPass.PPMWinform\obj\x86\Debug\BlockAndPass.PPMWinform.Properties.Resources.resources
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM\BlockAndPass.PPMWinform\obj\x86\Debug\BlockAndPass.PPMWinform.csproj.GenerateResource.Cache
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM\BlockAndPass.PPMWinform\obj\x86\Debug\RdlCompile.cache
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM\BlockAndPass.PPMWinform\obj\x86\Debug\RdlCompile.compiled
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\Tickets\ticketPagoM.rdlc
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\Tickets\ticketCarga.rdlc
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\Tickets\ticketArqueo.rdlc
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\Tickets\ticketPago.rdlc
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\Media\Png\bnCard.png
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\Media\Png\btnBag.png
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\Media\Png\btnCalendar.png
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\Media\Png\btnCard.png
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\Media\Png\btnClean.png
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\Media\Png\btnClose.png
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\Media\Png\btnCourtesy.png
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\Media\Png\btnDownArrow.png
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\Media\Png\btnEntry.png
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\Media\Png\btnFav.png
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\Media\Png\btnFuel.png
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\Media\Png\btnHelmet.png
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\Media\Png\btnMoto.png
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\Media\Png\btnPay.png
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\Tickets\CopiaFactura.rdlc
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\Tickets\ticketPagoSimplificado.rdlc
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\Tickets\ticketPagoMSimplificado.rdlc
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\Tickets\DataSetCopia.Designer.cs
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\Tickets\DataSetCopia.xsc
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\Tickets\DataSetCopia.xsd
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\Tickets\DataSetCopia.xss
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\BlockAndPass.PPMWinform.exe.config
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\BlockAndPass.PPMWinform.exe
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\BlockAndPass.PPMWinform.pdb
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\BlockAndPass.ValetWinform.exe
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\BlockAndPass.WebService.dll
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\BlockAndPass.WebServiceLocalReader.dll
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\EGlobalT.Device.SmartCard.dll
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\EGlobalT.Device.SmartCardFeeders.dll
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\EGlobalT.Device.SmartCardReaders.dll
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\EGlobalT.Device.Tools.dll
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\FontAwesome.Sharp.dll
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\BlockAndPass.ValetWinform.pdb
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\BlockAndPass.WebServiceLocalReader.pdb
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\BlockAndPass.WebService.pdb
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.PPMWinform\obj\x86\Debug\BlockAndPass.PPMWinform.csprojResolveAssemblyReference.cache
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.PPMWinform\obj\x86\Debug\BlockAndPass.PPMWinform.CasilleroCasco.resources
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.PPMWinform\obj\x86\Debug\BlockAndPass.PPMWinform.ConvenioPopUp.resources
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.PPMWinform\obj\x86\Debug\BlockAndPass.PPMWinform.CargaPopUp.resources
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.PPMWinform\obj\x86\Debug\BlockAndPass.PPMWinform.ArqueoPopUp.resources
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.PPMWinform\obj\x86\Debug\BlockAndPass.PPMWinform.CopiaFacturaM.resources
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.PPMWinform\obj\x86\Debug\BlockAndPass.PPMWinform.CopiaFactura.resources
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.PPMWinform\obj\x86\Debug\BlockAndPass.PPMWinform.CrearSalida.resources
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.PPMWinform\obj\x86\Debug\BlockAndPass.PPMWinform.CrearIngreso.resources
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.PPMWinform\obj\x86\Debug\BlockAndPass.PPMWinform.EventoPopUp.resources
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.PPMWinform\obj\x86\Debug\BlockAndPass.PPMWinform.CortesiaPopUp.resources
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.PPMWinform\obj\x86\Debug\BlockAndPass.PPMWinform.FacturaContingencia.resources
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.PPMWinform\obj\x86\Debug\BlockAndPass.PPMWinform.FacturaElectronica.resources
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.PPMWinform\obj\x86\Debug\BlockAndPass.PPMWinform.Login.resources
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.PPMWinform\obj\x86\Debug\BlockAndPass.PPMWinform.Menu.resources
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.PPMWinform\obj\x86\Debug\BlockAndPass.PPMWinform.MotivosCortesias.resources
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.PPMWinform\obj\x86\Debug\BlockAndPass.PPMWinform.PPM.resources
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.PPMWinform\obj\x86\Debug\BlockAndPass.PPMWinform.Properties.Resources.resources
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.PPMWinform\obj\x86\Debug\BlockAndPass.PPMWinform.ReporteDePatios.resources
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.PPMWinform\obj\x86\Debug\BlockAndPass.PPMWinform.ReposicionMensualidadPopUp.resources
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.PPMWinform\obj\x86\Debug\BlockAndPass.PPMWinform.ReposicionPopup.resources
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.PPMWinform\obj\x86\Debug\BlockAndPass.PPMWinform.SaldoEnLinea.resources
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.PPMWinform\obj\x86\Debug\BlockAndPass.PPMWinform.csproj.GenerateResource.Cache
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.PPMWinform\obj\x86\Debug\RdlCompile.cache
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.PPMWinform\obj\x86\Debug\RdlCompile.compiled
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.PPMWinform\obj\x86\Debug\BlockAndPass.PPMWinform.exe
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.PPMWinform\obj\x86\Debug\BlockAndPass.PPMWinform.pdb
+E:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\BlockAndPass.PPMWinform.exe.config
+E:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.PPMWinform\obj\x86\Debug\BlockAndPass.PPMWinform.exe
+E:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.PPMWinform\obj\x86\Debug\BlockAndPass.PPMWinform.pdb
+E:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\Tickets\ticketPagoM.rdlc
+E:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\Tickets\ticketCarga.rdlc
+E:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\Tickets\ticketArqueo.rdlc
+E:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\Tickets\ticketPago.rdlc
+E:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\Media\Png\bnCard.png
+E:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\Media\Png\btnBag.png
+E:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\Media\Png\btnCalendar.png
+E:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\Media\Png\btnCard.png
+E:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\Media\Png\btnClean.png
+E:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\Media\Png\btnClose.png
+E:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\Media\Png\btnCourtesy.png
+E:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\Media\Png\btnDownArrow.png
+E:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\Media\Png\btnEntry.png
+E:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\Media\Png\btnFav.png
+E:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\Media\Png\btnFuel.png
+E:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\Media\Png\btnHelmet.png
+E:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\Media\Png\btnMoto.png
+E:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\Media\Png\btnPay.png
+E:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\Tickets\CopiaFactura.rdlc
+E:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\Tickets\ticketPagoSimplificado.rdlc
+E:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\Tickets\ticketPagoMSimplificado.rdlc
+E:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\Tickets\DataSetCopia.Designer.cs
+E:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\Tickets\DataSetCopia.xsc
+E:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\Tickets\DataSetCopia.xsd
+E:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\Tickets\DataSetCopia.xss
+E:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\BlockAndPass.PPMWinform.exe
+E:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\BlockAndPass.PPMWinform.pdb
+E:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\BlockAndPass.ValetWinform.exe
+E:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\BlockAndPass.WebService.dll
+E:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\BlockAndPass.WebServiceLocalReader.dll
+E:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\EGlobalT.Device.SmartCard.dll
+E:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\EGlobalT.Device.SmartCardFeeders.dll
+E:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\EGlobalT.Device.SmartCardReaders.dll
+E:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\EGlobalT.Device.Tools.dll
+E:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\FontAwesome.Sharp.dll
+E:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\BlockAndPass.ValetWinform.pdb
+E:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\BlockAndPass.WebServiceLocalReader.pdb
+E:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\BlockAndPass.WebService.pdb
+E:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.PPMWinform\obj\x86\Debug\BlockAndPass.PPMWinform.csprojResolveAssemblyReference.cache
+E:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.PPMWinform\obj\x86\Debug\BlockAndPass.PPMWinform.CasilleroCasco.resources
+E:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.PPMWinform\obj\x86\Debug\BlockAndPass.PPMWinform.ConvenioPopUp.resources
+E:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.PPMWinform\obj\x86\Debug\BlockAndPass.PPMWinform.CargaPopUp.resources
+E:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.PPMWinform\obj\x86\Debug\BlockAndPass.PPMWinform.ArqueoPopUp.resources
+E:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.PPMWinform\obj\x86\Debug\BlockAndPass.PPMWinform.CopiaFacturaM.resources
+E:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.PPMWinform\obj\x86\Debug\BlockAndPass.PPMWinform.CopiaFactura.resources
+E:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.PPMWinform\obj\x86\Debug\BlockAndPass.PPMWinform.CrearSalida.resources
+E:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.PPMWinform\obj\x86\Debug\BlockAndPass.PPMWinform.CrearIngreso.resources
+E:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.PPMWinform\obj\x86\Debug\BlockAndPass.PPMWinform.EventoPopUp.resources
+E:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.PPMWinform\obj\x86\Debug\BlockAndPass.PPMWinform.CortesiaPopUp.resources
+E:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.PPMWinform\obj\x86\Debug\BlockAndPass.PPMWinform.FacturaContingencia.resources
+E:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.PPMWinform\obj\x86\Debug\BlockAndPass.PPMWinform.FacturaElectronica.resources
+E:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.PPMWinform\obj\x86\Debug\BlockAndPass.PPMWinform.Login.resources
+E:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.PPMWinform\obj\x86\Debug\BlockAndPass.PPMWinform.Menu.resources
+E:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.PPMWinform\obj\x86\Debug\BlockAndPass.PPMWinform.MotivosCortesias.resources
+E:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.PPMWinform\obj\x86\Debug\BlockAndPass.PPMWinform.PPM.resources
+E:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.PPMWinform\obj\x86\Debug\BlockAndPass.PPMWinform.Properties.Resources.resources
+E:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.PPMWinform\obj\x86\Debug\BlockAndPass.PPMWinform.ReporteDePatios.resources
+E:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.PPMWinform\obj\x86\Debug\BlockAndPass.PPMWinform.ReposicionMensualidadPopUp.resources
+E:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.PPMWinform\obj\x86\Debug\BlockAndPass.PPMWinform.ReposicionPopup.resources
+E:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.PPMWinform\obj\x86\Debug\BlockAndPass.PPMWinform.SaldoEnLinea.resources
+E:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.PPMWinform\obj\x86\Debug\BlockAndPass.PPMWinform.csproj.GenerateResource.Cache
+E:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.PPMWinform\obj\x86\Debug\RdlCompile.cache
+E:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.PPMWinform\obj\x86\Debug\RdlCompile.compiled
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\BlockAndPass.PPMWinform.exe.config
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.PPMWinform\obj\x86\Debug\BlockAndPass.PPMWinform.exe
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.PPMWinform\obj\x86\Debug\BlockAndPass.PPMWinform.pdb
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\Tickets\ticketPagoM.rdlc
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\Tickets\ticketCarga.rdlc
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\Tickets\ticketArqueo.rdlc
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\Tickets\ticketPago.rdlc
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\Media\Png\bnCard.png
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\Media\Png\btnBag.png
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\Media\Png\btnCalendar.png
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\Media\Png\btnCard.png
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\Media\Png\btnClean.png
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\Media\Png\btnClose.png
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\Media\Png\btnCourtesy.png
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\Media\Png\btnDownArrow.png
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\Media\Png\btnEntry.png
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\Media\Png\btnFav.png
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\Media\Png\btnFuel.png
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\Media\Png\btnHelmet.png
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\Media\Png\btnMoto.png
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\Media\Png\btnPay.png
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\Tickets\CopiaFactura.rdlc
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\Tickets\ticketPagoSimplificado.rdlc
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\Tickets\ticketPagoMSimplificado.rdlc
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\Tickets\DataSetCopia.Designer.cs
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\Tickets\DataSetCopia.xsc
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\Tickets\DataSetCopia.xsd
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\Tickets\DataSetCopia.xss
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\BlockAndPass.PPMWinform.exe
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\BlockAndPass.PPMWinform.pdb
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\BlockAndPass.ValetWinform.exe
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\BlockAndPass.WebService.dll
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\BlockAndPass.WebServiceLocalReader.dll
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\EGlobalT.Device.SmartCard.dll
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\EGlobalT.Device.SmartCardFeeders.dll
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\EGlobalT.Device.SmartCardReaders.dll
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\EGlobalT.Device.Tools.dll
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\FontAwesome.Sharp.dll
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\BlockAndPass.ValetWinform.pdb
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\BlockAndPass.WebServiceLocalReader.pdb
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\BlockAndPass.WebService.pdb
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.PPMWinform\obj\x86\Debug\BlockAndPass.PPMWinform.csprojResolveAssemblyReference.cache
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.PPMWinform\obj\x86\Debug\BlockAndPass.PPMWinform.CasilleroCasco.resources
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.PPMWinform\obj\x86\Debug\BlockAndPass.PPMWinform.ConvenioPopUp.resources
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.PPMWinform\obj\x86\Debug\BlockAndPass.PPMWinform.CargaPopUp.resources
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.PPMWinform\obj\x86\Debug\BlockAndPass.PPMWinform.ArqueoPopUp.resources
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.PPMWinform\obj\x86\Debug\BlockAndPass.PPMWinform.CopiaFacturaM.resources
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.PPMWinform\obj\x86\Debug\BlockAndPass.PPMWinform.CopiaFactura.resources
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.PPMWinform\obj\x86\Debug\BlockAndPass.PPMWinform.CrearSalida.resources
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.PPMWinform\obj\x86\Debug\BlockAndPass.PPMWinform.CrearIngreso.resources
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.PPMWinform\obj\x86\Debug\BlockAndPass.PPMWinform.EventoPopUp.resources
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.PPMWinform\obj\x86\Debug\BlockAndPass.PPMWinform.CortesiaPopUp.resources
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.PPMWinform\obj\x86\Debug\BlockAndPass.PPMWinform.FacturaContingencia.resources
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.PPMWinform\obj\x86\Debug\BlockAndPass.PPMWinform.FacturaElectronica.resources
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.PPMWinform\obj\x86\Debug\BlockAndPass.PPMWinform.Login.resources
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.PPMWinform\obj\x86\Debug\BlockAndPass.PPMWinform.Menu.resources
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.PPMWinform\obj\x86\Debug\BlockAndPass.PPMWinform.MotivosCortesias.resources
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.PPMWinform\obj\x86\Debug\BlockAndPass.PPMWinform.PPM.resources
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.PPMWinform\obj\x86\Debug\BlockAndPass.PPMWinform.Properties.Resources.resources
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.PPMWinform\obj\x86\Debug\BlockAndPass.PPMWinform.ReporteDePatios.resources
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.PPMWinform\obj\x86\Debug\BlockAndPass.PPMWinform.ReposicionMensualidadPopUp.resources
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.PPMWinform\obj\x86\Debug\BlockAndPass.PPMWinform.ReposicionPopup.resources
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.PPMWinform\obj\x86\Debug\BlockAndPass.PPMWinform.SaldoEnLinea.resources
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.PPMWinform\obj\x86\Debug\BlockAndPass.PPMWinform.csproj.GenerateResource.Cache
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.PPMWinform\obj\x86\Debug\RdlCompile.cache
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.PPMWinform\obj\x86\Debug\RdlCompile.compiled
+D:\PROYECTOS\PARQUEARSE\FORMULARIO FACTURA ELECTRONICA\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\BlockAndPass.PPMWinform.exe.config
+D:\PROYECTOS\PARQUEARSE\FORMULARIO FACTURA ELECTRONICA\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.PPMWinform\obj\x86\Debug\BlockAndPass.PPMWinform.exe
+D:\PROYECTOS\PARQUEARSE\FORMULARIO FACTURA ELECTRONICA\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.PPMWinform\obj\x86\Debug\BlockAndPass.PPMWinform.pdb
+D:\PROYECTOS\PARQUEARSE\FORMULARIO FACTURA ELECTRONICA\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\Tickets\ticketPagoM.rdlc
+D:\PROYECTOS\PARQUEARSE\FORMULARIO FACTURA ELECTRONICA\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\Tickets\ticketCarga.rdlc
+D:\PROYECTOS\PARQUEARSE\FORMULARIO FACTURA ELECTRONICA\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\Tickets\ticketArqueo.rdlc
+D:\PROYECTOS\PARQUEARSE\FORMULARIO FACTURA ELECTRONICA\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\Tickets\ticketPago.rdlc
+D:\PROYECTOS\PARQUEARSE\FORMULARIO FACTURA ELECTRONICA\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\Media\Png\bnCard.png
+D:\PROYECTOS\PARQUEARSE\FORMULARIO FACTURA ELECTRONICA\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\Media\Png\btnBag.png
+D:\PROYECTOS\PARQUEARSE\FORMULARIO FACTURA ELECTRONICA\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\Media\Png\btnCalendar.png
+D:\PROYECTOS\PARQUEARSE\FORMULARIO FACTURA ELECTRONICA\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\Media\Png\btnCard.png
+D:\PROYECTOS\PARQUEARSE\FORMULARIO FACTURA ELECTRONICA\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\Media\Png\btnClean.png
+D:\PROYECTOS\PARQUEARSE\FORMULARIO FACTURA ELECTRONICA\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\Media\Png\btnClose.png
+D:\PROYECTOS\PARQUEARSE\FORMULARIO FACTURA ELECTRONICA\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\Media\Png\btnCourtesy.png
+D:\PROYECTOS\PARQUEARSE\FORMULARIO FACTURA ELECTRONICA\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\Media\Png\btnDownArrow.png
+D:\PROYECTOS\PARQUEARSE\FORMULARIO FACTURA ELECTRONICA\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\Media\Png\btnEntry.png
+D:\PROYECTOS\PARQUEARSE\FORMULARIO FACTURA ELECTRONICA\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\Media\Png\btnFav.png
+D:\PROYECTOS\PARQUEARSE\FORMULARIO FACTURA ELECTRONICA\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\Media\Png\btnFuel.png
+D:\PROYECTOS\PARQUEARSE\FORMULARIO FACTURA ELECTRONICA\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\Media\Png\btnHelmet.png
+D:\PROYECTOS\PARQUEARSE\FORMULARIO FACTURA ELECTRONICA\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\Media\Png\btnMoto.png
+D:\PROYECTOS\PARQUEARSE\FORMULARIO FACTURA ELECTRONICA\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\Media\Png\btnPay.png
+D:\PROYECTOS\PARQUEARSE\FORMULARIO FACTURA ELECTRONICA\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\Tickets\CopiaFactura.rdlc
+D:\PROYECTOS\PARQUEARSE\FORMULARIO FACTURA ELECTRONICA\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\Tickets\ticketPagoSimplificado.rdlc
+D:\PROYECTOS\PARQUEARSE\FORMULARIO FACTURA ELECTRONICA\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\Tickets\ticketPagoMSimplificado.rdlc
+D:\PROYECTOS\PARQUEARSE\FORMULARIO FACTURA ELECTRONICA\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\Tickets\DataSetCopia.Designer.cs
+D:\PROYECTOS\PARQUEARSE\FORMULARIO FACTURA ELECTRONICA\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\Tickets\DataSetCopia.xsc
+D:\PROYECTOS\PARQUEARSE\FORMULARIO FACTURA ELECTRONICA\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\Tickets\DataSetCopia.xsd
+D:\PROYECTOS\PARQUEARSE\FORMULARIO FACTURA ELECTRONICA\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\Tickets\DataSetCopia.xss
+D:\PROYECTOS\PARQUEARSE\FORMULARIO FACTURA ELECTRONICA\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\BlockAndPass.PPMWinform.exe
+D:\PROYECTOS\PARQUEARSE\FORMULARIO FACTURA ELECTRONICA\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\BlockAndPass.PPMWinform.pdb
+D:\PROYECTOS\PARQUEARSE\FORMULARIO FACTURA ELECTRONICA\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\BlockAndPass.ValetWinform.exe
+D:\PROYECTOS\PARQUEARSE\FORMULARIO FACTURA ELECTRONICA\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\BlockAndPass.WebService.dll
+D:\PROYECTOS\PARQUEARSE\FORMULARIO FACTURA ELECTRONICA\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\BlockAndPass.WebServiceLocalReader.dll
+D:\PROYECTOS\PARQUEARSE\FORMULARIO FACTURA ELECTRONICA\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\EGlobalT.Device.SmartCard.dll
+D:\PROYECTOS\PARQUEARSE\FORMULARIO FACTURA ELECTRONICA\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\EGlobalT.Device.SmartCardFeeders.dll
+D:\PROYECTOS\PARQUEARSE\FORMULARIO FACTURA ELECTRONICA\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\EGlobalT.Device.SmartCardReaders.dll
+D:\PROYECTOS\PARQUEARSE\FORMULARIO FACTURA ELECTRONICA\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\EGlobalT.Device.Tools.dll
+D:\PROYECTOS\PARQUEARSE\FORMULARIO FACTURA ELECTRONICA\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\FontAwesome.Sharp.dll
+D:\PROYECTOS\PARQUEARSE\FORMULARIO FACTURA ELECTRONICA\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\BlockAndPass.ValetWinform.pdb
+D:\PROYECTOS\PARQUEARSE\FORMULARIO FACTURA ELECTRONICA\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\BlockAndPass.WebServiceLocalReader.pdb
+D:\PROYECTOS\PARQUEARSE\FORMULARIO FACTURA ELECTRONICA\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\BlockAndPass.WebService.pdb
+D:\PROYECTOS\PARQUEARSE\FORMULARIO FACTURA ELECTRONICA\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.PPMWinform\obj\x86\Debug\BlockAndPass.PPMWinform.csprojResolveAssemblyReference.cache
+D:\PROYECTOS\PARQUEARSE\FORMULARIO FACTURA ELECTRONICA\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.PPMWinform\obj\x86\Debug\BlockAndPass.PPMWinform.CasilleroCasco.resources
+D:\PROYECTOS\PARQUEARSE\FORMULARIO FACTURA ELECTRONICA\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.PPMWinform\obj\x86\Debug\BlockAndPass.PPMWinform.ConvenioPopUp.resources
+D:\PROYECTOS\PARQUEARSE\FORMULARIO FACTURA ELECTRONICA\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.PPMWinform\obj\x86\Debug\BlockAndPass.PPMWinform.CargaPopUp.resources
+D:\PROYECTOS\PARQUEARSE\FORMULARIO FACTURA ELECTRONICA\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.PPMWinform\obj\x86\Debug\BlockAndPass.PPMWinform.ArqueoPopUp.resources
+D:\PROYECTOS\PARQUEARSE\FORMULARIO FACTURA ELECTRONICA\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.PPMWinform\obj\x86\Debug\BlockAndPass.PPMWinform.RegistroManualPopUp.resources
+D:\PROYECTOS\PARQUEARSE\FORMULARIO FACTURA ELECTRONICA\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.PPMWinform\obj\x86\Debug\BlockAndPass.PPMWinform.CopiaFacturaM.resources
+D:\PROYECTOS\PARQUEARSE\FORMULARIO FACTURA ELECTRONICA\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.PPMWinform\obj\x86\Debug\BlockAndPass.PPMWinform.CopiaFactura.resources
+D:\PROYECTOS\PARQUEARSE\FORMULARIO FACTURA ELECTRONICA\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.PPMWinform\obj\x86\Debug\BlockAndPass.PPMWinform.CrearSalida.resources
+D:\PROYECTOS\PARQUEARSE\FORMULARIO FACTURA ELECTRONICA\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.PPMWinform\obj\x86\Debug\BlockAndPass.PPMWinform.CrearIngreso.resources
+D:\PROYECTOS\PARQUEARSE\FORMULARIO FACTURA ELECTRONICA\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.PPMWinform\obj\x86\Debug\BlockAndPass.PPMWinform.EventoPopUp.resources
+D:\PROYECTOS\PARQUEARSE\FORMULARIO FACTURA ELECTRONICA\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.PPMWinform\obj\x86\Debug\BlockAndPass.PPMWinform.CortesiaPopUp.resources
+D:\PROYECTOS\PARQUEARSE\FORMULARIO FACTURA ELECTRONICA\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.PPMWinform\obj\x86\Debug\BlockAndPass.PPMWinform.FacturaContingencia.resources
+D:\PROYECTOS\PARQUEARSE\FORMULARIO FACTURA ELECTRONICA\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.PPMWinform\obj\x86\Debug\BlockAndPass.PPMWinform.FacturaElectronica.resources
+D:\PROYECTOS\PARQUEARSE\FORMULARIO FACTURA ELECTRONICA\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.PPMWinform\obj\x86\Debug\BlockAndPass.PPMWinform.Login.resources
+D:\PROYECTOS\PARQUEARSE\FORMULARIO FACTURA ELECTRONICA\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.PPMWinform\obj\x86\Debug\BlockAndPass.PPMWinform.Menu.resources
+D:\PROYECTOS\PARQUEARSE\FORMULARIO FACTURA ELECTRONICA\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.PPMWinform\obj\x86\Debug\BlockAndPass.PPMWinform.MotivosCortesias.resources
+D:\PROYECTOS\PARQUEARSE\FORMULARIO FACTURA ELECTRONICA\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.PPMWinform\obj\x86\Debug\BlockAndPass.PPMWinform.PPM.resources
+D:\PROYECTOS\PARQUEARSE\FORMULARIO FACTURA ELECTRONICA\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.PPMWinform\obj\x86\Debug\BlockAndPass.PPMWinform.Properties.Resources.resources
+D:\PROYECTOS\PARQUEARSE\FORMULARIO FACTURA ELECTRONICA\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.PPMWinform\obj\x86\Debug\BlockAndPass.PPMWinform.ReporteDePatios.resources
+D:\PROYECTOS\PARQUEARSE\FORMULARIO FACTURA ELECTRONICA\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.PPMWinform\obj\x86\Debug\BlockAndPass.PPMWinform.ReposicionMensualidadPopUp.resources
+D:\PROYECTOS\PARQUEARSE\FORMULARIO FACTURA ELECTRONICA\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.PPMWinform\obj\x86\Debug\BlockAndPass.PPMWinform.ReposicionPopup.resources
+D:\PROYECTOS\PARQUEARSE\FORMULARIO FACTURA ELECTRONICA\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.PPMWinform\obj\x86\Debug\BlockAndPass.PPMWinform.SaldoEnLinea.resources
+D:\PROYECTOS\PARQUEARSE\FORMULARIO FACTURA ELECTRONICA\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.PPMWinform\obj\x86\Debug\BlockAndPass.PPMWinform.csproj.GenerateResource.Cache
+D:\PROYECTOS\PARQUEARSE\FORMULARIO FACTURA ELECTRONICA\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.PPMWinform\obj\x86\Debug\RdlCompile.cache
+D:\PROYECTOS\PARQUEARSE\FORMULARIO FACTURA ELECTRONICA\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.PPMWinform\obj\x86\Debug\RdlCompile.compiled
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.PPMWinform\obj\x86\Debug\BlockAndPass.PPMWinform.RegistroManualPopUp.resources
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\QRCoder.dll
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\Ucc\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\BlockAndPass.PPMWinform.exe.config
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\Ucc\ADMIN&PPM - copia\BlockAndPass.PPMWinform\obj\x86\Debug\BlockAndPass.PPMWinform.exe
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\Ucc\ADMIN&PPM - copia\BlockAndPass.PPMWinform\obj\x86\Debug\BlockAndPass.PPMWinform.pdb
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\Ucc\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\Tickets\ticketPagoM.rdlc
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\Ucc\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\Tickets\ticketCarga.rdlc
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\Ucc\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\Tickets\ticketArqueo.rdlc
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\Ucc\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\Tickets\ticketPago.rdlc
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\Ucc\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\Media\Png\bnCard.png
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\Ucc\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\Media\Png\btnBag.png
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\Ucc\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\Media\Png\btnCalendar.png
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\Ucc\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\Media\Png\btnCard.png
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\Ucc\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\Media\Png\btnClean.png
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\Ucc\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\Media\Png\btnClose.png
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\Ucc\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\Media\Png\btnCourtesy.png
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\Ucc\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\Media\Png\btnDownArrow.png
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\Ucc\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\Media\Png\btnEntry.png
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\Ucc\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\Media\Png\btnFav.png
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\Ucc\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\Media\Png\btnFuel.png
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\Ucc\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\Media\Png\btnHelmet.png
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\Ucc\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\Media\Png\btnMoto.png
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\Ucc\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\Media\Png\btnPay.png
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\Ucc\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\Tickets\CopiaFactura.rdlc
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\Ucc\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\Tickets\ticketPagoSimplificado.rdlc
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\Ucc\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\Tickets\ticketPagoMSimplificado.rdlc
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\Ucc\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\Tickets\DataSetCopia.Designer.cs
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\Ucc\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\Tickets\DataSetCopia.xsc
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\Ucc\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\Tickets\DataSetCopia.xsd
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\Ucc\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\Tickets\DataSetCopia.xss
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\Ucc\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\BlockAndPass.PPMWinform.exe
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\Ucc\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\BlockAndPass.PPMWinform.pdb
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\Ucc\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\BlockAndPass.ValetWinform.exe
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\Ucc\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\BlockAndPass.WebService.dll
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\Ucc\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\BlockAndPass.WebServiceLocalReader.dll
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\Ucc\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\EGlobalT.Device.SmartCard.dll
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\Ucc\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\EGlobalT.Device.SmartCardFeeders.dll
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\Ucc\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\EGlobalT.Device.SmartCardReaders.dll
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\Ucc\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\EGlobalT.Device.Tools.dll
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\Ucc\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\FontAwesome.Sharp.dll
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\Ucc\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\QRCoder.dll
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\Ucc\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\BlockAndPass.ValetWinform.pdb
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\Ucc\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\BlockAndPass.WebServiceLocalReader.pdb
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\Ucc\ADMIN&PPM - copia\BlockAndPass.PPMWinform\bin\x86\Debug\BlockAndPass.WebService.pdb
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\Ucc\ADMIN&PPM - copia\BlockAndPass.PPMWinform\obj\x86\Debug\BlockAndPass.PPMWinform.csprojResolveAssemblyReference.cache
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\Ucc\ADMIN&PPM - copia\BlockAndPass.PPMWinform\obj\x86\Debug\BlockAndPass.PPMWinform.CasilleroCasco.resources
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\Ucc\ADMIN&PPM - copia\BlockAndPass.PPMWinform\obj\x86\Debug\BlockAndPass.PPMWinform.ConvenioPopUp.resources
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\Ucc\ADMIN&PPM - copia\BlockAndPass.PPMWinform\obj\x86\Debug\BlockAndPass.PPMWinform.CargaPopUp.resources
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\Ucc\ADMIN&PPM - copia\BlockAndPass.PPMWinform\obj\x86\Debug\BlockAndPass.PPMWinform.ArqueoPopUp.resources
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\Ucc\ADMIN&PPM - copia\BlockAndPass.PPMWinform\obj\x86\Debug\BlockAndPass.PPMWinform.MensajePopUp.resources
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\Ucc\ADMIN&PPM - copia\BlockAndPass.PPMWinform\obj\x86\Debug\BlockAndPass.PPMWinform.RegistroManualPopUp.resources
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\Ucc\ADMIN&PPM - copia\BlockAndPass.PPMWinform\obj\x86\Debug\BlockAndPass.PPMWinform.CopiaFacturaM.resources
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\Ucc\ADMIN&PPM - copia\BlockAndPass.PPMWinform\obj\x86\Debug\BlockAndPass.PPMWinform.CopiaFactura.resources
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\Ucc\ADMIN&PPM - copia\BlockAndPass.PPMWinform\obj\x86\Debug\BlockAndPass.PPMWinform.CrearSalida.resources
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\Ucc\ADMIN&PPM - copia\BlockAndPass.PPMWinform\obj\x86\Debug\BlockAndPass.PPMWinform.CrearIngreso.resources
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\Ucc\ADMIN&PPM - copia\BlockAndPass.PPMWinform\obj\x86\Debug\BlockAndPass.PPMWinform.EventoPopUp.resources
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\Ucc\ADMIN&PPM - copia\BlockAndPass.PPMWinform\obj\x86\Debug\BlockAndPass.PPMWinform.CortesiaPopUp.resources
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\Ucc\ADMIN&PPM - copia\BlockAndPass.PPMWinform\obj\x86\Debug\BlockAndPass.PPMWinform.FacturaContingencia.resources
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\Ucc\ADMIN&PPM - copia\BlockAndPass.PPMWinform\obj\x86\Debug\BlockAndPass.PPMWinform.FacturaElectronica.resources
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\Ucc\ADMIN&PPM - copia\BlockAndPass.PPMWinform\obj\x86\Debug\BlockAndPass.PPMWinform.Login.resources
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\Ucc\ADMIN&PPM - copia\BlockAndPass.PPMWinform\obj\x86\Debug\BlockAndPass.PPMWinform.Menu.resources
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\Ucc\ADMIN&PPM - copia\BlockAndPass.PPMWinform\obj\x86\Debug\BlockAndPass.PPMWinform.MotivosCortesias.resources
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\Ucc\ADMIN&PPM - copia\BlockAndPass.PPMWinform\obj\x86\Debug\BlockAndPass.PPMWinform.PPM.resources
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\Ucc\ADMIN&PPM - copia\BlockAndPass.PPMWinform\obj\x86\Debug\BlockAndPass.PPMWinform.Properties.Resources.resources
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\Ucc\ADMIN&PPM - copia\BlockAndPass.PPMWinform\obj\x86\Debug\BlockAndPass.PPMWinform.ReporteDePatios.resources
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\Ucc\ADMIN&PPM - copia\BlockAndPass.PPMWinform\obj\x86\Debug\BlockAndPass.PPMWinform.ReposicionMensualidadPopUp.resources
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\Ucc\ADMIN&PPM - copia\BlockAndPass.PPMWinform\obj\x86\Debug\BlockAndPass.PPMWinform.ReposicionPopup.resources
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\Ucc\ADMIN&PPM - copia\BlockAndPass.PPMWinform\obj\x86\Debug\BlockAndPass.PPMWinform.SaldoEnLinea.resources
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\Ucc\ADMIN&PPM - copia\BlockAndPass.PPMWinform\obj\x86\Debug\BlockAndPass.PPMWinform.csproj.GenerateResource.Cache
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\Ucc\ADMIN&PPM - copia\BlockAndPass.PPMWinform\obj\x86\Debug\RdlCompile.cache
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\Ucc\ADMIN&PPM - copia\BlockAndPass.PPMWinform\obj\x86\Debug\RdlCompile.compiled

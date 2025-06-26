@@ -158,3 +158,111 @@ D:\PROYECTOS\PARQUEARSE\OLIVOS\ADMIN&PPM\BlockAndPass.WebServiceLocalReader\obj\
 D:\PROYECTOS\PARQUEARSE\OLIVOS\ADMIN&PPM\BlockAndPass.WebServiceLocalReader\obj\Debug\RdlCompile.compiled
 D:\PROYECTOS\PARQUEARSE\OLIVOS\ADMIN&PPM\BlockAndPass.WebServiceLocalReader\obj\Debug\BlockAndPass.WebServiceLocalReader.dll
 D:\PROYECTOS\PARQUEARSE\OLIVOS\ADMIN&PPM\BlockAndPass.WebServiceLocalReader\obj\Debug\BlockAndPass.WebServiceLocalReader.pdb
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM\BlockAndPass.WebServiceLocalReader\bin\Tickets\ticketPagoM.rdlc
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM\BlockAndPass.WebServiceLocalReader\bin\Tickets\ticketCarga.rdlc
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM\BlockAndPass.WebServiceLocalReader\bin\Tickets\ticketArqueo.rdlc
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM\BlockAndPass.WebServiceLocalReader\bin\Tickets\ticketPago.rdlc
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM\BlockAndPass.WebServiceLocalReader\bin\BlockAndPass.WebServiceLocalReader.dll
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM\BlockAndPass.WebServiceLocalReader\bin\BlockAndPass.WebServiceLocalReader.pdb
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM\BlockAndPass.WebServiceLocalReader\bin\EGlobalT.Device.SmartCard.dll
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM\BlockAndPass.WebServiceLocalReader\bin\EGlobalT.Device.SmartCardFeeders.dll
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM\BlockAndPass.WebServiceLocalReader\bin\EGlobalT.Device.SmartCardReaders.dll
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM\BlockAndPass.WebServiceLocalReader\bin\EGlobalT.Device.Tools.dll
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM\BlockAndPass.WebServiceLocalReader\bin\System.Web.Helpers.dll
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM\BlockAndPass.WebServiceLocalReader\bin\System.Web.Helpers.xml
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM\BlockAndPass.WebServiceLocalReader\bin\es\System.Web.Helpers.resources.dll
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM\BlockAndPass.WebServiceLocalReader\obj\Debug\RdlCompile.cache
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM\BlockAndPass.WebServiceLocalReader\obj\Debug\RdlCompile.compiled
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM\BlockAndPass.WebServiceLocalReader\obj\Debug\BlockAndPass.WebServiceLocalReader.dll
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM\BlockAndPass.WebServiceLocalReader\obj\Debug\BlockAndPass.WebServiceLocalReader.pdb
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM\BlockAndPass.WebServiceLocalReader\obj\Debug\BlockAndPass.WebServiceLocalReader.csprojResolveAssemblyReference.cache
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.WebServiceLocalReader\bin\Tickets\ticketPagoM.rdlc
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.WebServiceLocalReader\bin\Tickets\ticketCarga.rdlc
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.WebServiceLocalReader\bin\Tickets\ticketArqueo.rdlc
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.WebServiceLocalReader\bin\Tickets\ticketPago.rdlc
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.WebServiceLocalReader\bin\BlockAndPass.WebServiceLocalReader.dll
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.WebServiceLocalReader\bin\BlockAndPass.WebServiceLocalReader.pdb
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.WebServiceLocalReader\bin\EGlobalT.Device.SmartCard.dll
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.WebServiceLocalReader\bin\EGlobalT.Device.SmartCardFeeders.dll
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.WebServiceLocalReader\bin\EGlobalT.Device.SmartCardReaders.dll
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.WebServiceLocalReader\bin\EGlobalT.Device.Tools.dll
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.WebServiceLocalReader\bin\System.Web.Helpers.dll
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.WebServiceLocalReader\bin\System.Web.Helpers.xml
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.WebServiceLocalReader\bin\es\System.Web.Helpers.resources.dll
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.WebServiceLocalReader\obj\Debug\RdlCompile.cache
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.WebServiceLocalReader\obj\Debug\RdlCompile.compiled
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.WebServiceLocalReader\obj\Debug\BlockAndPass.WebServiceLocalReader.dll
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.WebServiceLocalReader\obj\Debug\BlockAndPass.WebServiceLocalReader.pdb
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.WebServiceLocalReader\obj\Debug\BlockAndPass.WebServiceLocalReader.csprojResolveAssemblyReference.cache
+E:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.WebServiceLocalReader\bin\Tickets\ticketPagoM.rdlc
+E:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.WebServiceLocalReader\bin\Tickets\ticketCarga.rdlc
+E:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.WebServiceLocalReader\bin\Tickets\ticketArqueo.rdlc
+E:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.WebServiceLocalReader\bin\Tickets\ticketPago.rdlc
+E:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.WebServiceLocalReader\bin\BlockAndPass.WebServiceLocalReader.dll
+E:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.WebServiceLocalReader\bin\BlockAndPass.WebServiceLocalReader.pdb
+E:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.WebServiceLocalReader\bin\EGlobalT.Device.SmartCard.dll
+E:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.WebServiceLocalReader\bin\EGlobalT.Device.SmartCardFeeders.dll
+E:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.WebServiceLocalReader\bin\EGlobalT.Device.SmartCardReaders.dll
+E:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.WebServiceLocalReader\bin\EGlobalT.Device.Tools.dll
+E:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.WebServiceLocalReader\bin\System.Web.Helpers.dll
+E:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.WebServiceLocalReader\bin\System.Web.Helpers.xml
+E:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.WebServiceLocalReader\bin\es\System.Web.Helpers.resources.dll
+E:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.WebServiceLocalReader\obj\Debug\RdlCompile.cache
+E:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.WebServiceLocalReader\obj\Debug\RdlCompile.compiled
+E:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.WebServiceLocalReader\obj\Debug\BlockAndPass.WebServiceLocalReader.dll
+E:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.WebServiceLocalReader\obj\Debug\BlockAndPass.WebServiceLocalReader.pdb
+E:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.WebServiceLocalReader\obj\Debug\BlockAndPass.WebServiceLocalReader.csprojResolveAssemblyReference.cache
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.WebServiceLocalReader\bin\Tickets\ticketPagoM.rdlc
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.WebServiceLocalReader\bin\Tickets\ticketCarga.rdlc
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.WebServiceLocalReader\bin\Tickets\ticketArqueo.rdlc
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.WebServiceLocalReader\bin\Tickets\ticketPago.rdlc
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.WebServiceLocalReader\bin\BlockAndPass.WebServiceLocalReader.dll
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.WebServiceLocalReader\bin\BlockAndPass.WebServiceLocalReader.pdb
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.WebServiceLocalReader\bin\EGlobalT.Device.SmartCard.dll
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.WebServiceLocalReader\bin\EGlobalT.Device.SmartCardFeeders.dll
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.WebServiceLocalReader\bin\EGlobalT.Device.SmartCardReaders.dll
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.WebServiceLocalReader\bin\EGlobalT.Device.Tools.dll
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.WebServiceLocalReader\bin\System.Web.Helpers.dll
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.WebServiceLocalReader\bin\System.Web.Helpers.xml
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.WebServiceLocalReader\bin\es\System.Web.Helpers.resources.dll
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.WebServiceLocalReader\obj\Debug\RdlCompile.cache
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.WebServiceLocalReader\obj\Debug\RdlCompile.compiled
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.WebServiceLocalReader\obj\Debug\BlockAndPass.WebServiceLocalReader.dll
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.WebServiceLocalReader\obj\Debug\BlockAndPass.WebServiceLocalReader.pdb
+D:\PROYECTOS\PARQUEARSE\FORMULARIO FACTURA ELECTRONICA\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.WebServiceLocalReader\bin\Tickets\ticketPagoM.rdlc
+D:\PROYECTOS\PARQUEARSE\FORMULARIO FACTURA ELECTRONICA\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.WebServiceLocalReader\bin\Tickets\ticketCarga.rdlc
+D:\PROYECTOS\PARQUEARSE\FORMULARIO FACTURA ELECTRONICA\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.WebServiceLocalReader\bin\Tickets\ticketArqueo.rdlc
+D:\PROYECTOS\PARQUEARSE\FORMULARIO FACTURA ELECTRONICA\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.WebServiceLocalReader\bin\Tickets\ticketPago.rdlc
+D:\PROYECTOS\PARQUEARSE\FORMULARIO FACTURA ELECTRONICA\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.WebServiceLocalReader\bin\BlockAndPass.WebServiceLocalReader.dll
+D:\PROYECTOS\PARQUEARSE\FORMULARIO FACTURA ELECTRONICA\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.WebServiceLocalReader\bin\BlockAndPass.WebServiceLocalReader.pdb
+D:\PROYECTOS\PARQUEARSE\FORMULARIO FACTURA ELECTRONICA\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.WebServiceLocalReader\bin\EGlobalT.Device.SmartCard.dll
+D:\PROYECTOS\PARQUEARSE\FORMULARIO FACTURA ELECTRONICA\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.WebServiceLocalReader\bin\EGlobalT.Device.SmartCardFeeders.dll
+D:\PROYECTOS\PARQUEARSE\FORMULARIO FACTURA ELECTRONICA\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.WebServiceLocalReader\bin\EGlobalT.Device.SmartCardReaders.dll
+D:\PROYECTOS\PARQUEARSE\FORMULARIO FACTURA ELECTRONICA\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.WebServiceLocalReader\bin\EGlobalT.Device.Tools.dll
+D:\PROYECTOS\PARQUEARSE\FORMULARIO FACTURA ELECTRONICA\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.WebServiceLocalReader\bin\System.Web.Helpers.dll
+D:\PROYECTOS\PARQUEARSE\FORMULARIO FACTURA ELECTRONICA\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.WebServiceLocalReader\bin\System.Web.Helpers.xml
+D:\PROYECTOS\PARQUEARSE\FORMULARIO FACTURA ELECTRONICA\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.WebServiceLocalReader\bin\es\System.Web.Helpers.resources.dll
+D:\PROYECTOS\PARQUEARSE\FORMULARIO FACTURA ELECTRONICA\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.WebServiceLocalReader\obj\Debug\BlockAndPass.WebServiceLocalReader.csprojResolveAssemblyReference.cache
+D:\PROYECTOS\PARQUEARSE\FORMULARIO FACTURA ELECTRONICA\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.WebServiceLocalReader\obj\Debug\RdlCompile.cache
+D:\PROYECTOS\PARQUEARSE\FORMULARIO FACTURA ELECTRONICA\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.WebServiceLocalReader\obj\Debug\RdlCompile.compiled
+D:\PROYECTOS\PARQUEARSE\FORMULARIO FACTURA ELECTRONICA\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.WebServiceLocalReader\obj\Debug\BlockAndPass.WebServiceLocalReader.dll
+D:\PROYECTOS\PARQUEARSE\FORMULARIO FACTURA ELECTRONICA\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.WebServiceLocalReader\obj\Debug\BlockAndPass.WebServiceLocalReader.pdb
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.WebServiceLocalReader\obj\Debug\BlockAndPass.WebServiceLocalReader.csprojResolveAssemblyReference.cache
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\Ucc\ADMIN&PPM - copia\BlockAndPass.WebServiceLocalReader\bin\Tickets\ticketPagoM.rdlc
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\Ucc\ADMIN&PPM - copia\BlockAndPass.WebServiceLocalReader\bin\Tickets\ticketCarga.rdlc
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\Ucc\ADMIN&PPM - copia\BlockAndPass.WebServiceLocalReader\bin\Tickets\ticketArqueo.rdlc
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\Ucc\ADMIN&PPM - copia\BlockAndPass.WebServiceLocalReader\bin\Tickets\ticketPago.rdlc
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\Ucc\ADMIN&PPM - copia\BlockAndPass.WebServiceLocalReader\bin\BlockAndPass.WebServiceLocalReader.dll
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\Ucc\ADMIN&PPM - copia\BlockAndPass.WebServiceLocalReader\bin\BlockAndPass.WebServiceLocalReader.pdb
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\Ucc\ADMIN&PPM - copia\BlockAndPass.WebServiceLocalReader\bin\EGlobalT.Device.SmartCard.dll
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\Ucc\ADMIN&PPM - copia\BlockAndPass.WebServiceLocalReader\bin\EGlobalT.Device.SmartCardFeeders.dll
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\Ucc\ADMIN&PPM - copia\BlockAndPass.WebServiceLocalReader\bin\EGlobalT.Device.SmartCardReaders.dll
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\Ucc\ADMIN&PPM - copia\BlockAndPass.WebServiceLocalReader\bin\EGlobalT.Device.Tools.dll
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\Ucc\ADMIN&PPM - copia\BlockAndPass.WebServiceLocalReader\bin\System.Web.Helpers.dll
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\Ucc\ADMIN&PPM - copia\BlockAndPass.WebServiceLocalReader\bin\System.Web.Helpers.xml
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\Ucc\ADMIN&PPM - copia\BlockAndPass.WebServiceLocalReader\bin\es\System.Web.Helpers.resources.dll
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\Ucc\ADMIN&PPM - copia\BlockAndPass.WebServiceLocalReader\obj\Debug\RdlCompile.cache
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\Ucc\ADMIN&PPM - copia\BlockAndPass.WebServiceLocalReader\obj\Debug\RdlCompile.compiled
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\Ucc\ADMIN&PPM - copia\BlockAndPass.WebServiceLocalReader\obj\Debug\BlockAndPass.WebServiceLocalReader.dll
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\Ucc\ADMIN&PPM - copia\BlockAndPass.WebServiceLocalReader\obj\Debug\BlockAndPass.WebServiceLocalReader.pdb
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\Ucc\ADMIN&PPM - copia\BlockAndPass.WebServiceLocalReader\obj\Debug\BlockAndPass.WebServiceLocalReader.csprojResolveAssemblyReference.cache

@@ -94,3 +94,81 @@ C:\Proyectos\SANTOTO\BlockAndPass.ValetWinform\obj\Debug\BlockAndPass.ValetWinfo
 C:\Proyectos\SANTOTO\BlockAndPass.ValetWinform\obj\Debug\BlockAndPass.ValetWinform.csproj.GenerateResource.Cache
 C:\Proyectos\SANTOTO\BlockAndPass.ValetWinform\obj\Debug\BlockAndPass.ValetWinform.exe
 C:\Proyectos\SANTOTO\BlockAndPass.ValetWinform\obj\Debug\BlockAndPass.ValetWinform.pdb
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.ValetWinform\bin\Debug\BlockAndPass.ValetWinform.exe.config
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.ValetWinform\bin\Debug\BlockAndPass.ValetWinform.exe
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.ValetWinform\bin\Debug\BlockAndPass.ValetWinform.pdb
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.ValetWinform\bin\Debug\EGlobalT.Device.SmartCard.dll
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.ValetWinform\bin\Debug\EGlobalT.Device.SmartCardFeeders.dll
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.ValetWinform\bin\Debug\EGlobalT.Device.SmartCardReaders.dll
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.ValetWinform\bin\Debug\EGlobalT.Device.Tools.dll
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.ValetWinform\obj\Debug\BlockAndPass.ValetWinform.CustomKeyBoard.resources
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.ValetWinform\obj\Debug\BlockAndPass.ValetWinform.Ingresar.resources
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.ValetWinform\obj\Debug\BlockAndPass.ValetWinform.Login.resources
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.ValetWinform\obj\Debug\BlockAndPass.ValetWinform.Properties.Resources.resources
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.ValetWinform\obj\Debug\BlockAndPass.ValetWinform.Valet.resources
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.ValetWinform\obj\Debug\BlockAndPass.ValetWinform.csproj.GenerateResource.Cache
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.ValetWinform\obj\Debug\BlockAndPass.ValetWinform.exe
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.ValetWinform\obj\Debug\BlockAndPass.ValetWinform.pdb
+D:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.ValetWinform\obj\Debug\BlockAndPass.ValetWinform.csprojResolveAssemblyReference.cache
+E:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.ValetWinform\bin\Debug\BlockAndPass.ValetWinform.exe.config
+E:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.ValetWinform\bin\Debug\BlockAndPass.ValetWinform.exe
+E:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.ValetWinform\bin\Debug\BlockAndPass.ValetWinform.pdb
+E:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.ValetWinform\bin\Debug\EGlobalT.Device.SmartCard.dll
+E:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.ValetWinform\bin\Debug\EGlobalT.Device.SmartCardFeeders.dll
+E:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.ValetWinform\bin\Debug\EGlobalT.Device.SmartCardReaders.dll
+E:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.ValetWinform\bin\Debug\EGlobalT.Device.Tools.dll
+E:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.ValetWinform\obj\Debug\BlockAndPass.ValetWinform.csprojResolveAssemblyReference.cache
+E:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.ValetWinform\obj\Debug\BlockAndPass.ValetWinform.CustomKeyBoard.resources
+E:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.ValetWinform\obj\Debug\BlockAndPass.ValetWinform.Ingresar.resources
+E:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.ValetWinform\obj\Debug\BlockAndPass.ValetWinform.Login.resources
+E:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.ValetWinform\obj\Debug\BlockAndPass.ValetWinform.Properties.Resources.resources
+E:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.ValetWinform\obj\Debug\BlockAndPass.ValetWinform.Valet.resources
+E:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.ValetWinform\obj\Debug\BlockAndPass.ValetWinform.csproj.GenerateResource.Cache
+E:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.ValetWinform\obj\Debug\BlockAndPass.ValetWinform.exe
+E:\PROYECTOS\PARQUEARSE\SAN LUIS\ADMIN&PPM - copia\BlockAndPass.ValetWinform\obj\Debug\BlockAndPass.ValetWinform.pdb
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.ValetWinform\bin\Debug\BlockAndPass.ValetWinform.exe.config
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.ValetWinform\bin\Debug\BlockAndPass.ValetWinform.exe
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.ValetWinform\bin\Debug\BlockAndPass.ValetWinform.pdb
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.ValetWinform\bin\Debug\EGlobalT.Device.SmartCard.dll
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.ValetWinform\bin\Debug\EGlobalT.Device.SmartCardFeeders.dll
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.ValetWinform\bin\Debug\EGlobalT.Device.SmartCardReaders.dll
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.ValetWinform\bin\Debug\EGlobalT.Device.Tools.dll
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.ValetWinform\obj\Debug\BlockAndPass.ValetWinform.CustomKeyBoard.resources
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.ValetWinform\obj\Debug\BlockAndPass.ValetWinform.Ingresar.resources
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.ValetWinform\obj\Debug\BlockAndPass.ValetWinform.Login.resources
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.ValetWinform\obj\Debug\BlockAndPass.ValetWinform.Properties.Resources.resources
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.ValetWinform\obj\Debug\BlockAndPass.ValetWinform.Valet.resources
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.ValetWinform\obj\Debug\BlockAndPass.ValetWinform.csproj.GenerateResource.Cache
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.ValetWinform\obj\Debug\BlockAndPass.ValetWinform.exe
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.ValetWinform\obj\Debug\BlockAndPass.ValetWinform.pdb
+D:\PROYECTOS\PARQUEARSE\FORMULARIO FACTURA ELECTRONICA\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.ValetWinform\bin\Debug\BlockAndPass.ValetWinform.exe.config
+D:\PROYECTOS\PARQUEARSE\FORMULARIO FACTURA ELECTRONICA\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.ValetWinform\bin\Debug\BlockAndPass.ValetWinform.exe
+D:\PROYECTOS\PARQUEARSE\FORMULARIO FACTURA ELECTRONICA\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.ValetWinform\bin\Debug\BlockAndPass.ValetWinform.pdb
+D:\PROYECTOS\PARQUEARSE\FORMULARIO FACTURA ELECTRONICA\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.ValetWinform\bin\Debug\EGlobalT.Device.SmartCard.dll
+D:\PROYECTOS\PARQUEARSE\FORMULARIO FACTURA ELECTRONICA\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.ValetWinform\bin\Debug\EGlobalT.Device.SmartCardFeeders.dll
+D:\PROYECTOS\PARQUEARSE\FORMULARIO FACTURA ELECTRONICA\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.ValetWinform\bin\Debug\EGlobalT.Device.SmartCardReaders.dll
+D:\PROYECTOS\PARQUEARSE\FORMULARIO FACTURA ELECTRONICA\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.ValetWinform\bin\Debug\EGlobalT.Device.Tools.dll
+D:\PROYECTOS\PARQUEARSE\FORMULARIO FACTURA ELECTRONICA\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.ValetWinform\obj\Debug\BlockAndPass.ValetWinform.csprojResolveAssemblyReference.cache
+D:\PROYECTOS\PARQUEARSE\FORMULARIO FACTURA ELECTRONICA\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.ValetWinform\obj\Debug\BlockAndPass.ValetWinform.CustomKeyBoard.resources
+D:\PROYECTOS\PARQUEARSE\FORMULARIO FACTURA ELECTRONICA\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.ValetWinform\obj\Debug\BlockAndPass.ValetWinform.Ingresar.resources
+D:\PROYECTOS\PARQUEARSE\FORMULARIO FACTURA ELECTRONICA\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.ValetWinform\obj\Debug\BlockAndPass.ValetWinform.Login.resources
+D:\PROYECTOS\PARQUEARSE\FORMULARIO FACTURA ELECTRONICA\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.ValetWinform\obj\Debug\BlockAndPass.ValetWinform.Properties.Resources.resources
+D:\PROYECTOS\PARQUEARSE\FORMULARIO FACTURA ELECTRONICA\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.ValetWinform\obj\Debug\BlockAndPass.ValetWinform.Valet.resources
+D:\PROYECTOS\PARQUEARSE\FORMULARIO FACTURA ELECTRONICA\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.ValetWinform\obj\Debug\BlockAndPass.ValetWinform.csproj.GenerateResource.Cache
+D:\PROYECTOS\PARQUEARSE\FORMULARIO FACTURA ELECTRONICA\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.ValetWinform\obj\Debug\BlockAndPass.ValetWinform.exe
+D:\PROYECTOS\PARQUEARSE\FORMULARIO FACTURA ELECTRONICA\UstaFlorida\ADMIN&PPM - copia\BlockAndPass.ValetWinform\obj\Debug\BlockAndPass.ValetWinform.pdb
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\Ucc\ADMIN&PPM - copia\BlockAndPass.ValetWinform\bin\Debug\BlockAndPass.ValetWinform.exe.config
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\Ucc\ADMIN&PPM - copia\BlockAndPass.ValetWinform\bin\Debug\BlockAndPass.ValetWinform.exe
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\Ucc\ADMIN&PPM - copia\BlockAndPass.ValetWinform\bin\Debug\BlockAndPass.ValetWinform.pdb
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\Ucc\ADMIN&PPM - copia\BlockAndPass.ValetWinform\bin\Debug\EGlobalT.Device.SmartCard.dll
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\Ucc\ADMIN&PPM - copia\BlockAndPass.ValetWinform\bin\Debug\EGlobalT.Device.SmartCardFeeders.dll
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\Ucc\ADMIN&PPM - copia\BlockAndPass.ValetWinform\bin\Debug\EGlobalT.Device.SmartCardReaders.dll
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\Ucc\ADMIN&PPM - copia\BlockAndPass.ValetWinform\bin\Debug\EGlobalT.Device.Tools.dll
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\Ucc\ADMIN&PPM - copia\BlockAndPass.ValetWinform\obj\Debug\BlockAndPass.ValetWinform.CustomKeyBoard.resources
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\Ucc\ADMIN&PPM - copia\BlockAndPass.ValetWinform\obj\Debug\BlockAndPass.ValetWinform.Ingresar.resources
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\Ucc\ADMIN&PPM - copia\BlockAndPass.ValetWinform\obj\Debug\BlockAndPass.ValetWinform.Login.resources
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\Ucc\ADMIN&PPM - copia\BlockAndPass.ValetWinform\obj\Debug\BlockAndPass.ValetWinform.Properties.Resources.resources
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\Ucc\ADMIN&PPM - copia\BlockAndPass.ValetWinform\obj\Debug\BlockAndPass.ValetWinform.Valet.resources
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\Ucc\ADMIN&PPM - copia\BlockAndPass.ValetWinform\obj\Debug\BlockAndPass.ValetWinform.csproj.GenerateResource.Cache
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\Ucc\ADMIN&PPM - copia\BlockAndPass.ValetWinform\obj\Debug\BlockAndPass.ValetWinform.exe
+D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\Ucc\ADMIN&PPM - copia\BlockAndPass.ValetWinform\obj\Debug\BlockAndPass.ValetWinform.pdb

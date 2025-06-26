@@ -20,16 +20,45 @@ namespace BlockAndPass.PPMWinform.ByPServices {
     using System.Web.Services.Protocols;
     using System.Xml.Serialization;
     using System.ComponentModel;
+    using System.Data;
     
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.4084.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Web.Services.WebServiceBindingAttribute(Name="ServicesByPSoap", Namespace="http://tempuri.org/")]
     public partial class ServicesByP : System.Web.Services.Protocols.SoapHttpClientProtocol {
         
+        private System.Threading.SendOrPostCallback InactivarTarjetaOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback InactivarMensualidadOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback ValidarClientePorNitOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback ObtenerDatosFacturaFEOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback ValidarSalidaOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback ObtenerListaMovitosRegistroManualesOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback RegistrarPagoRegistroManualOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback BuscarAutorizadoRecargaxPlacaOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback VerificarVigenciaAutorizadoRecargaOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback CrearEntradaRecargaOperationCompleted;
+        
         private System.Threading.SendOrPostCallback ObtenerInformacionUsuarioOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback ListarEventosAplicadosPorTransaccionOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback ListarTransaccionesPorPlacaEntradaOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback BuscarAutorizadoxPlacaReposicionOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback ListarUsuariosAutorizaCortesiaOperationCompleted;
         
         private System.Threading.SendOrPostCallback LoguearseOperationCompleted;
         
@@ -47,13 +76,23 @@ namespace BlockAndPass.PPMWinform.ByPServices {
         
         private System.Threading.SendOrPostCallback PagarClienteParticularOperationCompleted;
         
+        private System.Threading.SendOrPostCallback PagarClienteParticularFEOperationCompleted;
+        
         private System.Threading.SendOrPostCallback ObtenerDatosFacturaOperationCompleted;
         
+        private System.Threading.SendOrPostCallback ObtenerDatosFacturaMensualidadFEOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback ObtenerDatosCopiaFacturaOperationCompleted;
+        
         private System.Threading.SendOrPostCallback PagarMensualidadOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback PagarMensualidadFEOperationCompleted;
         
         private System.Threading.SendOrPostCallback ObtenerDatosFacturaMensualidadOperationCompleted;
         
         private System.Threading.SendOrPostCallback AplicarEtiquetaMotoOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback AplicarEtiquetaCarroOperationCompleted;
         
         private System.Threading.SendOrPostCallback AplicarConveniosOperationCompleted;
         
@@ -67,7 +106,11 @@ namespace BlockAndPass.PPMWinform.ByPServices {
         
         private System.Threading.SendOrPostCallback AplicarLaCortesiaOperationCompleted;
         
+        private System.Threading.SendOrPostCallback AplicarLaCortesiaNoParqueaOperationCompleted;
+        
         private System.Threading.SendOrPostCallback AplicarElEventoOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback EliminarEventoOperationCompleted;
         
         private System.Threading.SendOrPostCallback ObtenerListaMotivosCortesiaXEstacionamientoOperationCompleted;
         
@@ -103,6 +146,8 @@ namespace BlockAndPass.PPMWinform.ByPServices {
         
         private System.Threading.SendOrPostCallback BuscarAutorizadoxPlacaOperationCompleted;
         
+        private System.Threading.SendOrPostCallback BuscarAutorizadoPorIdTarjetaOperationCompleted;
+        
         private System.Threading.SendOrPostCallback VerificarTransaccionAbiertaAutorizadoOperationCompleted;
         
         private System.Threading.SendOrPostCallback VerificarVigenciaAutorizadoOperationCompleted;
@@ -118,6 +163,18 @@ namespace BlockAndPass.PPMWinform.ByPServices {
         private System.Threading.SendOrPostCallback ObtenerListaSedesOperationCompleted;
         
         private System.Threading.SendOrPostCallback ObtenerListaEstacionamientoXSedeOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback ObtenerCantidadVehiculosActualesOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback ObtenerCantidadMotosActualesOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback PagarFacturasContingenciaOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback ObtenerDatosFacturaContingenciaFEOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback ListarModulosPagosOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback ConsultarInfoTransaccionPorIdTransaccionOperationCompleted;
         
         private bool useDefaultCredentialsSetExplicitly;
         
@@ -158,7 +215,49 @@ namespace BlockAndPass.PPMWinform.ByPServices {
         }
         
         /// <remarks/>
+        public event InactivarTarjetaCompletedEventHandler InactivarTarjetaCompleted;
+        
+        /// <remarks/>
+        public event InactivarMensualidadCompletedEventHandler InactivarMensualidadCompleted;
+        
+        /// <remarks/>
+        public event ValidarClientePorNitCompletedEventHandler ValidarClientePorNitCompleted;
+        
+        /// <remarks/>
+        public event ObtenerDatosFacturaFECompletedEventHandler ObtenerDatosFacturaFECompleted;
+        
+        /// <remarks/>
+        public event ValidarSalidaCompletedEventHandler ValidarSalidaCompleted;
+        
+        /// <remarks/>
+        public event ObtenerListaMovitosRegistroManualesCompletedEventHandler ObtenerListaMovitosRegistroManualesCompleted;
+        
+        /// <remarks/>
+        public event RegistrarPagoRegistroManualCompletedEventHandler RegistrarPagoRegistroManualCompleted;
+        
+        /// <remarks/>
+        public event BuscarAutorizadoRecargaxPlacaCompletedEventHandler BuscarAutorizadoRecargaxPlacaCompleted;
+        
+        /// <remarks/>
+        public event VerificarVigenciaAutorizadoRecargaCompletedEventHandler VerificarVigenciaAutorizadoRecargaCompleted;
+        
+        /// <remarks/>
+        public event CrearEntradaRecargaCompletedEventHandler CrearEntradaRecargaCompleted;
+        
+        /// <remarks/>
         public event ObtenerInformacionUsuarioCompletedEventHandler ObtenerInformacionUsuarioCompleted;
+        
+        /// <remarks/>
+        public event ListarEventosAplicadosPorTransaccionCompletedEventHandler ListarEventosAplicadosPorTransaccionCompleted;
+        
+        /// <remarks/>
+        public event ListarTransaccionesPorPlacaEntradaCompletedEventHandler ListarTransaccionesPorPlacaEntradaCompleted;
+        
+        /// <remarks/>
+        public event BuscarAutorizadoxPlacaReposicionCompletedEventHandler BuscarAutorizadoxPlacaReposicionCompleted;
+        
+        /// <remarks/>
+        public event ListarUsuariosAutorizaCortesiaCompletedEventHandler ListarUsuariosAutorizaCortesiaCompleted;
         
         /// <remarks/>
         public event LoguearseCompletedEventHandler LoguearseCompleted;
@@ -185,16 +284,31 @@ namespace BlockAndPass.PPMWinform.ByPServices {
         public event PagarClienteParticularCompletedEventHandler PagarClienteParticularCompleted;
         
         /// <remarks/>
+        public event PagarClienteParticularFECompletedEventHandler PagarClienteParticularFECompleted;
+        
+        /// <remarks/>
         public event ObtenerDatosFacturaCompletedEventHandler ObtenerDatosFacturaCompleted;
         
         /// <remarks/>
+        public event ObtenerDatosFacturaMensualidadFECompletedEventHandler ObtenerDatosFacturaMensualidadFECompleted;
+        
+        /// <remarks/>
+        public event ObtenerDatosCopiaFacturaCompletedEventHandler ObtenerDatosCopiaFacturaCompleted;
+        
+        /// <remarks/>
         public event PagarMensualidadCompletedEventHandler PagarMensualidadCompleted;
+        
+        /// <remarks/>
+        public event PagarMensualidadFECompletedEventHandler PagarMensualidadFECompleted;
         
         /// <remarks/>
         public event ObtenerDatosFacturaMensualidadCompletedEventHandler ObtenerDatosFacturaMensualidadCompleted;
         
         /// <remarks/>
         public event AplicarEtiquetaMotoCompletedEventHandler AplicarEtiquetaMotoCompleted;
+        
+        /// <remarks/>
+        public event AplicarEtiquetaCarroCompletedEventHandler AplicarEtiquetaCarroCompleted;
         
         /// <remarks/>
         public event AplicarConveniosCompletedEventHandler AplicarConveniosCompleted;
@@ -215,7 +329,13 @@ namespace BlockAndPass.PPMWinform.ByPServices {
         public event AplicarLaCortesiaCompletedEventHandler AplicarLaCortesiaCompleted;
         
         /// <remarks/>
+        public event AplicarLaCortesiaNoParqueaCompletedEventHandler AplicarLaCortesiaNoParqueaCompleted;
+        
+        /// <remarks/>
         public event AplicarElEventoCompletedEventHandler AplicarElEventoCompleted;
+        
+        /// <remarks/>
+        public event EliminarEventoCompletedEventHandler EliminarEventoCompleted;
         
         /// <remarks/>
         public event ObtenerListaMotivosCortesiaXEstacionamientoCompletedEventHandler ObtenerListaMotivosCortesiaXEstacionamientoCompleted;
@@ -269,6 +389,9 @@ namespace BlockAndPass.PPMWinform.ByPServices {
         public event BuscarAutorizadoxPlacaCompletedEventHandler BuscarAutorizadoxPlacaCompleted;
         
         /// <remarks/>
+        public event BuscarAutorizadoPorIdTarjetaCompletedEventHandler BuscarAutorizadoPorIdTarjetaCompleted;
+        
+        /// <remarks/>
         public event VerificarTransaccionAbiertaAutorizadoCompletedEventHandler VerificarTransaccionAbiertaAutorizadoCompleted;
         
         /// <remarks/>
@@ -291,6 +414,354 @@ namespace BlockAndPass.PPMWinform.ByPServices {
         
         /// <remarks/>
         public event ObtenerListaEstacionamientoXSedeCompletedEventHandler ObtenerListaEstacionamientoXSedeCompleted;
+        
+        /// <remarks/>
+        public event ObtenerCantidadVehiculosActualesCompletedEventHandler ObtenerCantidadVehiculosActualesCompleted;
+        
+        /// <remarks/>
+        public event ObtenerCantidadMotosActualesCompletedEventHandler ObtenerCantidadMotosActualesCompleted;
+        
+        /// <remarks/>
+        public event PagarFacturasContingenciaCompletedEventHandler PagarFacturasContingenciaCompleted;
+        
+        /// <remarks/>
+        public event ObtenerDatosFacturaContingenciaFECompletedEventHandler ObtenerDatosFacturaContingenciaFECompleted;
+        
+        /// <remarks/>
+        public event ListarModulosPagosCompletedEventHandler ListarModulosPagosCompleted;
+        
+        /// <remarks/>
+        public event ConsultarInfoTransaccionPorIdTransaccionCompletedEventHandler ConsultarInfoTransaccionPorIdTransaccionCompleted;
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/InactivarTarjeta", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public TarjetasResponse InactivarTarjeta(string idTarjeta, long idEstacionamiento, long idTransaccion) {
+            object[] results = this.Invoke("InactivarTarjeta", new object[] {
+                        idTarjeta,
+                        idEstacionamiento,
+                        idTransaccion});
+            return ((TarjetasResponse)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void InactivarTarjetaAsync(string idTarjeta, long idEstacionamiento, long idTransaccion) {
+            this.InactivarTarjetaAsync(idTarjeta, idEstacionamiento, idTransaccion, null);
+        }
+        
+        /// <remarks/>
+        public void InactivarTarjetaAsync(string idTarjeta, long idEstacionamiento, long idTransaccion, object userState) {
+            if ((this.InactivarTarjetaOperationCompleted == null)) {
+                this.InactivarTarjetaOperationCompleted = new System.Threading.SendOrPostCallback(this.OnInactivarTarjetaOperationCompleted);
+            }
+            this.InvokeAsync("InactivarTarjeta", new object[] {
+                        idTarjeta,
+                        idEstacionamiento,
+                        idTransaccion}, this.InactivarTarjetaOperationCompleted, userState);
+        }
+        
+        private void OnInactivarTarjetaOperationCompleted(object arg) {
+            if ((this.InactivarTarjetaCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.InactivarTarjetaCompleted(this, new InactivarTarjetaCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/InactivarMensualidad", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public TarjetasResponse InactivarMensualidad(string idTarjeta, long idEstacionamiento) {
+            object[] results = this.Invoke("InactivarMensualidad", new object[] {
+                        idTarjeta,
+                        idEstacionamiento});
+            return ((TarjetasResponse)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void InactivarMensualidadAsync(string idTarjeta, long idEstacionamiento) {
+            this.InactivarMensualidadAsync(idTarjeta, idEstacionamiento, null);
+        }
+        
+        /// <remarks/>
+        public void InactivarMensualidadAsync(string idTarjeta, long idEstacionamiento, object userState) {
+            if ((this.InactivarMensualidadOperationCompleted == null)) {
+                this.InactivarMensualidadOperationCompleted = new System.Threading.SendOrPostCallback(this.OnInactivarMensualidadOperationCompleted);
+            }
+            this.InvokeAsync("InactivarMensualidad", new object[] {
+                        idTarjeta,
+                        idEstacionamiento}, this.InactivarMensualidadOperationCompleted, userState);
+        }
+        
+        private void OnInactivarMensualidadOperationCompleted(object arg) {
+            if ((this.InactivarMensualidadCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.InactivarMensualidadCompleted(this, new InactivarMensualidadCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/ValidarClientePorNit", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public InfoClienteFacturaElectronicaResponse ValidarClientePorNit(int nit) {
+            object[] results = this.Invoke("ValidarClientePorNit", new object[] {
+                        nit});
+            return ((InfoClienteFacturaElectronicaResponse)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void ValidarClientePorNitAsync(int nit) {
+            this.ValidarClientePorNitAsync(nit, null);
+        }
+        
+        /// <remarks/>
+        public void ValidarClientePorNitAsync(int nit, object userState) {
+            if ((this.ValidarClientePorNitOperationCompleted == null)) {
+                this.ValidarClientePorNitOperationCompleted = new System.Threading.SendOrPostCallback(this.OnValidarClientePorNitOperationCompleted);
+            }
+            this.InvokeAsync("ValidarClientePorNit", new object[] {
+                        nit}, this.ValidarClientePorNitOperationCompleted, userState);
+        }
+        
+        private void OnValidarClientePorNitOperationCompleted(object arg) {
+            if ((this.ValidarClientePorNitCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.ValidarClientePorNitCompleted(this, new ValidarClientePorNitCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/ObtenerDatosFacturaFE", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public InfoFacturaResponseFE ObtenerDatosFacturaFE(string idTransaccion) {
+            object[] results = this.Invoke("ObtenerDatosFacturaFE", new object[] {
+                        idTransaccion});
+            return ((InfoFacturaResponseFE)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void ObtenerDatosFacturaFEAsync(string idTransaccion) {
+            this.ObtenerDatosFacturaFEAsync(idTransaccion, null);
+        }
+        
+        /// <remarks/>
+        public void ObtenerDatosFacturaFEAsync(string idTransaccion, object userState) {
+            if ((this.ObtenerDatosFacturaFEOperationCompleted == null)) {
+                this.ObtenerDatosFacturaFEOperationCompleted = new System.Threading.SendOrPostCallback(this.OnObtenerDatosFacturaFEOperationCompleted);
+            }
+            this.InvokeAsync("ObtenerDatosFacturaFE", new object[] {
+                        idTransaccion}, this.ObtenerDatosFacturaFEOperationCompleted, userState);
+        }
+        
+        private void OnObtenerDatosFacturaFEOperationCompleted(object arg) {
+            if ((this.ObtenerDatosFacturaFECompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.ObtenerDatosFacturaFECompleted(this, new ObtenerDatosFacturaFECompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/ValidarSalida", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public VerificaTransaccionAbiertaAutorizadoResponse ValidarSalida(long idTransaccion) {
+            object[] results = this.Invoke("ValidarSalida", new object[] {
+                        idTransaccion});
+            return ((VerificaTransaccionAbiertaAutorizadoResponse)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void ValidarSalidaAsync(long idTransaccion) {
+            this.ValidarSalidaAsync(idTransaccion, null);
+        }
+        
+        /// <remarks/>
+        public void ValidarSalidaAsync(long idTransaccion, object userState) {
+            if ((this.ValidarSalidaOperationCompleted == null)) {
+                this.ValidarSalidaOperationCompleted = new System.Threading.SendOrPostCallback(this.OnValidarSalidaOperationCompleted);
+            }
+            this.InvokeAsync("ValidarSalida", new object[] {
+                        idTransaccion}, this.ValidarSalidaOperationCompleted, userState);
+        }
+        
+        private void OnValidarSalidaOperationCompleted(object arg) {
+            if ((this.ValidarSalidaCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.ValidarSalidaCompleted(this, new ValidarSalidaCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/ObtenerListaMovitosRegistroManuales", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public MotivosRegistroManuales ObtenerListaMovitosRegistroManuales(string idEstacionamiento) {
+            object[] results = this.Invoke("ObtenerListaMovitosRegistroManuales", new object[] {
+                        idEstacionamiento});
+            return ((MotivosRegistroManuales)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void ObtenerListaMovitosRegistroManualesAsync(string idEstacionamiento) {
+            this.ObtenerListaMovitosRegistroManualesAsync(idEstacionamiento, null);
+        }
+        
+        /// <remarks/>
+        public void ObtenerListaMovitosRegistroManualesAsync(string idEstacionamiento, object userState) {
+            if ((this.ObtenerListaMovitosRegistroManualesOperationCompleted == null)) {
+                this.ObtenerListaMovitosRegistroManualesOperationCompleted = new System.Threading.SendOrPostCallback(this.OnObtenerListaMovitosRegistroManualesOperationCompleted);
+            }
+            this.InvokeAsync("ObtenerListaMovitosRegistroManuales", new object[] {
+                        idEstacionamiento}, this.ObtenerListaMovitosRegistroManualesOperationCompleted, userState);
+        }
+        
+        private void OnObtenerListaMovitosRegistroManualesOperationCompleted(object arg) {
+            if ((this.ObtenerListaMovitosRegistroManualesCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.ObtenerListaMovitosRegistroManualesCompleted(this, new ObtenerListaMovitosRegistroManualesCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/RegistrarPagoRegistroManual", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public InfoPagoRegistroManualResponse RegistrarPagoRegistroManual(string idEstacionamiento, string idModulo, string documentoUsuario, string total, string idTransaccion, string fechaPago, int IdFormaPago, int nitCliente, string placa, int idTipoVehiculo, string fechaEntrada, InfoPagoRegistroManualResponse[] datosLista) {
+            object[] results = this.Invoke("RegistrarPagoRegistroManual", new object[] {
+                        idEstacionamiento,
+                        idModulo,
+                        documentoUsuario,
+                        total,
+                        idTransaccion,
+                        fechaPago,
+                        IdFormaPago,
+                        nitCliente,
+                        placa,
+                        idTipoVehiculo,
+                        fechaEntrada,
+                        datosLista});
+            return ((InfoPagoRegistroManualResponse)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void RegistrarPagoRegistroManualAsync(string idEstacionamiento, string idModulo, string documentoUsuario, string total, string idTransaccion, string fechaPago, int IdFormaPago, int nitCliente, string placa, int idTipoVehiculo, string fechaEntrada, InfoPagoRegistroManualResponse[] datosLista) {
+            this.RegistrarPagoRegistroManualAsync(idEstacionamiento, idModulo, documentoUsuario, total, idTransaccion, fechaPago, IdFormaPago, nitCliente, placa, idTipoVehiculo, fechaEntrada, datosLista, null);
+        }
+        
+        /// <remarks/>
+        public void RegistrarPagoRegistroManualAsync(string idEstacionamiento, string idModulo, string documentoUsuario, string total, string idTransaccion, string fechaPago, int IdFormaPago, int nitCliente, string placa, int idTipoVehiculo, string fechaEntrada, InfoPagoRegistroManualResponse[] datosLista, object userState) {
+            if ((this.RegistrarPagoRegistroManualOperationCompleted == null)) {
+                this.RegistrarPagoRegistroManualOperationCompleted = new System.Threading.SendOrPostCallback(this.OnRegistrarPagoRegistroManualOperationCompleted);
+            }
+            this.InvokeAsync("RegistrarPagoRegistroManual", new object[] {
+                        idEstacionamiento,
+                        idModulo,
+                        documentoUsuario,
+                        total,
+                        idTransaccion,
+                        fechaPago,
+                        IdFormaPago,
+                        nitCliente,
+                        placa,
+                        idTipoVehiculo,
+                        fechaEntrada,
+                        datosLista}, this.RegistrarPagoRegistroManualOperationCompleted, userState);
+        }
+        
+        private void OnRegistrarPagoRegistroManualOperationCompleted(object arg) {
+            if ((this.RegistrarPagoRegistroManualCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.RegistrarPagoRegistroManualCompleted(this, new RegistrarPagoRegistroManualCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/BuscarAutorizadoRecargaxPlaca", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public AutorizadoRecargaxPlacaResponse BuscarAutorizadoRecargaxPlaca(string sPlaca) {
+            object[] results = this.Invoke("BuscarAutorizadoRecargaxPlaca", new object[] {
+                        sPlaca});
+            return ((AutorizadoRecargaxPlacaResponse)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void BuscarAutorizadoRecargaxPlacaAsync(string sPlaca) {
+            this.BuscarAutorizadoRecargaxPlacaAsync(sPlaca, null);
+        }
+        
+        /// <remarks/>
+        public void BuscarAutorizadoRecargaxPlacaAsync(string sPlaca, object userState) {
+            if ((this.BuscarAutorizadoRecargaxPlacaOperationCompleted == null)) {
+                this.BuscarAutorizadoRecargaxPlacaOperationCompleted = new System.Threading.SendOrPostCallback(this.OnBuscarAutorizadoRecargaxPlacaOperationCompleted);
+            }
+            this.InvokeAsync("BuscarAutorizadoRecargaxPlaca", new object[] {
+                        sPlaca}, this.BuscarAutorizadoRecargaxPlacaOperationCompleted, userState);
+        }
+        
+        private void OnBuscarAutorizadoRecargaxPlacaOperationCompleted(object arg) {
+            if ((this.BuscarAutorizadoRecargaxPlacaCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.BuscarAutorizadoRecargaxPlacaCompleted(this, new BuscarAutorizadoRecargaxPlacaCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/VerificarVigenciaAutorizadoRecarga", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public VerificaVigenciaAutorizadoRecargaResponse VerificarVigenciaAutorizadoRecarga(string idTarjeta) {
+            object[] results = this.Invoke("VerificarVigenciaAutorizadoRecarga", new object[] {
+                        idTarjeta});
+            return ((VerificaVigenciaAutorizadoRecargaResponse)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void VerificarVigenciaAutorizadoRecargaAsync(string idTarjeta) {
+            this.VerificarVigenciaAutorizadoRecargaAsync(idTarjeta, null);
+        }
+        
+        /// <remarks/>
+        public void VerificarVigenciaAutorizadoRecargaAsync(string idTarjeta, object userState) {
+            if ((this.VerificarVigenciaAutorizadoRecargaOperationCompleted == null)) {
+                this.VerificarVigenciaAutorizadoRecargaOperationCompleted = new System.Threading.SendOrPostCallback(this.OnVerificarVigenciaAutorizadoRecargaOperationCompleted);
+            }
+            this.InvokeAsync("VerificarVigenciaAutorizadoRecarga", new object[] {
+                        idTarjeta}, this.VerificarVigenciaAutorizadoRecargaOperationCompleted, userState);
+        }
+        
+        private void OnVerificarVigenciaAutorizadoRecargaOperationCompleted(object arg) {
+            if ((this.VerificarVigenciaAutorizadoRecargaCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.VerificarVigenciaAutorizadoRecargaCompleted(this, new VerificarVigenciaAutorizadoRecargaCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/CrearEntradaRecarga", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public CreaEntradaRecargaResponse CrearEntradaRecarga(string idEstacionamiento, string idTarjeta, string carril, string placa, System.DateTime fecha, string tipov, string _IdAutorizacion) {
+            object[] results = this.Invoke("CrearEntradaRecarga", new object[] {
+                        idEstacionamiento,
+                        idTarjeta,
+                        carril,
+                        placa,
+                        fecha,
+                        tipov,
+                        _IdAutorizacion});
+            return ((CreaEntradaRecargaResponse)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void CrearEntradaRecargaAsync(string idEstacionamiento, string idTarjeta, string carril, string placa, System.DateTime fecha, string tipov, string _IdAutorizacion) {
+            this.CrearEntradaRecargaAsync(idEstacionamiento, idTarjeta, carril, placa, fecha, tipov, _IdAutorizacion, null);
+        }
+        
+        /// <remarks/>
+        public void CrearEntradaRecargaAsync(string idEstacionamiento, string idTarjeta, string carril, string placa, System.DateTime fecha, string tipov, string _IdAutorizacion, object userState) {
+            if ((this.CrearEntradaRecargaOperationCompleted == null)) {
+                this.CrearEntradaRecargaOperationCompleted = new System.Threading.SendOrPostCallback(this.OnCrearEntradaRecargaOperationCompleted);
+            }
+            this.InvokeAsync("CrearEntradaRecarga", new object[] {
+                        idEstacionamiento,
+                        idTarjeta,
+                        carril,
+                        placa,
+                        fecha,
+                        tipov,
+                        _IdAutorizacion}, this.CrearEntradaRecargaOperationCompleted, userState);
+        }
+        
+        private void OnCrearEntradaRecargaOperationCompleted(object arg) {
+            if ((this.CrearEntradaRecargaCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.CrearEntradaRecargaCompleted(this, new CrearEntradaRecargaCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
         
         /// <remarks/>
         [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/ObtenerInformacionUsuario", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
@@ -318,6 +789,122 @@ namespace BlockAndPass.PPMWinform.ByPServices {
             if ((this.ObtenerInformacionUsuarioCompleted != null)) {
                 System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
                 this.ObtenerInformacionUsuarioCompleted(this, new ObtenerInformacionUsuarioCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/ListarEventosAplicadosPorTransaccion", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public System.Data.DataTable ListarEventosAplicadosPorTransaccion(string idTransaccion) {
+            object[] results = this.Invoke("ListarEventosAplicadosPorTransaccion", new object[] {
+                        idTransaccion});
+            return ((System.Data.DataTable)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void ListarEventosAplicadosPorTransaccionAsync(string idTransaccion) {
+            this.ListarEventosAplicadosPorTransaccionAsync(idTransaccion, null);
+        }
+        
+        /// <remarks/>
+        public void ListarEventosAplicadosPorTransaccionAsync(string idTransaccion, object userState) {
+            if ((this.ListarEventosAplicadosPorTransaccionOperationCompleted == null)) {
+                this.ListarEventosAplicadosPorTransaccionOperationCompleted = new System.Threading.SendOrPostCallback(this.OnListarEventosAplicadosPorTransaccionOperationCompleted);
+            }
+            this.InvokeAsync("ListarEventosAplicadosPorTransaccion", new object[] {
+                        idTransaccion}, this.ListarEventosAplicadosPorTransaccionOperationCompleted, userState);
+        }
+        
+        private void OnListarEventosAplicadosPorTransaccionOperationCompleted(object arg) {
+            if ((this.ListarEventosAplicadosPorTransaccionCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.ListarEventosAplicadosPorTransaccionCompleted(this, new ListarEventosAplicadosPorTransaccionCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/ListarTransaccionesPorPlacaEntrada", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public System.Data.DataTable ListarTransaccionesPorPlacaEntrada(string placaEntrada) {
+            object[] results = this.Invoke("ListarTransaccionesPorPlacaEntrada", new object[] {
+                        placaEntrada});
+            return ((System.Data.DataTable)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void ListarTransaccionesPorPlacaEntradaAsync(string placaEntrada) {
+            this.ListarTransaccionesPorPlacaEntradaAsync(placaEntrada, null);
+        }
+        
+        /// <remarks/>
+        public void ListarTransaccionesPorPlacaEntradaAsync(string placaEntrada, object userState) {
+            if ((this.ListarTransaccionesPorPlacaEntradaOperationCompleted == null)) {
+                this.ListarTransaccionesPorPlacaEntradaOperationCompleted = new System.Threading.SendOrPostCallback(this.OnListarTransaccionesPorPlacaEntradaOperationCompleted);
+            }
+            this.InvokeAsync("ListarTransaccionesPorPlacaEntrada", new object[] {
+                        placaEntrada}, this.ListarTransaccionesPorPlacaEntradaOperationCompleted, userState);
+        }
+        
+        private void OnListarTransaccionesPorPlacaEntradaOperationCompleted(object arg) {
+            if ((this.ListarTransaccionesPorPlacaEntradaCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.ListarTransaccionesPorPlacaEntradaCompleted(this, new ListarTransaccionesPorPlacaEntradaCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/BuscarAutorizadoxPlacaReposicion", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public System.Data.DataTable BuscarAutorizadoxPlacaReposicion(string sPlaca) {
+            object[] results = this.Invoke("BuscarAutorizadoxPlacaReposicion", new object[] {
+                        sPlaca});
+            return ((System.Data.DataTable)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void BuscarAutorizadoxPlacaReposicionAsync(string sPlaca) {
+            this.BuscarAutorizadoxPlacaReposicionAsync(sPlaca, null);
+        }
+        
+        /// <remarks/>
+        public void BuscarAutorizadoxPlacaReposicionAsync(string sPlaca, object userState) {
+            if ((this.BuscarAutorizadoxPlacaReposicionOperationCompleted == null)) {
+                this.BuscarAutorizadoxPlacaReposicionOperationCompleted = new System.Threading.SendOrPostCallback(this.OnBuscarAutorizadoxPlacaReposicionOperationCompleted);
+            }
+            this.InvokeAsync("BuscarAutorizadoxPlacaReposicion", new object[] {
+                        sPlaca}, this.BuscarAutorizadoxPlacaReposicionOperationCompleted, userState);
+        }
+        
+        private void OnBuscarAutorizadoxPlacaReposicionOperationCompleted(object arg) {
+            if ((this.BuscarAutorizadoxPlacaReposicionCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.BuscarAutorizadoxPlacaReposicionCompleted(this, new BuscarAutorizadoxPlacaReposicionCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/ListarUsuariosAutorizaCortesia", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public System.Data.DataTable ListarUsuariosAutorizaCortesia(long idEstacionamiento) {
+            object[] results = this.Invoke("ListarUsuariosAutorizaCortesia", new object[] {
+                        idEstacionamiento});
+            return ((System.Data.DataTable)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void ListarUsuariosAutorizaCortesiaAsync(long idEstacionamiento) {
+            this.ListarUsuariosAutorizaCortesiaAsync(idEstacionamiento, null);
+        }
+        
+        /// <remarks/>
+        public void ListarUsuariosAutorizaCortesiaAsync(long idEstacionamiento, object userState) {
+            if ((this.ListarUsuariosAutorizaCortesiaOperationCompleted == null)) {
+                this.ListarUsuariosAutorizaCortesiaOperationCompleted = new System.Threading.SendOrPostCallback(this.OnListarUsuariosAutorizaCortesiaOperationCompleted);
+            }
+            this.InvokeAsync("ListarUsuariosAutorizaCortesia", new object[] {
+                        idEstacionamiento}, this.ListarUsuariosAutorizaCortesiaOperationCompleted, userState);
+        }
+        
+        private void OnListarUsuariosAutorizaCortesiaOperationCompleted(object arg) {
+            if ((this.ListarUsuariosAutorizaCortesiaCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.ListarUsuariosAutorizaCortesiaCompleted(this, new ListarUsuariosAutorizaCortesiaCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
             }
         }
         
@@ -540,24 +1127,27 @@ namespace BlockAndPass.PPMWinform.ByPServices {
         
         /// <remarks/>
         [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/PagarClienteParticular", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public InfoPagoNormalService PagarClienteParticular(string pagosstring, string idEstacionamiento, string idTransaccion, string idModulo, string fecha, string total) {
+        public InfoPagoNormalService PagarClienteParticular(string pagosstring, string idEstacionamiento, string idTransaccion, string idModulo, string fecha, string total, string documentoUsuario, int IdFormaPago, int nitCliente) {
             object[] results = this.Invoke("PagarClienteParticular", new object[] {
                         pagosstring,
                         idEstacionamiento,
                         idTransaccion,
                         idModulo,
                         fecha,
-                        total});
+                        total,
+                        documentoUsuario,
+                        IdFormaPago,
+                        nitCliente});
             return ((InfoPagoNormalService)(results[0]));
         }
         
         /// <remarks/>
-        public void PagarClienteParticularAsync(string pagosstring, string idEstacionamiento, string idTransaccion, string idModulo, string fecha, string total) {
-            this.PagarClienteParticularAsync(pagosstring, idEstacionamiento, idTransaccion, idModulo, fecha, total, null);
+        public void PagarClienteParticularAsync(string pagosstring, string idEstacionamiento, string idTransaccion, string idModulo, string fecha, string total, string documentoUsuario, int IdFormaPago, int nitCliente) {
+            this.PagarClienteParticularAsync(pagosstring, idEstacionamiento, idTransaccion, idModulo, fecha, total, documentoUsuario, IdFormaPago, nitCliente, null);
         }
         
         /// <remarks/>
-        public void PagarClienteParticularAsync(string pagosstring, string idEstacionamiento, string idTransaccion, string idModulo, string fecha, string total, object userState) {
+        public void PagarClienteParticularAsync(string pagosstring, string idEstacionamiento, string idTransaccion, string idModulo, string fecha, string total, string documentoUsuario, int IdFormaPago, int nitCliente, object userState) {
             if ((this.PagarClienteParticularOperationCompleted == null)) {
                 this.PagarClienteParticularOperationCompleted = new System.Threading.SendOrPostCallback(this.OnPagarClienteParticularOperationCompleted);
             }
@@ -567,13 +1157,59 @@ namespace BlockAndPass.PPMWinform.ByPServices {
                         idTransaccion,
                         idModulo,
                         fecha,
-                        total}, this.PagarClienteParticularOperationCompleted, userState);
+                        total,
+                        documentoUsuario,
+                        IdFormaPago,
+                        nitCliente}, this.PagarClienteParticularOperationCompleted, userState);
         }
         
         private void OnPagarClienteParticularOperationCompleted(object arg) {
             if ((this.PagarClienteParticularCompleted != null)) {
                 System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
                 this.PagarClienteParticularCompleted(this, new PagarClienteParticularCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/PagarClienteParticularFE", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public InfoPagoNormalServiceFE PagarClienteParticularFE(string pagosstring, string idEstacionamiento, string idTransaccion, string idModulo, string fecha, string total, string documentoUsuario, int nitCliente) {
+            object[] results = this.Invoke("PagarClienteParticularFE", new object[] {
+                        pagosstring,
+                        idEstacionamiento,
+                        idTransaccion,
+                        idModulo,
+                        fecha,
+                        total,
+                        documentoUsuario,
+                        nitCliente});
+            return ((InfoPagoNormalServiceFE)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void PagarClienteParticularFEAsync(string pagosstring, string idEstacionamiento, string idTransaccion, string idModulo, string fecha, string total, string documentoUsuario, int nitCliente) {
+            this.PagarClienteParticularFEAsync(pagosstring, idEstacionamiento, idTransaccion, idModulo, fecha, total, documentoUsuario, nitCliente, null);
+        }
+        
+        /// <remarks/>
+        public void PagarClienteParticularFEAsync(string pagosstring, string idEstacionamiento, string idTransaccion, string idModulo, string fecha, string total, string documentoUsuario, int nitCliente, object userState) {
+            if ((this.PagarClienteParticularFEOperationCompleted == null)) {
+                this.PagarClienteParticularFEOperationCompleted = new System.Threading.SendOrPostCallback(this.OnPagarClienteParticularFEOperationCompleted);
+            }
+            this.InvokeAsync("PagarClienteParticularFE", new object[] {
+                        pagosstring,
+                        idEstacionamiento,
+                        idTransaccion,
+                        idModulo,
+                        fecha,
+                        total,
+                        documentoUsuario,
+                        nitCliente}, this.PagarClienteParticularFEOperationCompleted, userState);
+        }
+        
+        private void OnPagarClienteParticularFEOperationCompleted(object arg) {
+            if ((this.PagarClienteParticularFECompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.PagarClienteParticularFECompleted(this, new PagarClienteParticularFECompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
             }
         }
         
@@ -607,25 +1243,90 @@ namespace BlockAndPass.PPMWinform.ByPServices {
         }
         
         /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/ObtenerDatosFacturaMensualidadFE", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public InfoFacturaResponseFE ObtenerDatosFacturaMensualidadFE(string idTransaccion, string idAutorizacion) {
+            object[] results = this.Invoke("ObtenerDatosFacturaMensualidadFE", new object[] {
+                        idTransaccion,
+                        idAutorizacion});
+            return ((InfoFacturaResponseFE)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void ObtenerDatosFacturaMensualidadFEAsync(string idTransaccion, string idAutorizacion) {
+            this.ObtenerDatosFacturaMensualidadFEAsync(idTransaccion, idAutorizacion, null);
+        }
+        
+        /// <remarks/>
+        public void ObtenerDatosFacturaMensualidadFEAsync(string idTransaccion, string idAutorizacion, object userState) {
+            if ((this.ObtenerDatosFacturaMensualidadFEOperationCompleted == null)) {
+                this.ObtenerDatosFacturaMensualidadFEOperationCompleted = new System.Threading.SendOrPostCallback(this.OnObtenerDatosFacturaMensualidadFEOperationCompleted);
+            }
+            this.InvokeAsync("ObtenerDatosFacturaMensualidadFE", new object[] {
+                        idTransaccion,
+                        idAutorizacion}, this.ObtenerDatosFacturaMensualidadFEOperationCompleted, userState);
+        }
+        
+        private void OnObtenerDatosFacturaMensualidadFEOperationCompleted(object arg) {
+            if ((this.ObtenerDatosFacturaMensualidadFECompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.ObtenerDatosFacturaMensualidadFECompleted(this, new ObtenerDatosFacturaMensualidadFECompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/ObtenerDatosCopiaFactura", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public InfoFacturaResponse ObtenerDatosCopiaFactura(string numeroFactura, string idModulo) {
+            object[] results = this.Invoke("ObtenerDatosCopiaFactura", new object[] {
+                        numeroFactura,
+                        idModulo});
+            return ((InfoFacturaResponse)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void ObtenerDatosCopiaFacturaAsync(string numeroFactura, string idModulo) {
+            this.ObtenerDatosCopiaFacturaAsync(numeroFactura, idModulo, null);
+        }
+        
+        /// <remarks/>
+        public void ObtenerDatosCopiaFacturaAsync(string numeroFactura, string idModulo, object userState) {
+            if ((this.ObtenerDatosCopiaFacturaOperationCompleted == null)) {
+                this.ObtenerDatosCopiaFacturaOperationCompleted = new System.Threading.SendOrPostCallback(this.OnObtenerDatosCopiaFacturaOperationCompleted);
+            }
+            this.InvokeAsync("ObtenerDatosCopiaFactura", new object[] {
+                        numeroFactura,
+                        idModulo}, this.ObtenerDatosCopiaFacturaOperationCompleted, userState);
+        }
+        
+        private void OnObtenerDatosCopiaFacturaOperationCompleted(object arg) {
+            if ((this.ObtenerDatosCopiaFacturaCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.ObtenerDatosCopiaFacturaCompleted(this, new ObtenerDatosCopiaFacturaCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
         [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/PagarMensualidad", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public InfoPagoMensualidadService PagarMensualidad(string pagosstring, string idEstacionamiento, string idModulo, string fecha, string total, string idTarjeta) {
+        public InfoPagoMensualidadService PagarMensualidad(string pagosstring, string idEstacionamiento, string idModulo, string fecha, string total, string idTarjeta, string documentoUsuario, int IdFormaPago, int nitCliente) {
             object[] results = this.Invoke("PagarMensualidad", new object[] {
                         pagosstring,
                         idEstacionamiento,
                         idModulo,
                         fecha,
                         total,
-                        idTarjeta});
+                        idTarjeta,
+                        documentoUsuario,
+                        IdFormaPago,
+                        nitCliente});
             return ((InfoPagoMensualidadService)(results[0]));
         }
         
         /// <remarks/>
-        public void PagarMensualidadAsync(string pagosstring, string idEstacionamiento, string idModulo, string fecha, string total, string idTarjeta) {
-            this.PagarMensualidadAsync(pagosstring, idEstacionamiento, idModulo, fecha, total, idTarjeta, null);
+        public void PagarMensualidadAsync(string pagosstring, string idEstacionamiento, string idModulo, string fecha, string total, string idTarjeta, string documentoUsuario, int IdFormaPago, int nitCliente) {
+            this.PagarMensualidadAsync(pagosstring, idEstacionamiento, idModulo, fecha, total, idTarjeta, documentoUsuario, IdFormaPago, nitCliente, null);
         }
         
         /// <remarks/>
-        public void PagarMensualidadAsync(string pagosstring, string idEstacionamiento, string idModulo, string fecha, string total, string idTarjeta, object userState) {
+        public void PagarMensualidadAsync(string pagosstring, string idEstacionamiento, string idModulo, string fecha, string total, string idTarjeta, string documentoUsuario, int IdFormaPago, int nitCliente, object userState) {
             if ((this.PagarMensualidadOperationCompleted == null)) {
                 this.PagarMensualidadOperationCompleted = new System.Threading.SendOrPostCallback(this.OnPagarMensualidadOperationCompleted);
             }
@@ -635,13 +1336,59 @@ namespace BlockAndPass.PPMWinform.ByPServices {
                         idModulo,
                         fecha,
                         total,
-                        idTarjeta}, this.PagarMensualidadOperationCompleted, userState);
+                        idTarjeta,
+                        documentoUsuario,
+                        IdFormaPago,
+                        nitCliente}, this.PagarMensualidadOperationCompleted, userState);
         }
         
         private void OnPagarMensualidadOperationCompleted(object arg) {
             if ((this.PagarMensualidadCompleted != null)) {
                 System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
                 this.PagarMensualidadCompleted(this, new PagarMensualidadCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/PagarMensualidadFE", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public InfoPagoMensualidadServiceFE PagarMensualidadFE(string pagosstring, string idEstacionamiento, string idModulo, string fecha, string total, string idTarjeta, string documentoUsuario, int nitCliente) {
+            object[] results = this.Invoke("PagarMensualidadFE", new object[] {
+                        pagosstring,
+                        idEstacionamiento,
+                        idModulo,
+                        fecha,
+                        total,
+                        idTarjeta,
+                        documentoUsuario,
+                        nitCliente});
+            return ((InfoPagoMensualidadServiceFE)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void PagarMensualidadFEAsync(string pagosstring, string idEstacionamiento, string idModulo, string fecha, string total, string idTarjeta, string documentoUsuario, int nitCliente) {
+            this.PagarMensualidadFEAsync(pagosstring, idEstacionamiento, idModulo, fecha, total, idTarjeta, documentoUsuario, nitCliente, null);
+        }
+        
+        /// <remarks/>
+        public void PagarMensualidadFEAsync(string pagosstring, string idEstacionamiento, string idModulo, string fecha, string total, string idTarjeta, string documentoUsuario, int nitCliente, object userState) {
+            if ((this.PagarMensualidadFEOperationCompleted == null)) {
+                this.PagarMensualidadFEOperationCompleted = new System.Threading.SendOrPostCallback(this.OnPagarMensualidadFEOperationCompleted);
+            }
+            this.InvokeAsync("PagarMensualidadFE", new object[] {
+                        pagosstring,
+                        idEstacionamiento,
+                        idModulo,
+                        fecha,
+                        total,
+                        idTarjeta,
+                        documentoUsuario,
+                        nitCliente}, this.PagarMensualidadFEOperationCompleted, userState);
+        }
+        
+        private void OnPagarMensualidadFEOperationCompleted(object arg) {
+            if ((this.PagarMensualidadFECompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.PagarMensualidadFECompleted(this, new PagarMensualidadFECompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
             }
         }
         
@@ -706,6 +1453,39 @@ namespace BlockAndPass.PPMWinform.ByPServices {
             if ((this.AplicarEtiquetaMotoCompleted != null)) {
                 System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
                 this.AplicarEtiquetaMotoCompleted(this, new AplicarEtiquetaMotoCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/AplicarEtiquetaCarro", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public AplicarMotoResponse AplicarEtiquetaCarro(string idEstacionamiento, string idTarjeta, string moduloEntrada) {
+            object[] results = this.Invoke("AplicarEtiquetaCarro", new object[] {
+                        idEstacionamiento,
+                        idTarjeta,
+                        moduloEntrada});
+            return ((AplicarMotoResponse)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void AplicarEtiquetaCarroAsync(string idEstacionamiento, string idTarjeta, string moduloEntrada) {
+            this.AplicarEtiquetaCarroAsync(idEstacionamiento, idTarjeta, moduloEntrada, null);
+        }
+        
+        /// <remarks/>
+        public void AplicarEtiquetaCarroAsync(string idEstacionamiento, string idTarjeta, string moduloEntrada, object userState) {
+            if ((this.AplicarEtiquetaCarroOperationCompleted == null)) {
+                this.AplicarEtiquetaCarroOperationCompleted = new System.Threading.SendOrPostCallback(this.OnAplicarEtiquetaCarroOperationCompleted);
+            }
+            this.InvokeAsync("AplicarEtiquetaCarro", new object[] {
+                        idEstacionamiento,
+                        idTarjeta,
+                        moduloEntrada}, this.AplicarEtiquetaCarroOperationCompleted, userState);
+        }
+        
+        private void OnAplicarEtiquetaCarroOperationCompleted(object arg) {
+            if ((this.AplicarEtiquetaCarroCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.AplicarEtiquetaCarroCompleted(this, new AplicarEtiquetaCarroCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
             }
         }
         
@@ -870,23 +1650,27 @@ namespace BlockAndPass.PPMWinform.ByPServices {
         
         /// <remarks/>
         [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/AplicarLaCortesia", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public AplicarCortesiaResponse AplicarLaCortesia(string idEstacionamiento, string observacion, string idMotivo, string idTransaccion, string sUser) {
+        public AplicarCortesiaResponse AplicarLaCortesia(string idEstacionamiento, string observacion, string idMotivo, string idTransaccion, string sUser, string nombresApellidos, string documento, string documentoAutorizaCortesia, string novedad) {
             object[] results = this.Invoke("AplicarLaCortesia", new object[] {
                         idEstacionamiento,
                         observacion,
                         idMotivo,
                         idTransaccion,
-                        sUser});
+                        sUser,
+                        nombresApellidos,
+                        documento,
+                        documentoAutorizaCortesia,
+                        novedad});
             return ((AplicarCortesiaResponse)(results[0]));
         }
         
         /// <remarks/>
-        public void AplicarLaCortesiaAsync(string idEstacionamiento, string observacion, string idMotivo, string idTransaccion, string sUser) {
-            this.AplicarLaCortesiaAsync(idEstacionamiento, observacion, idMotivo, idTransaccion, sUser, null);
+        public void AplicarLaCortesiaAsync(string idEstacionamiento, string observacion, string idMotivo, string idTransaccion, string sUser, string nombresApellidos, string documento, string documentoAutorizaCortesia, string novedad) {
+            this.AplicarLaCortesiaAsync(idEstacionamiento, observacion, idMotivo, idTransaccion, sUser, nombresApellidos, documento, documentoAutorizaCortesia, novedad, null);
         }
         
         /// <remarks/>
-        public void AplicarLaCortesiaAsync(string idEstacionamiento, string observacion, string idMotivo, string idTransaccion, string sUser, object userState) {
+        public void AplicarLaCortesiaAsync(string idEstacionamiento, string observacion, string idMotivo, string idTransaccion, string sUser, string nombresApellidos, string documento, string documentoAutorizaCortesia, string novedad, object userState) {
             if ((this.AplicarLaCortesiaOperationCompleted == null)) {
                 this.AplicarLaCortesiaOperationCompleted = new System.Threading.SendOrPostCallback(this.OnAplicarLaCortesiaOperationCompleted);
             }
@@ -895,13 +1679,54 @@ namespace BlockAndPass.PPMWinform.ByPServices {
                         observacion,
                         idMotivo,
                         idTransaccion,
-                        sUser}, this.AplicarLaCortesiaOperationCompleted, userState);
+                        sUser,
+                        nombresApellidos,
+                        documento,
+                        documentoAutorizaCortesia,
+                        novedad}, this.AplicarLaCortesiaOperationCompleted, userState);
         }
         
         private void OnAplicarLaCortesiaOperationCompleted(object arg) {
             if ((this.AplicarLaCortesiaCompleted != null)) {
                 System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
                 this.AplicarLaCortesiaCompleted(this, new AplicarLaCortesiaCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/AplicarLaCortesiaNoParquea", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public AplicarEventoResponse AplicarLaCortesiaNoParquea(string idEstacionamiento, string observacion, string idMotivo, string idTransaccion, string sUser) {
+            object[] results = this.Invoke("AplicarLaCortesiaNoParquea", new object[] {
+                        idEstacionamiento,
+                        observacion,
+                        idMotivo,
+                        idTransaccion,
+                        sUser});
+            return ((AplicarEventoResponse)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void AplicarLaCortesiaNoParqueaAsync(string idEstacionamiento, string observacion, string idMotivo, string idTransaccion, string sUser) {
+            this.AplicarLaCortesiaNoParqueaAsync(idEstacionamiento, observacion, idMotivo, idTransaccion, sUser, null);
+        }
+        
+        /// <remarks/>
+        public void AplicarLaCortesiaNoParqueaAsync(string idEstacionamiento, string observacion, string idMotivo, string idTransaccion, string sUser, object userState) {
+            if ((this.AplicarLaCortesiaNoParqueaOperationCompleted == null)) {
+                this.AplicarLaCortesiaNoParqueaOperationCompleted = new System.Threading.SendOrPostCallback(this.OnAplicarLaCortesiaNoParqueaOperationCompleted);
+            }
+            this.InvokeAsync("AplicarLaCortesiaNoParquea", new object[] {
+                        idEstacionamiento,
+                        observacion,
+                        idMotivo,
+                        idTransaccion,
+                        sUser}, this.AplicarLaCortesiaNoParqueaOperationCompleted, userState);
+        }
+        
+        private void OnAplicarLaCortesiaNoParqueaOperationCompleted(object arg) {
+            if ((this.AplicarLaCortesiaNoParqueaCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.AplicarLaCortesiaNoParqueaCompleted(this, new AplicarLaCortesiaNoParqueaCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
             }
         }
         
@@ -939,6 +1764,39 @@ namespace BlockAndPass.PPMWinform.ByPServices {
             if ((this.AplicarElEventoCompleted != null)) {
                 System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
                 this.AplicarElEventoCompleted(this, new AplicarElEventoCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/EliminarEvento", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public AplicarEventoResponse EliminarEvento(string idEstacionamiento, string idTransaccion, string idEvento) {
+            object[] results = this.Invoke("EliminarEvento", new object[] {
+                        idEstacionamiento,
+                        idTransaccion,
+                        idEvento});
+            return ((AplicarEventoResponse)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void EliminarEventoAsync(string idEstacionamiento, string idTransaccion, string idEvento) {
+            this.EliminarEventoAsync(idEstacionamiento, idTransaccion, idEvento, null);
+        }
+        
+        /// <remarks/>
+        public void EliminarEventoAsync(string idEstacionamiento, string idTransaccion, string idEvento, object userState) {
+            if ((this.EliminarEventoOperationCompleted == null)) {
+                this.EliminarEventoOperationCompleted = new System.Threading.SendOrPostCallback(this.OnEliminarEventoOperationCompleted);
+            }
+            this.InvokeAsync("EliminarEvento", new object[] {
+                        idEstacionamiento,
+                        idTransaccion,
+                        idEvento}, this.EliminarEventoOperationCompleted, userState);
+        }
+        
+        private void OnEliminarEventoOperationCompleted(object arg) {
+            if ((this.EliminarEventoCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.EliminarEventoCompleted(this, new EliminarEventoCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
             }
         }
         
@@ -1035,26 +1893,28 @@ namespace BlockAndPass.PPMWinform.ByPServices {
         
         /// <remarks/>
         [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/ObtenerListaEventosXEstacionamientoXUsuario", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public EventosResponse ObtenerListaEventosXEstacionamientoXUsuario(string idEstacionamiento, string user) {
+        public EventosResponse ObtenerListaEventosXEstacionamientoXUsuario(string idEstacionamiento, string user, int idTipoVehiculo) {
             object[] results = this.Invoke("ObtenerListaEventosXEstacionamientoXUsuario", new object[] {
                         idEstacionamiento,
-                        user});
+                        user,
+                        idTipoVehiculo});
             return ((EventosResponse)(results[0]));
         }
         
         /// <remarks/>
-        public void ObtenerListaEventosXEstacionamientoXUsuarioAsync(string idEstacionamiento, string user) {
-            this.ObtenerListaEventosXEstacionamientoXUsuarioAsync(idEstacionamiento, user, null);
+        public void ObtenerListaEventosXEstacionamientoXUsuarioAsync(string idEstacionamiento, string user, int idTipoVehiculo) {
+            this.ObtenerListaEventosXEstacionamientoXUsuarioAsync(idEstacionamiento, user, idTipoVehiculo, null);
         }
         
         /// <remarks/>
-        public void ObtenerListaEventosXEstacionamientoXUsuarioAsync(string idEstacionamiento, string user, object userState) {
+        public void ObtenerListaEventosXEstacionamientoXUsuarioAsync(string idEstacionamiento, string user, int idTipoVehiculo, object userState) {
             if ((this.ObtenerListaEventosXEstacionamientoXUsuarioOperationCompleted == null)) {
                 this.ObtenerListaEventosXEstacionamientoXUsuarioOperationCompleted = new System.Threading.SendOrPostCallback(this.OnObtenerListaEventosXEstacionamientoXUsuarioOperationCompleted);
             }
             this.InvokeAsync("ObtenerListaEventosXEstacionamientoXUsuario", new object[] {
                         idEstacionamiento,
-                        user}, this.ObtenerListaEventosXEstacionamientoXUsuarioOperationCompleted, userState);
+                        user,
+                        idTipoVehiculo}, this.ObtenerListaEventosXEstacionamientoXUsuarioOperationCompleted, userState);
         }
         
         private void OnObtenerListaEventosXEstacionamientoXUsuarioOperationCompleted(object arg) {
@@ -1128,22 +1988,23 @@ namespace BlockAndPass.PPMWinform.ByPServices {
         
         /// <remarks/>
         [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/ConfirmarElArqueo", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public ConfirmarArqueoResponse ConfirmarElArqueo(string idEstacionamiento, string idModulo, string idArqueo, string manual) {
+        public ConfirmarArqueoResponse ConfirmarElArqueo(string idEstacionamiento, string idModulo, string idArqueo, string manual, string documentoUsuario) {
             object[] results = this.Invoke("ConfirmarElArqueo", new object[] {
                         idEstacionamiento,
                         idModulo,
                         idArqueo,
-                        manual});
+                        manual,
+                        documentoUsuario});
             return ((ConfirmarArqueoResponse)(results[0]));
         }
         
         /// <remarks/>
-        public void ConfirmarElArqueoAsync(string idEstacionamiento, string idModulo, string idArqueo, string manual) {
-            this.ConfirmarElArqueoAsync(idEstacionamiento, idModulo, idArqueo, manual, null);
+        public void ConfirmarElArqueoAsync(string idEstacionamiento, string idModulo, string idArqueo, string manual, string documentoUsuario) {
+            this.ConfirmarElArqueoAsync(idEstacionamiento, idModulo, idArqueo, manual, documentoUsuario, null);
         }
         
         /// <remarks/>
-        public void ConfirmarElArqueoAsync(string idEstacionamiento, string idModulo, string idArqueo, string manual, object userState) {
+        public void ConfirmarElArqueoAsync(string idEstacionamiento, string idModulo, string idArqueo, string manual, string documentoUsuario, object userState) {
             if ((this.ConfirmarElArqueoOperationCompleted == null)) {
                 this.ConfirmarElArqueoOperationCompleted = new System.Threading.SendOrPostCallback(this.OnConfirmarElArqueoOperationCompleted);
             }
@@ -1151,7 +2012,8 @@ namespace BlockAndPass.PPMWinform.ByPServices {
                         idEstacionamiento,
                         idModulo,
                         idArqueo,
-                        manual}, this.ConfirmarElArqueoOperationCompleted, userState);
+                        manual,
+                        documentoUsuario}, this.ConfirmarElArqueoOperationCompleted, userState);
         }
         
         private void OnConfirmarElArqueoOperationCompleted(object arg) {
@@ -1361,26 +2223,28 @@ namespace BlockAndPass.PPMWinform.ByPServices {
         
         /// <remarks/>
         [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/CrearSalida", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public CreaSalidaResponse CrearSalida(string idEstacionamiento, string placa) {
+        public CreaSalidaResponse CrearSalida(string idEstacionamiento, string placa, string sIdTarjeta) {
             object[] results = this.Invoke("CrearSalida", new object[] {
                         idEstacionamiento,
-                        placa});
+                        placa,
+                        sIdTarjeta});
             return ((CreaSalidaResponse)(results[0]));
         }
         
         /// <remarks/>
-        public void CrearSalidaAsync(string idEstacionamiento, string placa) {
-            this.CrearSalidaAsync(idEstacionamiento, placa, null);
+        public void CrearSalidaAsync(string idEstacionamiento, string placa, string sIdTarjeta) {
+            this.CrearSalidaAsync(idEstacionamiento, placa, sIdTarjeta, null);
         }
         
         /// <remarks/>
-        public void CrearSalidaAsync(string idEstacionamiento, string placa, object userState) {
+        public void CrearSalidaAsync(string idEstacionamiento, string placa, string sIdTarjeta, object userState) {
             if ((this.CrearSalidaOperationCompleted == null)) {
                 this.CrearSalidaOperationCompleted = new System.Threading.SendOrPostCallback(this.OnCrearSalidaOperationCompleted);
             }
             this.InvokeAsync("CrearSalida", new object[] {
                         idEstacionamiento,
-                        placa}, this.CrearSalidaOperationCompleted, userState);
+                        placa,
+                        sIdTarjeta}, this.CrearSalidaOperationCompleted, userState);
         }
         
         private void OnCrearSalidaOperationCompleted(object arg) {
@@ -1488,6 +2352,35 @@ namespace BlockAndPass.PPMWinform.ByPServices {
             if ((this.BuscarAutorizadoxPlacaCompleted != null)) {
                 System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
                 this.BuscarAutorizadoxPlacaCompleted(this, new BuscarAutorizadoxPlacaCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/BuscarAutorizadoPorIdTarjeta", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public AutorizadoxPlacaResponse BuscarAutorizadoPorIdTarjeta(string idTarjeta) {
+            object[] results = this.Invoke("BuscarAutorizadoPorIdTarjeta", new object[] {
+                        idTarjeta});
+            return ((AutorizadoxPlacaResponse)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void BuscarAutorizadoPorIdTarjetaAsync(string idTarjeta) {
+            this.BuscarAutorizadoPorIdTarjetaAsync(idTarjeta, null);
+        }
+        
+        /// <remarks/>
+        public void BuscarAutorizadoPorIdTarjetaAsync(string idTarjeta, object userState) {
+            if ((this.BuscarAutorizadoPorIdTarjetaOperationCompleted == null)) {
+                this.BuscarAutorizadoPorIdTarjetaOperationCompleted = new System.Threading.SendOrPostCallback(this.OnBuscarAutorizadoPorIdTarjetaOperationCompleted);
+            }
+            this.InvokeAsync("BuscarAutorizadoPorIdTarjeta", new object[] {
+                        idTarjeta}, this.BuscarAutorizadoPorIdTarjetaOperationCompleted, userState);
+        }
+        
+        private void OnBuscarAutorizadoPorIdTarjetaOperationCompleted(object arg) {
+            if ((this.BuscarAutorizadoPorIdTarjetaCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.BuscarAutorizadoPorIdTarjetaCompleted(this, new BuscarAutorizadoPorIdTarjetaCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
             }
         }
         
@@ -1740,6 +2633,192 @@ namespace BlockAndPass.PPMWinform.ByPServices {
         }
         
         /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/ObtenerCantidadVehiculosActuales", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public InfoCantidadVehiculosActualesResponse ObtenerCantidadVehiculosActuales() {
+            object[] results = this.Invoke("ObtenerCantidadVehiculosActuales", new object[0]);
+            return ((InfoCantidadVehiculosActualesResponse)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void ObtenerCantidadVehiculosActualesAsync() {
+            this.ObtenerCantidadVehiculosActualesAsync(null);
+        }
+        
+        /// <remarks/>
+        public void ObtenerCantidadVehiculosActualesAsync(object userState) {
+            if ((this.ObtenerCantidadVehiculosActualesOperationCompleted == null)) {
+                this.ObtenerCantidadVehiculosActualesOperationCompleted = new System.Threading.SendOrPostCallback(this.OnObtenerCantidadVehiculosActualesOperationCompleted);
+            }
+            this.InvokeAsync("ObtenerCantidadVehiculosActuales", new object[0], this.ObtenerCantidadVehiculosActualesOperationCompleted, userState);
+        }
+        
+        private void OnObtenerCantidadVehiculosActualesOperationCompleted(object arg) {
+            if ((this.ObtenerCantidadVehiculosActualesCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.ObtenerCantidadVehiculosActualesCompleted(this, new ObtenerCantidadVehiculosActualesCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/ObtenerCantidadMotosActuales", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public InfoCantidadMotosActualesResponse ObtenerCantidadMotosActuales() {
+            object[] results = this.Invoke("ObtenerCantidadMotosActuales", new object[0]);
+            return ((InfoCantidadMotosActualesResponse)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void ObtenerCantidadMotosActualesAsync() {
+            this.ObtenerCantidadMotosActualesAsync(null);
+        }
+        
+        /// <remarks/>
+        public void ObtenerCantidadMotosActualesAsync(object userState) {
+            if ((this.ObtenerCantidadMotosActualesOperationCompleted == null)) {
+                this.ObtenerCantidadMotosActualesOperationCompleted = new System.Threading.SendOrPostCallback(this.OnObtenerCantidadMotosActualesOperationCompleted);
+            }
+            this.InvokeAsync("ObtenerCantidadMotosActuales", new object[0], this.ObtenerCantidadMotosActualesOperationCompleted, userState);
+        }
+        
+        private void OnObtenerCantidadMotosActualesOperationCompleted(object arg) {
+            if ((this.ObtenerCantidadMotosActualesCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.ObtenerCantidadMotosActualesCompleted(this, new ObtenerCantidadMotosActualesCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/PagarFacturasContingencia", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public InfoPagoNormalService PagarFacturasContingencia(string[] pagosFinal, string idEstacionamiento, string idModulo, string prefijo, int nitCliente, int documentoUsuario, string numeroFactura) {
+            object[] results = this.Invoke("PagarFacturasContingencia", new object[] {
+                        pagosFinal,
+                        idEstacionamiento,
+                        idModulo,
+                        prefijo,
+                        nitCliente,
+                        documentoUsuario,
+                        numeroFactura});
+            return ((InfoPagoNormalService)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void PagarFacturasContingenciaAsync(string[] pagosFinal, string idEstacionamiento, string idModulo, string prefijo, int nitCliente, int documentoUsuario, string numeroFactura) {
+            this.PagarFacturasContingenciaAsync(pagosFinal, idEstacionamiento, idModulo, prefijo, nitCliente, documentoUsuario, numeroFactura, null);
+        }
+        
+        /// <remarks/>
+        public void PagarFacturasContingenciaAsync(string[] pagosFinal, string idEstacionamiento, string idModulo, string prefijo, int nitCliente, int documentoUsuario, string numeroFactura, object userState) {
+            if ((this.PagarFacturasContingenciaOperationCompleted == null)) {
+                this.PagarFacturasContingenciaOperationCompleted = new System.Threading.SendOrPostCallback(this.OnPagarFacturasContingenciaOperationCompleted);
+            }
+            this.InvokeAsync("PagarFacturasContingencia", new object[] {
+                        pagosFinal,
+                        idEstacionamiento,
+                        idModulo,
+                        prefijo,
+                        nitCliente,
+                        documentoUsuario,
+                        numeroFactura}, this.PagarFacturasContingenciaOperationCompleted, userState);
+        }
+        
+        private void OnPagarFacturasContingenciaOperationCompleted(object arg) {
+            if ((this.PagarFacturasContingenciaCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.PagarFacturasContingenciaCompleted(this, new PagarFacturasContingenciaCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/ObtenerDatosFacturaContingenciaFE", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public InfoFacturaResponseFE ObtenerDatosFacturaContingenciaFE(string idModulo, int numeroFactura) {
+            object[] results = this.Invoke("ObtenerDatosFacturaContingenciaFE", new object[] {
+                        idModulo,
+                        numeroFactura});
+            return ((InfoFacturaResponseFE)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void ObtenerDatosFacturaContingenciaFEAsync(string idModulo, int numeroFactura) {
+            this.ObtenerDatosFacturaContingenciaFEAsync(idModulo, numeroFactura, null);
+        }
+        
+        /// <remarks/>
+        public void ObtenerDatosFacturaContingenciaFEAsync(string idModulo, int numeroFactura, object userState) {
+            if ((this.ObtenerDatosFacturaContingenciaFEOperationCompleted == null)) {
+                this.ObtenerDatosFacturaContingenciaFEOperationCompleted = new System.Threading.SendOrPostCallback(this.OnObtenerDatosFacturaContingenciaFEOperationCompleted);
+            }
+            this.InvokeAsync("ObtenerDatosFacturaContingenciaFE", new object[] {
+                        idModulo,
+                        numeroFactura}, this.ObtenerDatosFacturaContingenciaFEOperationCompleted, userState);
+        }
+        
+        private void OnObtenerDatosFacturaContingenciaFEOperationCompleted(object arg) {
+            if ((this.ObtenerDatosFacturaContingenciaFECompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.ObtenerDatosFacturaContingenciaFECompleted(this, new ObtenerDatosFacturaContingenciaFECompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/ListarModulosPagos", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public ModulosResponse ListarModulosPagos(string idEstacionamiento) {
+            object[] results = this.Invoke("ListarModulosPagos", new object[] {
+                        idEstacionamiento});
+            return ((ModulosResponse)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void ListarModulosPagosAsync(string idEstacionamiento) {
+            this.ListarModulosPagosAsync(idEstacionamiento, null);
+        }
+        
+        /// <remarks/>
+        public void ListarModulosPagosAsync(string idEstacionamiento, object userState) {
+            if ((this.ListarModulosPagosOperationCompleted == null)) {
+                this.ListarModulosPagosOperationCompleted = new System.Threading.SendOrPostCallback(this.OnListarModulosPagosOperationCompleted);
+            }
+            this.InvokeAsync("ListarModulosPagos", new object[] {
+                        idEstacionamiento}, this.ListarModulosPagosOperationCompleted, userState);
+        }
+        
+        private void OnListarModulosPagosOperationCompleted(object arg) {
+            if ((this.ListarModulosPagosCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.ListarModulosPagosCompleted(this, new ListarModulosPagosCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/ConsultarInfoTransaccionPorIdTransaccion", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public InfoTransaccionResponse ConsultarInfoTransaccionPorIdTransaccion(string idTransaccion, string idEstacionamiento) {
+            object[] results = this.Invoke("ConsultarInfoTransaccionPorIdTransaccion", new object[] {
+                        idTransaccion,
+                        idEstacionamiento});
+            return ((InfoTransaccionResponse)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void ConsultarInfoTransaccionPorIdTransaccionAsync(string idTransaccion, string idEstacionamiento) {
+            this.ConsultarInfoTransaccionPorIdTransaccionAsync(idTransaccion, idEstacionamiento, null);
+        }
+        
+        /// <remarks/>
+        public void ConsultarInfoTransaccionPorIdTransaccionAsync(string idTransaccion, string idEstacionamiento, object userState) {
+            if ((this.ConsultarInfoTransaccionPorIdTransaccionOperationCompleted == null)) {
+                this.ConsultarInfoTransaccionPorIdTransaccionOperationCompleted = new System.Threading.SendOrPostCallback(this.OnConsultarInfoTransaccionPorIdTransaccionOperationCompleted);
+            }
+            this.InvokeAsync("ConsultarInfoTransaccionPorIdTransaccion", new object[] {
+                        idTransaccion,
+                        idEstacionamiento}, this.ConsultarInfoTransaccionPorIdTransaccionOperationCompleted, userState);
+        }
+        
+        private void OnConsultarInfoTransaccionPorIdTransaccionOperationCompleted(object arg) {
+            if ((this.ConsultarInfoTransaccionPorIdTransaccionCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.ConsultarInfoTransaccionPorIdTransaccionCompleted(this, new ConsultarInfoTransaccionPorIdTransaccionCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
         public new void CancelAsync(object userState) {
             base.CancelAsync(userState);
         }
@@ -1759,24 +2838,18 @@ namespace BlockAndPass.PPMWinform.ByPServices {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4084.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9037.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://tempuri.org/")]
-    public partial class InfoUsuarioResponse {
+    public partial class TarjetasResponse {
         
         private bool exitoField;
         
         private string errorMessageField;
         
-        private string documentoField;
-        
-        private string nombresField;
-        
-        private string usuarioField;
-        
-        private string cargoField;
+        private InfoModuloResponse[] listInfoModuloResponseField;
         
         /// <remarks/>
         public bool Exito {
@@ -1799,48 +2872,291 @@ namespace BlockAndPass.PPMWinform.ByPServices {
         }
         
         /// <remarks/>
-        public string Documento {
+        public InfoModuloResponse[] ListInfoModuloResponse {
             get {
-                return this.documentoField;
+                return this.listInfoModuloResponseField;
             }
             set {
-                this.documentoField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string Nombres {
-            get {
-                return this.nombresField;
-            }
-            set {
-                this.nombresField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string Usuario {
-            get {
-                return this.usuarioField;
-            }
-            set {
-                this.usuarioField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string Cargo {
-            get {
-                return this.cargoField;
-            }
-            set {
-                this.cargoField = value;
+                this.listInfoModuloResponseField = value;
             }
         }
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4084.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9037.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://tempuri.org/")]
+    public partial class InfoModuloResponse {
+        
+        private int valueField;
+        
+        private string displayField;
+        
+        /// <remarks/>
+        public int Value {
+            get {
+                return this.valueField;
+            }
+            set {
+                this.valueField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string Display {
+            get {
+                return this.displayField;
+            }
+            set {
+                this.displayField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9037.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://tempuri.org/")]
+    public partial class InfoTransaccionResponse {
+        
+        private bool exitoField;
+        
+        private string errorMessageField;
+        
+        private string idTransaccionField;
+        
+        private int carrilField;
+        
+        private string moduloEntradaField;
+        
+        private string idEstacionamientoField;
+        
+        private System.DateTime fechaEntradaField;
+        
+        private string tipoVehiculoField;
+        
+        private string placaEntradaField;
+        
+        private int idTipoVehiculoField;
+        
+        /// <remarks/>
+        public bool Exito {
+            get {
+                return this.exitoField;
+            }
+            set {
+                this.exitoField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string ErrorMessage {
+            get {
+                return this.errorMessageField;
+            }
+            set {
+                this.errorMessageField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string IdTransaccion {
+            get {
+                return this.idTransaccionField;
+            }
+            set {
+                this.idTransaccionField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public int Carril {
+            get {
+                return this.carrilField;
+            }
+            set {
+                this.carrilField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string ModuloEntrada {
+            get {
+                return this.moduloEntradaField;
+            }
+            set {
+                this.moduloEntradaField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string IdEstacionamiento {
+            get {
+                return this.idEstacionamientoField;
+            }
+            set {
+                this.idEstacionamientoField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public System.DateTime FechaEntrada {
+            get {
+                return this.fechaEntradaField;
+            }
+            set {
+                this.fechaEntradaField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string TipoVehiculo {
+            get {
+                return this.tipoVehiculoField;
+            }
+            set {
+                this.tipoVehiculoField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string PlacaEntrada {
+            get {
+                return this.placaEntradaField;
+            }
+            set {
+                this.placaEntradaField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public int IdTipoVehiculo {
+            get {
+                return this.idTipoVehiculoField;
+            }
+            set {
+                this.idTipoVehiculoField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9037.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://tempuri.org/")]
+    public partial class ModulosResponse {
+        
+        private bool exitoField;
+        
+        private string errorMessageField;
+        
+        private InfoModuloResponse[] listInfoModuloResponseField;
+        
+        /// <remarks/>
+        public bool Exito {
+            get {
+                return this.exitoField;
+            }
+            set {
+                this.exitoField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string ErrorMessage {
+            get {
+                return this.errorMessageField;
+            }
+            set {
+                this.errorMessageField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public InfoModuloResponse[] ListInfoModuloResponse {
+            get {
+                return this.listInfoModuloResponseField;
+            }
+            set {
+                this.listInfoModuloResponseField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9037.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://tempuri.org/")]
+    public partial class InfoCantidadMotosActualesResponse {
+        
+        private int cantidadField;
+        
+        private bool exitoField;
+        
+        /// <remarks/>
+        public int Cantidad {
+            get {
+                return this.cantidadField;
+            }
+            set {
+                this.cantidadField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public bool Exito {
+            get {
+                return this.exitoField;
+            }
+            set {
+                this.exitoField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9037.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://tempuri.org/")]
+    public partial class InfoCantidadVehiculosActualesResponse {
+        
+        private int cantidadField;
+        
+        private bool exitoField;
+        
+        /// <remarks/>
+        public int Cantidad {
+            get {
+                return this.cantidadField;
+            }
+            set {
+                this.cantidadField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public bool Exito {
+            get {
+                return this.exitoField;
+            }
+            set {
+                this.exitoField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9037.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -1873,7 +3189,7 @@ namespace BlockAndPass.PPMWinform.ByPServices {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4084.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9037.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -1918,7 +3234,7 @@ namespace BlockAndPass.PPMWinform.ByPServices {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4084.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9037.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -1951,7 +3267,7 @@ namespace BlockAndPass.PPMWinform.ByPServices {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4084.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9037.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -1996,7 +3312,7 @@ namespace BlockAndPass.PPMWinform.ByPServices {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4084.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9037.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -2089,7 +3405,7 @@ namespace BlockAndPass.PPMWinform.ByPServices {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4084.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9037.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -2134,7 +3450,7 @@ namespace BlockAndPass.PPMWinform.ByPServices {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4084.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9037.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -2167,7 +3483,7 @@ namespace BlockAndPass.PPMWinform.ByPServices {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4084.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9037.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -2200,40 +3516,7 @@ namespace BlockAndPass.PPMWinform.ByPServices {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4084.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://tempuri.org/")]
-    public partial class VerificaTransaccionAbiertaAutorizadoResponse {
-        
-        private bool exitoField;
-        
-        private string errorMessageField;
-        
-        /// <remarks/>
-        public bool Exito {
-            get {
-                return this.exitoField;
-            }
-            set {
-                this.exitoField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string ErrorMessage {
-            get {
-                return this.errorMessageField;
-            }
-            set {
-                this.errorMessageField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4084.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9037.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -2244,9 +3527,13 @@ namespace BlockAndPass.PPMWinform.ByPServices {
         
         private string errorMessageField;
         
+        private string nombresApelldidosField;
+        
         private string idTarjetaField;
         
         private string idAutorizacionField;
+        
+        private string documentoField;
         
         /// <remarks/>
         public bool Exito {
@@ -2265,6 +3552,16 @@ namespace BlockAndPass.PPMWinform.ByPServices {
             }
             set {
                 this.errorMessageField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string NombresApelldidos {
+            get {
+                return this.nombresApelldidosField;
+            }
+            set {
+                this.nombresApelldidosField = value;
             }
         }
         
@@ -2287,10 +3584,20 @@ namespace BlockAndPass.PPMWinform.ByPServices {
                 this.idAutorizacionField = value;
             }
         }
+        
+        /// <remarks/>
+        public string Documento {
+            get {
+                return this.documentoField;
+            }
+            set {
+                this.documentoField = value;
+            }
+        }
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4084.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9037.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -2323,7 +3630,7 @@ namespace BlockAndPass.PPMWinform.ByPServices {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4084.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9037.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -2356,7 +3663,7 @@ namespace BlockAndPass.PPMWinform.ByPServices {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4084.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9037.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -2389,7 +3696,7 @@ namespace BlockAndPass.PPMWinform.ByPServices {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4084.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9037.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -2434,7 +3741,7 @@ namespace BlockAndPass.PPMWinform.ByPServices {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4084.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9037.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -2467,7 +3774,7 @@ namespace BlockAndPass.PPMWinform.ByPServices {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4084.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9037.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -2512,7 +3819,7 @@ namespace BlockAndPass.PPMWinform.ByPServices {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4084.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9037.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -2629,7 +3936,7 @@ namespace BlockAndPass.PPMWinform.ByPServices {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4084.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9037.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -2674,7 +3981,7 @@ namespace BlockAndPass.PPMWinform.ByPServices {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4084.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9037.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -2815,7 +4122,7 @@ namespace BlockAndPass.PPMWinform.ByPServices {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4084.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9037.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -2860,7 +4167,7 @@ namespace BlockAndPass.PPMWinform.ByPServices {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4084.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9037.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -2893,7 +4200,7 @@ namespace BlockAndPass.PPMWinform.ByPServices {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4084.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9037.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -2938,7 +4245,7 @@ namespace BlockAndPass.PPMWinform.ByPServices {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4084.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9037.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -2983,7 +4290,7 @@ namespace BlockAndPass.PPMWinform.ByPServices {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4084.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9037.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -3016,7 +4323,7 @@ namespace BlockAndPass.PPMWinform.ByPServices {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4084.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9037.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -3061,7 +4368,7 @@ namespace BlockAndPass.PPMWinform.ByPServices {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4084.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9037.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -3094,7 +4401,7 @@ namespace BlockAndPass.PPMWinform.ByPServices {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4084.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9037.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -3139,7 +4446,7 @@ namespace BlockAndPass.PPMWinform.ByPServices {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4084.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9037.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -3184,7 +4491,7 @@ namespace BlockAndPass.PPMWinform.ByPServices {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4084.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9037.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -3217,7 +4524,7 @@ namespace BlockAndPass.PPMWinform.ByPServices {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4084.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9037.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -3262,7 +4569,7 @@ namespace BlockAndPass.PPMWinform.ByPServices {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4084.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9037.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -3295,7 +4602,7 @@ namespace BlockAndPass.PPMWinform.ByPServices {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4084.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9037.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -3328,7 +4635,7 @@ namespace BlockAndPass.PPMWinform.ByPServices {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4084.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9037.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -3361,7 +4668,7 @@ namespace BlockAndPass.PPMWinform.ByPServices {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4084.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9037.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -3394,7 +4701,7 @@ namespace BlockAndPass.PPMWinform.ByPServices {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4084.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9037.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -3427,7 +4734,7 @@ namespace BlockAndPass.PPMWinform.ByPServices {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4084.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9037.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -3460,7 +4767,64 @@ namespace BlockAndPass.PPMWinform.ByPServices {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4084.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9037.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://tempuri.org/")]
+    public partial class InfoPagoMensualidadServiceFE {
+        
+        private bool exitoField;
+        
+        private string errorMessageField;
+        
+        private string idTranaccionField;
+        
+        private string idAutorizacionField;
+        
+        /// <remarks/>
+        public bool Exito {
+            get {
+                return this.exitoField;
+            }
+            set {
+                this.exitoField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string ErrorMessage {
+            get {
+                return this.errorMessageField;
+            }
+            set {
+                this.errorMessageField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string IdTranaccion {
+            get {
+                return this.idTranaccionField;
+            }
+            set {
+                this.idTranaccionField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string IdAutorizacion {
+            get {
+                return this.idAutorizacionField;
+            }
+            set {
+                this.idAutorizacionField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9037.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -3517,220 +4881,64 @@ namespace BlockAndPass.PPMWinform.ByPServices {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4084.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9037.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://tempuri.org/")]
-    public partial class InfoItemsFacturaMensualidadResponse {
+    public partial class InfoFacturaResponse {
         
-        private string numeroFacturaField;
+        private bool exitoField;
         
-        private string nombreField;
+        private string errorMessageField;
         
-        private string telefonoField;
+        private InfoItemsFacturaResponse[] lstItemsField;
         
-        private string direccionField;
-        
-        private string moduloField;
-        
-        private string fechaField;
-        
-        private string idTransaccionField;
-        
-        private string tipoField;
-        
-        private string totalField;
-        
-        private string subtotalField;
-        
-        private string ivaField;
-        
-        private string numeroResolucionField;
-        
-        private string nombreAutorizacionField;
-        
-        private string documentoField;
-        
-        private string nitField;
-        
-        private string nombreEmpresaField;
-        
-        private string vigenciaField;
+        private InfoItemsFacturaMensualidadResponse[] lstItemsMensualidadField;
         
         /// <remarks/>
-        public string NumeroFactura {
+        public bool Exito {
             get {
-                return this.numeroFacturaField;
+                return this.exitoField;
             }
             set {
-                this.numeroFacturaField = value;
+                this.exitoField = value;
             }
         }
         
         /// <remarks/>
-        public string Nombre {
+        public string ErrorMessage {
             get {
-                return this.nombreField;
+                return this.errorMessageField;
             }
             set {
-                this.nombreField = value;
+                this.errorMessageField = value;
             }
         }
         
         /// <remarks/>
-        public string Telefono {
+        public InfoItemsFacturaResponse[] LstItems {
             get {
-                return this.telefonoField;
+                return this.lstItemsField;
             }
             set {
-                this.telefonoField = value;
+                this.lstItemsField = value;
             }
         }
         
         /// <remarks/>
-        public string Direccion {
+        public InfoItemsFacturaMensualidadResponse[] LstItemsMensualidad {
             get {
-                return this.direccionField;
+                return this.lstItemsMensualidadField;
             }
             set {
-                this.direccionField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string Modulo {
-            get {
-                return this.moduloField;
-            }
-            set {
-                this.moduloField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string Fecha {
-            get {
-                return this.fechaField;
-            }
-            set {
-                this.fechaField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string IdTransaccion {
-            get {
-                return this.idTransaccionField;
-            }
-            set {
-                this.idTransaccionField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string Tipo {
-            get {
-                return this.tipoField;
-            }
-            set {
-                this.tipoField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string Total {
-            get {
-                return this.totalField;
-            }
-            set {
-                this.totalField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string Subtotal {
-            get {
-                return this.subtotalField;
-            }
-            set {
-                this.subtotalField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string Iva {
-            get {
-                return this.ivaField;
-            }
-            set {
-                this.ivaField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string NumeroResolucion {
-            get {
-                return this.numeroResolucionField;
-            }
-            set {
-                this.numeroResolucionField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string NombreAutorizacion {
-            get {
-                return this.nombreAutorizacionField;
-            }
-            set {
-                this.nombreAutorizacionField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string Documento {
-            get {
-                return this.documentoField;
-            }
-            set {
-                this.documentoField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string Nit {
-            get {
-                return this.nitField;
-            }
-            set {
-                this.nitField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string NombreEmpresa {
-            get {
-                return this.nombreEmpresaField;
-            }
-            set {
-                this.nombreEmpresaField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string Vigencia {
-            get {
-                return this.vigenciaField;
-            }
-            set {
-                this.vigenciaField = value;
+                this.lstItemsMensualidadField = value;
             }
         }
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4084.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9037.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -3967,20 +5175,231 @@ namespace BlockAndPass.PPMWinform.ByPServices {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4084.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9037.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://tempuri.org/")]
-    public partial class InfoFacturaResponse {
+    public partial class InfoItemsFacturaMensualidadResponse {
+        
+        private string numeroFacturaField;
+        
+        private string nombreField;
+        
+        private string telefonoField;
+        
+        private string direccionField;
+        
+        private string moduloField;
+        
+        private string fechaField;
+        
+        private string idTransaccionField;
+        
+        private string tipoField;
+        
+        private string totalField;
+        
+        private string subtotalField;
+        
+        private string ivaField;
+        
+        private string numeroResolucionField;
+        
+        private string nombreAutorizacionField;
+        
+        private string documentoField;
+        
+        private string nitField;
+        
+        private string nombreEmpresaField;
+        
+        private string vigenciaField;
+        
+        /// <remarks/>
+        public string NumeroFactura {
+            get {
+                return this.numeroFacturaField;
+            }
+            set {
+                this.numeroFacturaField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string Nombre {
+            get {
+                return this.nombreField;
+            }
+            set {
+                this.nombreField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string Telefono {
+            get {
+                return this.telefonoField;
+            }
+            set {
+                this.telefonoField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string Direccion {
+            get {
+                return this.direccionField;
+            }
+            set {
+                this.direccionField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string Modulo {
+            get {
+                return this.moduloField;
+            }
+            set {
+                this.moduloField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string Fecha {
+            get {
+                return this.fechaField;
+            }
+            set {
+                this.fechaField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string IdTransaccion {
+            get {
+                return this.idTransaccionField;
+            }
+            set {
+                this.idTransaccionField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string Tipo {
+            get {
+                return this.tipoField;
+            }
+            set {
+                this.tipoField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string Total {
+            get {
+                return this.totalField;
+            }
+            set {
+                this.totalField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string Subtotal {
+            get {
+                return this.subtotalField;
+            }
+            set {
+                this.subtotalField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string Iva {
+            get {
+                return this.ivaField;
+            }
+            set {
+                this.ivaField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string NumeroResolucion {
+            get {
+                return this.numeroResolucionField;
+            }
+            set {
+                this.numeroResolucionField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string NombreAutorizacion {
+            get {
+                return this.nombreAutorizacionField;
+            }
+            set {
+                this.nombreAutorizacionField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string Documento {
+            get {
+                return this.documentoField;
+            }
+            set {
+                this.documentoField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string Nit {
+            get {
+                return this.nitField;
+            }
+            set {
+                this.nitField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string NombreEmpresa {
+            get {
+                return this.nombreEmpresaField;
+            }
+            set {
+                this.nombreEmpresaField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string Vigencia {
+            get {
+                return this.vigenciaField;
+            }
+            set {
+                this.vigenciaField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9037.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://tempuri.org/")]
+    public partial class InfoPagoNormalServiceFE {
         
         private bool exitoField;
         
         private string errorMessageField;
         
-        private InfoItemsFacturaResponse[] lstItemsField;
-        
-        private InfoItemsFacturaMensualidadResponse[] lstItemsMensualidadField;
+        private int numeroFacturaField;
         
         /// <remarks/>
         public bool Exito {
@@ -4003,28 +5422,18 @@ namespace BlockAndPass.PPMWinform.ByPServices {
         }
         
         /// <remarks/>
-        public InfoItemsFacturaResponse[] LstItems {
+        public int NumeroFactura {
             get {
-                return this.lstItemsField;
+                return this.numeroFacturaField;
             }
             set {
-                this.lstItemsField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public InfoItemsFacturaMensualidadResponse[] LstItemsMensualidad {
-            get {
-                return this.lstItemsMensualidadField;
-            }
-            set {
-                this.lstItemsMensualidadField = value;
+                this.numeroFacturaField = value;
             }
         }
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4084.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9037.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -4035,6 +5444,8 @@ namespace BlockAndPass.PPMWinform.ByPServices {
         
         private string errorMessageField;
         
+        private int numeroFacturaField;
+        
         /// <remarks/>
         public bool Exito {
             get {
@@ -4054,10 +5465,20 @@ namespace BlockAndPass.PPMWinform.ByPServices {
                 this.errorMessageField = value;
             }
         }
+        
+        /// <remarks/>
+        public int NumeroFactura {
+            get {
+                return this.numeroFacturaField;
+            }
+            set {
+                this.numeroFacturaField = value;
+            }
+        }
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4084.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9037.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -4114,7 +5535,7 @@ namespace BlockAndPass.PPMWinform.ByPServices {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4084.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9037.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -4159,7 +5580,7 @@ namespace BlockAndPass.PPMWinform.ByPServices {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4084.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9037.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -4180,7 +5601,7 @@ namespace BlockAndPass.PPMWinform.ByPServices {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4084.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9037.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -4189,6 +5610,8 @@ namespace BlockAndPass.PPMWinform.ByPServices {
         
         private bool exitoField;
         
+        private string idTarjetaField;
+        
         private string errorMessageField;
         
         private string idTransaccionField;
@@ -4196,6 +5619,14 @@ namespace BlockAndPass.PPMWinform.ByPServices {
         private string casilleroField;
         
         private string horaTransaccionField;
+        
+        private string moduloEntradaField;
+        
+        private string placaEntradaField;
+        
+        private System.DateTime fechaEntradaField;
+        
+        private int idTipoVehiculoField;
         
         private InfoItemsTransaccionService[] lstTransacField;
         
@@ -4206,6 +5637,16 @@ namespace BlockAndPass.PPMWinform.ByPServices {
             }
             set {
                 this.exitoField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string IdTarjeta {
+            get {
+                return this.idTarjetaField;
+            }
+            set {
+                this.idTarjetaField = value;
             }
         }
         
@@ -4250,6 +5691,46 @@ namespace BlockAndPass.PPMWinform.ByPServices {
         }
         
         /// <remarks/>
+        public string ModuloEntrada {
+            get {
+                return this.moduloEntradaField;
+            }
+            set {
+                this.moduloEntradaField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string PlacaEntrada {
+            get {
+                return this.placaEntradaField;
+            }
+            set {
+                this.placaEntradaField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public System.DateTime FechaEntrada {
+            get {
+                return this.fechaEntradaField;
+            }
+            set {
+                this.fechaEntradaField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public int IdTipoVehiculo {
+            get {
+                return this.idTipoVehiculoField;
+            }
+            set {
+                this.idTipoVehiculoField = value;
+            }
+        }
+        
+        /// <remarks/>
         public InfoItemsTransaccionService[] LstTransac {
             get {
                 return this.lstTransacField;
@@ -4261,7 +5742,7 @@ namespace BlockAndPass.PPMWinform.ByPServices {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4084.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9037.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -4354,7 +5835,7 @@ namespace BlockAndPass.PPMWinform.ByPServices {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4084.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9037.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -4368,6 +5849,8 @@ namespace BlockAndPass.PPMWinform.ByPServices {
         private string documentoField;
         
         private string claveField;
+        
+        private string cargoField;
         
         /// <remarks/>
         public bool Exito {
@@ -4408,14 +5891,926 @@ namespace BlockAndPass.PPMWinform.ByPServices {
                 this.claveField = value;
             }
         }
+        
+        /// <remarks/>
+        public string Cargo {
+            get {
+                return this.cargoField;
+            }
+            set {
+                this.cargoField = value;
+            }
+        }
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.4084.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9037.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://tempuri.org/")]
+    public partial class InfoUsuarioResponse {
+        
+        private bool exitoField;
+        
+        private string errorMessageField;
+        
+        private string documentoField;
+        
+        private string nombresField;
+        
+        private string usuarioField;
+        
+        private string cargoField;
+        
+        /// <remarks/>
+        public bool Exito {
+            get {
+                return this.exitoField;
+            }
+            set {
+                this.exitoField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string ErrorMessage {
+            get {
+                return this.errorMessageField;
+            }
+            set {
+                this.errorMessageField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string Documento {
+            get {
+                return this.documentoField;
+            }
+            set {
+                this.documentoField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string Nombres {
+            get {
+                return this.nombresField;
+            }
+            set {
+                this.nombresField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string Usuario {
+            get {
+                return this.usuarioField;
+            }
+            set {
+                this.usuarioField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string Cargo {
+            get {
+                return this.cargoField;
+            }
+            set {
+                this.cargoField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9037.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://tempuri.org/")]
+    public partial class CreaEntradaRecargaResponse {
+        
+        private bool exitoField;
+        
+        private string errorMessageField;
+        
+        /// <remarks/>
+        public bool Exito {
+            get {
+                return this.exitoField;
+            }
+            set {
+                this.exitoField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string ErrorMessage {
+            get {
+                return this.errorMessageField;
+            }
+            set {
+                this.errorMessageField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9037.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://tempuri.org/")]
+    public partial class VerificaVigenciaAutorizadoRecargaResponse {
+        
+        private bool exitoField;
+        
+        private string errorMessageField;
+        
+        private int cantidadDiasField;
+        
+        /// <remarks/>
+        public bool Exito {
+            get {
+                return this.exitoField;
+            }
+            set {
+                this.exitoField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string ErrorMessage {
+            get {
+                return this.errorMessageField;
+            }
+            set {
+                this.errorMessageField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public int CantidadDias {
+            get {
+                return this.cantidadDiasField;
+            }
+            set {
+                this.cantidadDiasField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9037.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://tempuri.org/")]
+    public partial class AutorizadoRecargaxPlacaResponse {
+        
+        private bool exitoField;
+        
+        private string errorMessageField;
+        
+        private string idTarjetaField;
+        
+        private string idAutorizacionField;
+        
+        private string idPagoField;
+        
+        /// <remarks/>
+        public bool Exito {
+            get {
+                return this.exitoField;
+            }
+            set {
+                this.exitoField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string ErrorMessage {
+            get {
+                return this.errorMessageField;
+            }
+            set {
+                this.errorMessageField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string IdTarjeta {
+            get {
+                return this.idTarjetaField;
+            }
+            set {
+                this.idTarjetaField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string IdAutorizacion {
+            get {
+                return this.idAutorizacionField;
+            }
+            set {
+                this.idAutorizacionField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string IdPago {
+            get {
+                return this.idPagoField;
+            }
+            set {
+                this.idPagoField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9037.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://tempuri.org/")]
+    public partial class InfoPagoRegistroManualResponse {
+        
+        private bool exitoField;
+        
+        private string errorMessageField;
+        
+        private int numeroFacturaField;
+        
+        private string observacionField;
+        
+        private int idMotivoField;
+        
+        private string fechaYHoraField;
+        
+        private int idTipoVehiculoField;
+        
+        private long idTransaccionField;
+        
+        private int idTipoPagoField;
+        
+        private string idModuloField;
+        
+        private double ivaField;
+        
+        private double totalField;
+        
+        private double subtotalField;
+        
+        private string placaField;
+        
+        /// <remarks/>
+        public bool Exito {
+            get {
+                return this.exitoField;
+            }
+            set {
+                this.exitoField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string ErrorMessage {
+            get {
+                return this.errorMessageField;
+            }
+            set {
+                this.errorMessageField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public int NumeroFactura {
+            get {
+                return this.numeroFacturaField;
+            }
+            set {
+                this.numeroFacturaField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string Observacion {
+            get {
+                return this.observacionField;
+            }
+            set {
+                this.observacionField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public int IdMotivo {
+            get {
+                return this.idMotivoField;
+            }
+            set {
+                this.idMotivoField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string FechaYHora {
+            get {
+                return this.fechaYHoraField;
+            }
+            set {
+                this.fechaYHoraField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public int IdTipoVehiculo {
+            get {
+                return this.idTipoVehiculoField;
+            }
+            set {
+                this.idTipoVehiculoField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public long IdTransaccion {
+            get {
+                return this.idTransaccionField;
+            }
+            set {
+                this.idTransaccionField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public int IdTipoPago {
+            get {
+                return this.idTipoPagoField;
+            }
+            set {
+                this.idTipoPagoField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string IdModulo {
+            get {
+                return this.idModuloField;
+            }
+            set {
+                this.idModuloField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public double Iva {
+            get {
+                return this.ivaField;
+            }
+            set {
+                this.ivaField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public double Total {
+            get {
+                return this.totalField;
+            }
+            set {
+                this.totalField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public double Subtotal {
+            get {
+                return this.subtotalField;
+            }
+            set {
+                this.subtotalField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string Placa {
+            get {
+                return this.placaField;
+            }
+            set {
+                this.placaField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9037.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://tempuri.org/")]
+    public partial class InfoMotivosRegistroManuales {
+        
+        private int valueField;
+        
+        private string displayField;
+        
+        /// <remarks/>
+        public int Value {
+            get {
+                return this.valueField;
+            }
+            set {
+                this.valueField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string Display {
+            get {
+                return this.displayField;
+            }
+            set {
+                this.displayField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9037.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://tempuri.org/")]
+    public partial class MotivosRegistroManuales {
+        
+        private bool exitoField;
+        
+        private string errorMessageField;
+        
+        private InfoMotivosRegistroManuales[] lstMotivosRegistrosManualesField;
+        
+        /// <remarks/>
+        public bool Exito {
+            get {
+                return this.exitoField;
+            }
+            set {
+                this.exitoField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string ErrorMessage {
+            get {
+                return this.errorMessageField;
+            }
+            set {
+                this.errorMessageField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public InfoMotivosRegistroManuales[] LstMotivosRegistrosManuales {
+            get {
+                return this.lstMotivosRegistrosManualesField;
+            }
+            set {
+                this.lstMotivosRegistrosManualesField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9037.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://tempuri.org/")]
+    public partial class VerificaTransaccionAbiertaAutorizadoResponse {
+        
+        private bool exitoField;
+        
+        private string errorMessageField;
+        
+        private string placaEntradaField;
+        
+        private string idTransaccionField;
+        
+        /// <remarks/>
+        public bool Exito {
+            get {
+                return this.exitoField;
+            }
+            set {
+                this.exitoField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string ErrorMessage {
+            get {
+                return this.errorMessageField;
+            }
+            set {
+                this.errorMessageField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string PlacaEntrada {
+            get {
+                return this.placaEntradaField;
+            }
+            set {
+                this.placaEntradaField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string IdTransaccion {
+            get {
+                return this.idTransaccionField;
+            }
+            set {
+                this.idTransaccionField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9037.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://tempuri.org/")]
+    public partial class InfoFacturaResponseFE {
+        
+        private bool exitoField;
+        
+        private string errorMessageField;
+        
+        private InfoItemsFacturaResponse[] lstItemsField;
+        
+        private InfoItemsFacturaMensualidadResponse[] lstItemsMensualidadField;
+        
+        /// <remarks/>
+        public bool Exito {
+            get {
+                return this.exitoField;
+            }
+            set {
+                this.exitoField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string ErrorMessage {
+            get {
+                return this.errorMessageField;
+            }
+            set {
+                this.errorMessageField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public InfoItemsFacturaResponse[] LstItems {
+            get {
+                return this.lstItemsField;
+            }
+            set {
+                this.lstItemsField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public InfoItemsFacturaMensualidadResponse[] LstItemsMensualidad {
+            get {
+                return this.lstItemsMensualidadField;
+            }
+            set {
+                this.lstItemsMensualidadField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9037.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://tempuri.org/")]
+    public partial class InfoClienteFacturaElectronicaResponse {
+        
+        private int identificacionField;
+        
+        private bool exitoField;
+        
+        private string nombreField;
+        
+        /// <remarks/>
+        public int Identificacion {
+            get {
+                return this.identificacionField;
+            }
+            set {
+                this.identificacionField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public bool Exito {
+            get {
+                return this.exitoField;
+            }
+            set {
+                this.exitoField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string Nombre {
+            get {
+                return this.nombreField;
+            }
+            set {
+                this.nombreField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
+    public delegate void InactivarTarjetaCompletedEventHandler(object sender, InactivarTarjetaCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class InactivarTarjetaCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal InactivarTarjetaCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public TarjetasResponse Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((TarjetasResponse)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
+    public delegate void InactivarMensualidadCompletedEventHandler(object sender, InactivarMensualidadCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class InactivarMensualidadCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal InactivarMensualidadCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public TarjetasResponse Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((TarjetasResponse)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
+    public delegate void ValidarClientePorNitCompletedEventHandler(object sender, ValidarClientePorNitCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class ValidarClientePorNitCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal ValidarClientePorNitCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public InfoClienteFacturaElectronicaResponse Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((InfoClienteFacturaElectronicaResponse)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
+    public delegate void ObtenerDatosFacturaFECompletedEventHandler(object sender, ObtenerDatosFacturaFECompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class ObtenerDatosFacturaFECompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal ObtenerDatosFacturaFECompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public InfoFacturaResponseFE Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((InfoFacturaResponseFE)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
+    public delegate void ValidarSalidaCompletedEventHandler(object sender, ValidarSalidaCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class ValidarSalidaCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal ValidarSalidaCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public VerificaTransaccionAbiertaAutorizadoResponse Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((VerificaTransaccionAbiertaAutorizadoResponse)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
+    public delegate void ObtenerListaMovitosRegistroManualesCompletedEventHandler(object sender, ObtenerListaMovitosRegistroManualesCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class ObtenerListaMovitosRegistroManualesCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal ObtenerListaMovitosRegistroManualesCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public MotivosRegistroManuales Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((MotivosRegistroManuales)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
+    public delegate void RegistrarPagoRegistroManualCompletedEventHandler(object sender, RegistrarPagoRegistroManualCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class RegistrarPagoRegistroManualCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal RegistrarPagoRegistroManualCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public InfoPagoRegistroManualResponse Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((InfoPagoRegistroManualResponse)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
+    public delegate void BuscarAutorizadoRecargaxPlacaCompletedEventHandler(object sender, BuscarAutorizadoRecargaxPlacaCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class BuscarAutorizadoRecargaxPlacaCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal BuscarAutorizadoRecargaxPlacaCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public AutorizadoRecargaxPlacaResponse Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((AutorizadoRecargaxPlacaResponse)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
+    public delegate void VerificarVigenciaAutorizadoRecargaCompletedEventHandler(object sender, VerificarVigenciaAutorizadoRecargaCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class VerificarVigenciaAutorizadoRecargaCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal VerificarVigenciaAutorizadoRecargaCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public VerificaVigenciaAutorizadoRecargaResponse Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((VerificaVigenciaAutorizadoRecargaResponse)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
+    public delegate void CrearEntradaRecargaCompletedEventHandler(object sender, CrearEntradaRecargaCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class CrearEntradaRecargaCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal CrearEntradaRecargaCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public CreaEntradaRecargaResponse Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((CreaEntradaRecargaResponse)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
     public delegate void ObtenerInformacionUsuarioCompletedEventHandler(object sender, ObtenerInformacionUsuarioCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.4084.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class ObtenerInformacionUsuarioCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -4437,11 +6832,115 @@ namespace BlockAndPass.PPMWinform.ByPServices {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.4084.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
+    public delegate void ListarEventosAplicadosPorTransaccionCompletedEventHandler(object sender, ListarEventosAplicadosPorTransaccionCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class ListarEventosAplicadosPorTransaccionCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal ListarEventosAplicadosPorTransaccionCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public System.Data.DataTable Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((System.Data.DataTable)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
+    public delegate void ListarTransaccionesPorPlacaEntradaCompletedEventHandler(object sender, ListarTransaccionesPorPlacaEntradaCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class ListarTransaccionesPorPlacaEntradaCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal ListarTransaccionesPorPlacaEntradaCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public System.Data.DataTable Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((System.Data.DataTable)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
+    public delegate void BuscarAutorizadoxPlacaReposicionCompletedEventHandler(object sender, BuscarAutorizadoxPlacaReposicionCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class BuscarAutorizadoxPlacaReposicionCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal BuscarAutorizadoxPlacaReposicionCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public System.Data.DataTable Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((System.Data.DataTable)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
+    public delegate void ListarUsuariosAutorizaCortesiaCompletedEventHandler(object sender, ListarUsuariosAutorizaCortesiaCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class ListarUsuariosAutorizaCortesiaCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal ListarUsuariosAutorizaCortesiaCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public System.Data.DataTable Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((System.Data.DataTable)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
     public delegate void LoguearseCompletedEventHandler(object sender, LoguearseCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.4084.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class LoguearseCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -4463,11 +6962,11 @@ namespace BlockAndPass.PPMWinform.ByPServices {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.4084.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
     public delegate void ObtenerDatosPPMxMacCompletedEventHandler(object sender, ObtenerDatosPPMxMacCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.4084.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class ObtenerDatosPPMxMacCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -4489,11 +6988,11 @@ namespace BlockAndPass.PPMWinform.ByPServices {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.4084.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
     public delegate void ObtenerValorParametroxNombreCompletedEventHandler(object sender, ObtenerValorParametroxNombreCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.4084.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class ObtenerValorParametroxNombreCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -4515,11 +7014,11 @@ namespace BlockAndPass.PPMWinform.ByPServices {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.4084.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
     public delegate void ConsultarInfoTransaccionCompletedEventHandler(object sender, ConsultarInfoTransaccionCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.4084.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class ConsultarInfoTransaccionCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -4541,11 +7040,11 @@ namespace BlockAndPass.PPMWinform.ByPServices {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.4084.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
     public delegate void ConsultarCascosxIdCompletedEventHandler(object sender, ConsultarCascosxIdCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.4084.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class ConsultarCascosxIdCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -4567,11 +7066,11 @@ namespace BlockAndPass.PPMWinform.ByPServices {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.4084.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
     public delegate void ConsultarInfoTransaccionxIdCompletedEventHandler(object sender, ConsultarInfoTransaccionxIdCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.4084.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class ConsultarInfoTransaccionxIdCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -4593,11 +7092,11 @@ namespace BlockAndPass.PPMWinform.ByPServices {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.4084.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
     public delegate void ConsultarValorPagarCompletedEventHandler(object sender, ConsultarValorPagarCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.4084.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class ConsultarValorPagarCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -4619,11 +7118,11 @@ namespace BlockAndPass.PPMWinform.ByPServices {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.4084.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
     public delegate void PagarClienteParticularCompletedEventHandler(object sender, PagarClienteParticularCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.4084.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class PagarClienteParticularCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -4645,11 +7144,37 @@ namespace BlockAndPass.PPMWinform.ByPServices {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.4084.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
+    public delegate void PagarClienteParticularFECompletedEventHandler(object sender, PagarClienteParticularFECompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class PagarClienteParticularFECompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal PagarClienteParticularFECompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public InfoPagoNormalServiceFE Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((InfoPagoNormalServiceFE)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
     public delegate void ObtenerDatosFacturaCompletedEventHandler(object sender, ObtenerDatosFacturaCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.4084.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class ObtenerDatosFacturaCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -4671,11 +7196,63 @@ namespace BlockAndPass.PPMWinform.ByPServices {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.4084.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
+    public delegate void ObtenerDatosFacturaMensualidadFECompletedEventHandler(object sender, ObtenerDatosFacturaMensualidadFECompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class ObtenerDatosFacturaMensualidadFECompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal ObtenerDatosFacturaMensualidadFECompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public InfoFacturaResponseFE Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((InfoFacturaResponseFE)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
+    public delegate void ObtenerDatosCopiaFacturaCompletedEventHandler(object sender, ObtenerDatosCopiaFacturaCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class ObtenerDatosCopiaFacturaCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal ObtenerDatosCopiaFacturaCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public InfoFacturaResponse Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((InfoFacturaResponse)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
     public delegate void PagarMensualidadCompletedEventHandler(object sender, PagarMensualidadCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.4084.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class PagarMensualidadCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -4697,11 +7274,37 @@ namespace BlockAndPass.PPMWinform.ByPServices {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.4084.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
+    public delegate void PagarMensualidadFECompletedEventHandler(object sender, PagarMensualidadFECompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class PagarMensualidadFECompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal PagarMensualidadFECompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public InfoPagoMensualidadServiceFE Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((InfoPagoMensualidadServiceFE)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
     public delegate void ObtenerDatosFacturaMensualidadCompletedEventHandler(object sender, ObtenerDatosFacturaMensualidadCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.4084.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class ObtenerDatosFacturaMensualidadCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -4723,11 +7326,11 @@ namespace BlockAndPass.PPMWinform.ByPServices {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.4084.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
     public delegate void AplicarEtiquetaMotoCompletedEventHandler(object sender, AplicarEtiquetaMotoCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.4084.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class AplicarEtiquetaMotoCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -4749,11 +7352,37 @@ namespace BlockAndPass.PPMWinform.ByPServices {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.4084.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
+    public delegate void AplicarEtiquetaCarroCompletedEventHandler(object sender, AplicarEtiquetaCarroCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class AplicarEtiquetaCarroCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal AplicarEtiquetaCarroCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public AplicarMotoResponse Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((AplicarMotoResponse)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
     public delegate void AplicarConveniosCompletedEventHandler(object sender, AplicarConveniosCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.4084.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class AplicarConveniosCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -4775,11 +7404,11 @@ namespace BlockAndPass.PPMWinform.ByPServices {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.4084.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
     public delegate void AplicarCascoCompletedEventHandler(object sender, AplicarCascoCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.4084.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class AplicarCascoCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -4801,11 +7430,11 @@ namespace BlockAndPass.PPMWinform.ByPServices {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.4084.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
     public delegate void SaveConvenioCompletedEventHandler(object sender, SaveConvenioCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.4084.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class SaveConvenioCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -4827,11 +7456,11 @@ namespace BlockAndPass.PPMWinform.ByPServices {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.4084.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
     public delegate void LiberarCascoCompletedEventHandler(object sender, LiberarCascoCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.4084.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class LiberarCascoCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -4853,11 +7482,11 @@ namespace BlockAndPass.PPMWinform.ByPServices {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.4084.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
     public delegate void ObtenerCasilleroCompletedEventHandler(object sender, ObtenerCasilleroCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.4084.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class ObtenerCasilleroCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -4879,11 +7508,11 @@ namespace BlockAndPass.PPMWinform.ByPServices {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.4084.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
     public delegate void AplicarLaCortesiaCompletedEventHandler(object sender, AplicarLaCortesiaCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.4084.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class AplicarLaCortesiaCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -4905,11 +7534,37 @@ namespace BlockAndPass.PPMWinform.ByPServices {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.4084.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
+    public delegate void AplicarLaCortesiaNoParqueaCompletedEventHandler(object sender, AplicarLaCortesiaNoParqueaCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class AplicarLaCortesiaNoParqueaCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal AplicarLaCortesiaNoParqueaCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public AplicarEventoResponse Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((AplicarEventoResponse)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
     public delegate void AplicarElEventoCompletedEventHandler(object sender, AplicarElEventoCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.4084.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class AplicarElEventoCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -4931,11 +7586,37 @@ namespace BlockAndPass.PPMWinform.ByPServices {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.4084.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
+    public delegate void EliminarEventoCompletedEventHandler(object sender, EliminarEventoCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class EliminarEventoCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal EliminarEventoCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public AplicarEventoResponse Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((AplicarEventoResponse)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
     public delegate void ObtenerListaMotivosCortesiaXEstacionamientoCompletedEventHandler(object sender, ObtenerListaMotivosCortesiaXEstacionamientoCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.4084.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class ObtenerListaMotivosCortesiaXEstacionamientoCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -4957,11 +7638,11 @@ namespace BlockAndPass.PPMWinform.ByPServices {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.4084.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
     public delegate void ObtenerCarrilxIdModuloCompletedEventHandler(object sender, ObtenerCarrilxIdModuloCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.4084.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class ObtenerCarrilxIdModuloCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -4983,11 +7664,11 @@ namespace BlockAndPass.PPMWinform.ByPServices {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.4084.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
     public delegate void ObtenerListaConveniosXEstacionamientoXUsuarioCompletedEventHandler(object sender, ObtenerListaConveniosXEstacionamientoXUsuarioCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.4084.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class ObtenerListaConveniosXEstacionamientoXUsuarioCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -5009,11 +7690,11 @@ namespace BlockAndPass.PPMWinform.ByPServices {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.4084.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
     public delegate void ObtenerListaEventosXEstacionamientoXUsuarioCompletedEventHandler(object sender, ObtenerListaEventosXEstacionamientoXUsuarioCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.4084.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class ObtenerListaEventosXEstacionamientoXUsuarioCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -5035,11 +7716,11 @@ namespace BlockAndPass.PPMWinform.ByPServices {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.4084.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
     public delegate void ConsultarDescripcionConvenioCompletedEventHandler(object sender, ConsultarDescripcionConvenioCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.4084.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class ConsultarDescripcionConvenioCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -5061,11 +7742,11 @@ namespace BlockAndPass.PPMWinform.ByPServices {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.4084.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
     public delegate void RegistrarElArqueoCompletedEventHandler(object sender, RegistrarElArqueoCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.4084.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class RegistrarElArqueoCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -5087,11 +7768,11 @@ namespace BlockAndPass.PPMWinform.ByPServices {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.4084.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
     public delegate void ConfirmarElArqueoCompletedEventHandler(object sender, ConfirmarElArqueoCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.4084.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class ConfirmarElArqueoCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -5113,11 +7794,11 @@ namespace BlockAndPass.PPMWinform.ByPServices {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.4084.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
     public delegate void ObtenerDatosComprobanteArqueoCompletedEventHandler(object sender, ObtenerDatosComprobanteArqueoCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.4084.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class ObtenerDatosComprobanteArqueoCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -5139,11 +7820,11 @@ namespace BlockAndPass.PPMWinform.ByPServices {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.4084.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
     public delegate void ObtenerDatosComprobanteCargaCompletedEventHandler(object sender, ObtenerDatosComprobanteCargaCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.4084.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class ObtenerDatosComprobanteCargaCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -5165,11 +7846,11 @@ namespace BlockAndPass.PPMWinform.ByPServices {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.4084.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
     public delegate void RegistrarLaCargaCompletedEventHandler(object sender, RegistrarLaCargaCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.4084.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class RegistrarLaCargaCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -5191,11 +7872,11 @@ namespace BlockAndPass.PPMWinform.ByPServices {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.4084.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
     public delegate void ConfirmarLaCargaCompletedEventHandler(object sender, ConfirmarLaCargaCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.4084.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class ConfirmarLaCargaCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -5217,11 +7898,11 @@ namespace BlockAndPass.PPMWinform.ByPServices {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.4084.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
     public delegate void ObtenerListaCarrilEntradaxEstacionamientoCompletedEventHandler(object sender, ObtenerListaCarrilEntradaxEstacionamientoCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.4084.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class ObtenerListaCarrilEntradaxEstacionamientoCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -5243,11 +7924,11 @@ namespace BlockAndPass.PPMWinform.ByPServices {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.4084.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
     public delegate void CrearEntradaCompletedEventHandler(object sender, CrearEntradaCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.4084.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class CrearEntradaCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -5269,11 +7950,11 @@ namespace BlockAndPass.PPMWinform.ByPServices {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.4084.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
     public delegate void CrearSalidaCompletedEventHandler(object sender, CrearSalidaCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.4084.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class CrearSalidaCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -5295,11 +7976,11 @@ namespace BlockAndPass.PPMWinform.ByPServices {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.4084.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
     public delegate void CrearSalida2CompletedEventHandler(object sender, CrearSalida2CompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.4084.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class CrearSalida2CompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -5321,11 +8002,11 @@ namespace BlockAndPass.PPMWinform.ByPServices {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.4084.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
     public delegate void CrearSalida3CompletedEventHandler(object sender, CrearSalida3CompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.4084.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class CrearSalida3CompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -5347,11 +8028,11 @@ namespace BlockAndPass.PPMWinform.ByPServices {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.4084.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
     public delegate void BuscarAutorizadoxPlacaCompletedEventHandler(object sender, BuscarAutorizadoxPlacaCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.4084.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class BuscarAutorizadoxPlacaCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -5373,11 +8054,37 @@ namespace BlockAndPass.PPMWinform.ByPServices {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.4084.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
+    public delegate void BuscarAutorizadoPorIdTarjetaCompletedEventHandler(object sender, BuscarAutorizadoPorIdTarjetaCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class BuscarAutorizadoPorIdTarjetaCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal BuscarAutorizadoPorIdTarjetaCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public AutorizadoxPlacaResponse Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((AutorizadoxPlacaResponse)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
     public delegate void VerificarTransaccionAbiertaAutorizadoCompletedEventHandler(object sender, VerificarTransaccionAbiertaAutorizadoCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.4084.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class VerificarTransaccionAbiertaAutorizadoCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -5399,11 +8106,11 @@ namespace BlockAndPass.PPMWinform.ByPServices {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.4084.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
     public delegate void VerificarVigenciaAutorizadoCompletedEventHandler(object sender, VerificarVigenciaAutorizadoCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.4084.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class VerificarVigenciaAutorizadoCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -5425,11 +8132,11 @@ namespace BlockAndPass.PPMWinform.ByPServices {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.4084.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
     public delegate void ActualizarVigenciaAutorizadoCompletedEventHandler(object sender, ActualizarVigenciaAutorizadoCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.4084.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class ActualizarVigenciaAutorizadoCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -5451,11 +8158,11 @@ namespace BlockAndPass.PPMWinform.ByPServices {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.4084.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
     public delegate void ObtenerListaVehiculosEnValetCompletedEventHandler(object sender, ObtenerListaVehiculosEnValetCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.4084.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class ObtenerListaVehiculosEnValetCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -5477,11 +8184,11 @@ namespace BlockAndPass.PPMWinform.ByPServices {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.4084.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
     public delegate void ObtenerListaVehiculosSaliendoCompletedEventHandler(object sender, ObtenerListaVehiculosSaliendoCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.4084.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class ObtenerListaVehiculosSaliendoCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -5503,11 +8210,11 @@ namespace BlockAndPass.PPMWinform.ByPServices {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.4084.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
     public delegate void InsertarVehiculoValetCompletedEventHandler(object sender, InsertarVehiculoValetCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.4084.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class InsertarVehiculoValetCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -5529,11 +8236,11 @@ namespace BlockAndPass.PPMWinform.ByPServices {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.4084.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
     public delegate void ObtenerListaSedesCompletedEventHandler(object sender, ObtenerListaSedesCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.4084.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class ObtenerListaSedesCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -5555,11 +8262,11 @@ namespace BlockAndPass.PPMWinform.ByPServices {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.4084.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
     public delegate void ObtenerListaEstacionamientoXSedeCompletedEventHandler(object sender, ObtenerListaEstacionamientoXSedeCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.4084.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class ObtenerListaEstacionamientoXSedeCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -5576,6 +8283,162 @@ namespace BlockAndPass.PPMWinform.ByPServices {
             get {
                 this.RaiseExceptionIfNecessary();
                 return ((EstacionamientosResponse)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
+    public delegate void ObtenerCantidadVehiculosActualesCompletedEventHandler(object sender, ObtenerCantidadVehiculosActualesCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class ObtenerCantidadVehiculosActualesCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal ObtenerCantidadVehiculosActualesCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public InfoCantidadVehiculosActualesResponse Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((InfoCantidadVehiculosActualesResponse)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
+    public delegate void ObtenerCantidadMotosActualesCompletedEventHandler(object sender, ObtenerCantidadMotosActualesCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class ObtenerCantidadMotosActualesCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal ObtenerCantidadMotosActualesCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public InfoCantidadMotosActualesResponse Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((InfoCantidadMotosActualesResponse)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
+    public delegate void PagarFacturasContingenciaCompletedEventHandler(object sender, PagarFacturasContingenciaCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class PagarFacturasContingenciaCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal PagarFacturasContingenciaCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public InfoPagoNormalService Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((InfoPagoNormalService)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
+    public delegate void ObtenerDatosFacturaContingenciaFECompletedEventHandler(object sender, ObtenerDatosFacturaContingenciaFECompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class ObtenerDatosFacturaContingenciaFECompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal ObtenerDatosFacturaContingenciaFECompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public InfoFacturaResponseFE Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((InfoFacturaResponseFE)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
+    public delegate void ListarModulosPagosCompletedEventHandler(object sender, ListarModulosPagosCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class ListarModulosPagosCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal ListarModulosPagosCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public ModulosResponse Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((ModulosResponse)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
+    public delegate void ConsultarInfoTransaccionPorIdTransaccionCompletedEventHandler(object sender, ConsultarInfoTransaccionPorIdTransaccionCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class ConsultarInfoTransaccionPorIdTransaccionCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal ConsultarInfoTransaccionPorIdTransaccionCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public InfoTransaccionResponse Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((InfoTransaccionResponse)(this.results[0]));
             }
         }
     }

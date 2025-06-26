@@ -31,19 +31,6 @@ namespace BlockAndPass.PPMWinform
             
         }
 
-        private void btn_Ok_Click(object sender, EventArgs e)
-        {
-            this.Valor = Convert.ToInt64(tbValorConteoManual.Text.Replace("$", "").Replace(".", ""));
-            this.DialogResult = DialogResult.OK;
-            this.Close();
-        }
-
-        private void btn_Cancel_Click(object sender, EventArgs e)
-        {
-            this.DialogResult = DialogResult.Cancel;
-            this.Close();
-        }
-
         private void tbValor_TextChanged(object sender, EventArgs e)
         {
             Int64 recibido = 0;
@@ -58,6 +45,19 @@ namespace BlockAndPass.PPMWinform
 
             tbValorConteoManual.SelectionStart = tbValorConteoManual.Text.Length; // add some logic if length is 0
             tbValorConteoManual.SelectionLength = 0;
+        }
+
+        private void btn_Ok_Click(object sender, EventArgs e)
+        {
+            this.Valor = Convert.ToInt64(tbValorConteoManual.Text.Replace("$", "").Replace(".", ""));
+            this.DialogResult = DialogResult.OK;
+            this.Close();
+        }
+
+        private void btn_Cancel_Click(object sender, EventArgs e)
+        {
+            this.DialogResult = DialogResult.Cancel;
+            this.Close();
         }
 
     }

@@ -65,22 +65,6 @@ namespace BlockAndPass.PPMWinform
             }
         }
 
-        private void btn_Ok_Click(object sender, EventArgs e)
-        {
-            this.Convenio = Convert.ToInt32(cbConvenio.SelectedValue);
-            
-            string GG = cbConvenio.Text;
-            this.NameConvenio = GG;
-            this.DialogResult = DialogResult.OK;
-            this.Close();
-        }
-
-        private void btn_Cancel_Click(object sender, EventArgs e)
-        {
-            this.DialogResult = DialogResult.Cancel;
-            this.Close();
-        }
-
         private void cbConvenio_SelectedIndexChanged(object sender, EventArgs e)
         {
             DescripcionConvenioResponse oDes = cliente.ConsultarDescripcionConvenio(cbConvenio.SelectedValue.ToString());
@@ -92,6 +76,22 @@ namespace BlockAndPass.PPMWinform
             {
                 tbDescripcion.Text = oDes.ErrorMessage;
             }
+        }
+
+        private void btn_Ok_Click(object sender, EventArgs e)
+        {
+            this.Convenio = Convert.ToInt32(cbConvenio.SelectedValue);
+
+            string GG = cbConvenio.Text;
+            this.NameConvenio = GG;
+            this.DialogResult = DialogResult.OK;
+            this.Close();
+        }
+
+        private void btn_Cancel_Click(object sender, EventArgs e)
+        {
+            this.DialogResult = DialogResult.Cancel;
+            this.Close();
         }
     }
 }

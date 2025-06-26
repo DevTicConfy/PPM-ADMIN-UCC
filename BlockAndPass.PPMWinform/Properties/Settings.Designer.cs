@@ -25,22 +25,33 @@ namespace BlockAndPass.PPMWinform.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.WebServiceUrl)]
-        [global::System.Configuration.DefaultSettingValueAttribute("http://localhost:85/ServicesByP.asmx")]
-        public string BlockAndPass_PPMWinform_ByPServices_ServicesByP {
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=PROGRAMACION;Initial Catalog=SanLuis;User ID=sa;Password=Parquearse12" +
+            "3")]
+        public string SanLuisConnectionString {
             get {
-                return ((string)(this["BlockAndPass_PPMWinform_ByPServices_ServicesByP"]));
+                return ((string)(this["SanLuisConnectionString"]));
             }
         }
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=169.47.207.158;Initial Catalog=Parking;User ID=AdminParkingUser;Passw" +
-            "ord=P4rqu1ng+")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=PROGRAMACION;Initial Catalog=SanLuis;User ID=sa;Password=Parquearse12" +
+            "3")]
         public string ParkingConnectionString {
             get {
                 return ((string)(this["ParkingConnectionString"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.WebServiceUrl)]
+        [global::System.Configuration.DefaultSettingValueAttribute("http://localhost:85/ServicesByP.asmx")]
+        public string BlockAndPass_PPMWinform_ByPServices_ServicesByP {
+            get {
+                return ((string)(this["BlockAndPass_PPMWinform_ByPServices_ServicesByP"]));
             }
         }
     }

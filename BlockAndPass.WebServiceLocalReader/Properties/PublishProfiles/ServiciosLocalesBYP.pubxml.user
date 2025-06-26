@@ -12,10 +12,10 @@ editando este archivo MSBuild. Para conocer más acerca de esto, visite http://g
   </PropertyGroup>
   <ItemGroup>
     <File Include="bin/BlockAndPass.WebServiceLocalReader.dll">
-      <publishTime>07/07/2021 11:35:47</publishTime>
+      <publishTime>02/04/2023 09:31:59</publishTime>
     </File>
     <File Include="bin/BlockAndPass.WebServiceLocalReader.pdb">
-      <publishTime>07/07/2021 11:35:47</publishTime>
+      <publishTime>02/04/2023 09:31:58</publishTime>
     </File>
     <File Include="bin/de/Microsoft.ReportViewer.WinForms.resources.dll">
       <publishTime>06/24/2012 13:52:48</publishTime>
@@ -111,7 +111,7 @@ editando este archivo MSBuild. Para conocer más acerca de esto, visite http://g
       <publishTime>05/08/2019 08:57:01</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>07/07/2021 11:37:45</publishTime>
+      <publishTime>02/04/2023 09:31:59</publishTime>
     </File>
   </ItemGroup>
 </Project>
