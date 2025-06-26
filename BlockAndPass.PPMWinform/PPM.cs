@@ -157,7 +157,7 @@ namespace BlockAndPass.PPMWinform
                                 pagosFinal += item.Tipo + "-" + item.SubTotal + "-" + item.Iva + "-" + item.Total;
                             }
 
-                            InfoPagoNormalService pagoNormal = cliente.PagarClienteParticular(pagosFinal, cbEstacionamiento.SelectedValue.ToString(), tbIdTransaccion.Text, cbPPM.SelectedValue.ToString(), oCardResponse.fechaPago, sumTotalPagar.ToString(), _DocumentoUsuario,0,0);
+                            InfoPagoNormalService pagoNormal = cliente.PagarClienteParticular(pagosFinal, cbEstacionamiento.SelectedValue.ToString(), tbIdTransaccion.Text, cbPPM.SelectedValue.ToString(), oCardResponse.fechaPago, sumTotalPagar.ToString(), _DocumentoUsuario,0,"");
 
                             if (pagoNormal.Exito)
                             {
@@ -188,7 +188,7 @@ namespace BlockAndPass.PPMWinform
                             pagosFinal += item.Tipo + "-" + item.SubTotal + "-" + item.Iva + "-" + item.Total;
                         }
 
-                        InfoPagoMensualidadService pagoNormal = cliente.PagarMensualidad(pagosFinal, cbEstacionamiento.SelectedValue.ToString(), cbPPM.SelectedValue.ToString(), DateTime.Now.ToString(), sumTotalPagar.ToString(), tbIdTarjeta.Text, _DocumentoUsuario,0,0);
+                        InfoPagoMensualidadService pagoNormal = cliente.PagarMensualidad(pagosFinal, cbEstacionamiento.SelectedValue.ToString(), cbPPM.SelectedValue.ToString(), DateTime.Now.ToString(), sumTotalPagar.ToString(), tbIdTarjeta.Text, _DocumentoUsuario,0,"");
 
                         if (pagoNormal.Exito)
                         {

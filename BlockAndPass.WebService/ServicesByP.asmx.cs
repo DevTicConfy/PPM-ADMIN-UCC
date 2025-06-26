@@ -598,7 +598,7 @@ namespace BlockAndPass.WebService
         }
 
         [WebMethod]
-        public InfoPagoNormalService PagarClienteParticular(string pagosstring, string idEstacionamiento, string idTransaccion, string idModulo, string fecha, string total, string documentoUsuario, int IdFormaPago, int nitCliente)
+        public InfoPagoNormalService PagarClienteParticular(string pagosstring, string idEstacionamiento, string idTransaccion, string idModulo, string fecha, string total, string documentoUsuario, int IdFormaPago, string nitCliente)
         {
             ArrayList pagosFinal = new ArrayList();
 
@@ -812,7 +812,6 @@ namespace BlockAndPass.WebService
 
             return oInfoPagoService;
         }
-
         [WebMethod]
         public InfoPagoNormalServiceFE PagarClienteParticularFE(string pagosstring, string idEstacionamiento, string idTransaccion, string idModulo, string fecha, string total, string documentoUsuario, int nitCliente)
         {
@@ -3994,7 +3993,7 @@ namespace BlockAndPass.WebService
         }
 
         [WebMethod]
-        public InfoPagoNormalService PagarFacturasContingencia(List<string> pagosFinal, string idEstacionamiento, string idModulo, string prefijo, int nitCliente, int documentoUsuario, string numeroFactura)
+        public InfoPagoNormalService PagarFacturasContingencia(List<string> pagosFinal, string idEstacionamiento, string idModulo, string prefijo, string nitCliente, int documentoUsuario, string numeroFactura)
         {
             #region Old
             ////string[] pagos = pagosstring.Split(',');
@@ -4583,8 +4582,9 @@ namespace BlockAndPass.WebService
             return oTarjetasResponse;
         }
 
+
         [WebMethod]
-        public InfoClienteFacturaElectronicaResponse ValidarClientePorNit(int nit)
+        public InfoClienteFacturaElectronicaResponse ValidarClientePorNit(string nit)
         {
             InfoClienteFacturaElectronicaResponse array = new InfoClienteFacturaElectronicaResponse();
 
@@ -4811,7 +4811,7 @@ namespace BlockAndPass.WebService
         }
 
         [WebMethod]
-        public InfoPagoRegistroManualResponse RegistrarPagoRegistroManual(string idEstacionamiento, string idModulo, string documentoUsuario, string total, string idTransaccion, string fechaPago, int IdFormaPago, int nitCliente, string placa, int idTipoVehiculo,string fechaEntrada, List<InfoPagoRegistroManualResponse> datosLista)
+        public InfoPagoRegistroManualResponse RegistrarPagoRegistroManual(string idEstacionamiento, string idModulo, string documentoUsuario, string total, string idTransaccion, string fechaPago, int IdFormaPago, string nitCliente, string placa, int idTipoVehiculo, string fechaEntrada, List<InfoPagoRegistroManualResponse> datosLista)
         {
             InfoPagoRegistroManualResponse oInfoPagoRegistroManualResponse = new InfoPagoRegistroManualResponse();
             var connectionString = ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString;
@@ -4909,7 +4909,7 @@ namespace BlockAndPass.WebService
                     try
                     {
                         command.CommandText =
-                        "insert into t_transacciones values ('" + idTransaccion + "','30','ADM01','" + idEstacionamiento + "','" + documentoUsuario + "','" + placa.ToUpper() + "'," + "convert(datetime,'" + fechaEntrada + "',103),convert(datetime,'" + fechaPago + "',103),'ADM01','30','"+placa+"','" + idTipoVehiculo + "',NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'false', 'false', 'false')";
+                        "insert into t_transacciones values ('" + idTransaccion + "','30','ADM01','" + idEstacionamiento + "','" + documentoUsuario + "','" + placa.ToUpper() + "'," + "convert(datetime,'" + fechaEntrada + "',103),convert(datetime,'" + fechaPago + "',103),'ADM01','30','" + placa + "','" + idTipoVehiculo + "',NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'false', 'false', 'false')";
                         command.ExecuteNonQuery();
 
                         command.CommandText =
@@ -4943,7 +4943,7 @@ namespace BlockAndPass.WebService
                         {
                             command.CommandText =
                                 "INSERT INTO T_PagosRegistroManual (IdTransaccion,IdEstacionamiento,IdModulo,IdTipoPago, IdMotivoRegistroManual,FechaPago,Subtotal,Iva,Total,NumeroFactura,Sincronizacion,DocumentoUsuario,Observacion,Anulada,Estado)" +
-                                "VALUES(" + datos.IdTransaccion + ", " + idEstacionamiento + ", '" + idModulo + "', " + datos.IdTipoPago + ", " + datos.IdMotivo + ",convert(datetime,'" + fechaPago + "',103), " + datos.Subtotal + ", " + datos.Iva + ", " + datos.Total + ", '" + facturaActual + "',0,'" + documentoUsuario + "','"+datos.Observacion+"',0,1)";
+                                "VALUES(" + datos.IdTransaccion + ", " + idEstacionamiento + ", '" + idModulo + "', " + datos.IdTipoPago + ", " + datos.IdMotivo + ",convert(datetime,'" + fechaPago + "',103), " + datos.Subtotal + ", " + datos.Iva + ", " + datos.Total + ", '" + facturaActual + "',0,'" + documentoUsuario + "','" + datos.Observacion + "',0,1)";
                             command.ExecuteNonQuery();
                         }
 

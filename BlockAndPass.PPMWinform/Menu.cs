@@ -115,8 +115,8 @@ namespace BlockAndPass.PPMWinform
             set { _IdAutorizacion = value; }
         }
 
-        private int _NiCliente = 0;
-        public int NiCliente
+        private string _NiCliente = string.Empty;
+        public string NiCliente
         {
             get { return _NiCliente; }
             set { _NiCliente = value; }
@@ -644,7 +644,7 @@ namespace BlockAndPass.PPMWinform
                 tbCodigo.Text = "";
                 tbCodigo.Focus();
                 _FacturaElectronica = false;
-                _NiCliente = 0;
+                _NiCliente = string.Empty; 
                 btn_Motos.Visible = false;
                 btn_Carros.Visible = false;
                 txtPlacaBuscar.Enabled = true;
@@ -1257,14 +1257,15 @@ namespace BlockAndPass.PPMWinform
             {
                 if (!_FacturaElectronica)
                 {
-                    _NiCliente = 222222222;
+                    _NiCliente = cliente.ObtenerValorParametroxNombre("ConsumidorFinal", cbEstacionamiento.SelectedValue.ToString());
                 }
+
                 if (Convert.ToInt64(tbValorAPagarCobrar.Text.Replace("$", "").Replace(".", "")) > 0)
                 {
                     tmrTimeOutPago.Stop();
 
                     string clave = cliente.ObtenerValorParametroxNombre("claveTarjeta", cbEstacionamiento.SelectedValue.ToString());
-                    if (clave != string.Empty)
+                    if (clave != string.Empty && oCardResponse.idCard.ToString() != "")
                     {
                         //AutorizadoxPlacaResponse oInfoAutorizado = cliente.BuscarAutorizadoPorIdTarjeta(oCardResponse.idCard.ToString());
                         //if (!oInfoAutorizado.Exito)
@@ -1291,17 +1292,20 @@ namespace BlockAndPass.PPMWinform
 
                             if (pagoNormal.Exito)
                             {
-                                DialogResult oDialogResult = MessageBox.Show("¿Desea imprimir la factura?", "Cobro PPM", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-                                if (oDialogResult == DialogResult.Yes)
-                                {
+                                //DialogResult oDialogResult = MessageBox.Show("¿Desea imprimir la factura?", "Cobro PPM", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                                //if (oDialogResult == DialogResult.Yes)
+                                //{
+                                ImprimirPagoNormal(_IdTransaccion.ToString());
+                                tmrTimeOutPago.Stop();
+                                btn_Entrada_Click(btn_Entrada, EventArgs.Empty);
+                                LimpiarDatosCobrar();
 
-                                    ImprimirPagoNormal(_IdTransaccion.ToString());
-                                }
+                                //}
                                 oCardResponse = PayCard(clave, oCardResponse.idCard, cbPPM.SelectedValue.ToString(), DateTime.ParseExact(DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss"), "dd'/'MM'/'yyyy HH':'mm':'ss", CultureInfo.CurrentCulture));
                                 if (!oCardResponse.error)
                                 {
-                                    LimpiarDatosCobrar();
-                                    tmrTimeOutPago.Start();
+                                    //LimpiarDatosCobrar();
+                                    //tmrTimeOutPago.Start();
                                 }
                                 else
                                 {
@@ -1331,7 +1335,7 @@ namespace BlockAndPass.PPMWinform
                                     pagosFinal += item.Tipo + "-" + item.SubTotal + "-" + item.Iva + "-" + item.Total;
                                 }
 
-                                InfoPagoMensualidadService pagoNormal = cliente.PagarMensualidad(pagosFinal, cbEstacionamiento.SelectedValue.ToString(), cbPPM.SelectedValue.ToString(), DateTime.Now.ToString(), sumTotalPagar.ToString(), oInfoAuto.IdTarjeta, _DocumentoUsuario,_FormaPago,_NiCliente);
+                                InfoPagoMensualidadService pagoNormal = cliente.PagarMensualidad(pagosFinal, cbEstacionamiento.SelectedValue.ToString(), cbPPM.SelectedValue.ToString(), DateTime.Now.ToString(), sumTotalPagar.ToString(), oInfoAuto.IdTarjeta, _DocumentoUsuario, _FormaPago, _NiCliente);
 
                                 if (pagoNormal.Exito)
                                 {
@@ -1339,13 +1343,16 @@ namespace BlockAndPass.PPMWinform
                                     //oCardResponse = LimpiarReposicion(clave);
                                     //if (!oCardResponse.error)
                                     //{
-                                    DialogResult oDialogResult = MessageBox.Show("¿Desea imprimir la factura?", "Cobro PPM", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-                                    if (oDialogResult == DialogResult.Yes)
-                                    {
-                                        ImprimirPagoMensualidad(pagoNormal.IdTranaccion, pagoNormal.IdAutorizacion);
-                                    }
+                                    //DialogResult oDialogResult = MessageBox.Show("¿Desea imprimir la factura?", "Cobro PPM", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                                    //if (oDialogResult == DialogResult.Yes)
+                                    //{
+                                    ImprimirPagoMensualidad(pagoNormal.IdTranaccion, pagoNormal.IdAutorizacion);
+                                    tmrTimeOutPago.Stop();
+                                    btn_Entrada_Click(btn_Entrada, EventArgs.Empty);
+
+                                    //}
                                     LimpiarDatosCobrar();
-                                    tmrTimeOutPago.Start();
+                                    //tmrTimeOutPago.Start();
                                     //}
                                 }
                                 else
@@ -1377,18 +1384,21 @@ namespace BlockAndPass.PPMWinform
 
                             if (pagoNormal.Exito)
                             {
-                                //CardResponse oCardResponse = new CardResponse();
-                                oCardResponse = LimpiarReposicion(clave);
-                                if (!oCardResponse.error)
-                                {
-                                    DialogResult oDialogResult = MessageBox.Show("¿Desea imprimir la factura?", "Cobro PPM", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-                                    if (oDialogResult == DialogResult.Yes)
-                                    {
-                                        ImprimirPagoMensualidad(pagoNormal.IdTranaccion, pagoNormal.IdAutorizacion);
-                                    }
-                                    LimpiarDatosCobrar();
-                                    tmrTimeOutPago.Start();
-                                }
+                                ////CardResponse oCardResponse = new CardResponse();
+                                //oCardResponse = LimpiarReposicion(clave);
+                                //if (!oCardResponse.error)
+                                //{
+                                //DialogResult oDialogResult = MessageBox.Show("¿Desea imprimir la factura?", "Cobro PPM", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                                //if (oDialogResult == DialogResult.Yes)
+                                //{
+                                ImprimirPagoMensualidad(pagoNormal.IdTranaccion, pagoNormal.IdAutorizacion);
+                                tmrTimeOutPago.Stop();
+                                btn_Entrada_Click(btn_Entrada, EventArgs.Empty);
+
+                                //}
+                                LimpiarDatosCobrar();
+                                //tmrTimeOutPago.Start();
+                                //}
                             }
                             else
                             {
@@ -1397,14 +1407,61 @@ namespace BlockAndPass.PPMWinform
                         }
                     }
                 }
-            }
 
+            }
             catch (Exception)
             {
+                if (ckMensualidadDocumento.Checked == true && txtPlacaBuscar.Text != string.Empty)
+                {
+                    string sPlacaAuto = txtPlacaBuscar.Text.Trim();
+
+                    AutorizadoxPlacaResponse oInfoAuto = cliente.BuscarAutorizadoxPlaca(sPlacaAuto);
+
+                    if (oInfoAuto.Exito)
+                    {
+                        //Mensualidad
+                        string pagosFinal = "";
+                        double sumTotalPagar = 0;
+                        foreach (DatosLiquidacionService item in liquidacion.LstLiquidacion)
+                        {
+                            sumTotalPagar += item.Total;
+                            pagosFinal += item.Tipo + "-" + item.SubTotal + "-" + item.Iva + "-" + item.Total;
+                        }
+
+                        InfoPagoMensualidadService pagoNormal = cliente.PagarMensualidad(pagosFinal, cbEstacionamiento.SelectedValue.ToString(), cbPPM.SelectedValue.ToString(), DateTime.Now.ToString(), sumTotalPagar.ToString(), oInfoAuto.IdTarjeta, _DocumentoUsuario, _FormaPago, _NiCliente);
+
+                        if (pagoNormal.Exito)
+                        {
+                            ////CardResponse oCardResponse = new CardResponse();
+                            //oCardResponse = LimpiarReposicion(clave);
+                            //if (!oCardResponse.error)
+                            //{
+                            //DialogResult oDialogResult = MessageBox.Show("¿Desea imprimir la factura?", "Cobro PPM", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                            //if (oDialogResult == DialogResult.Yes)
+                            //{
+                            ImprimirPagoMensualidad(pagoNormal.IdTranaccion, pagoNormal.IdAutorizacion);
+                            tmrTimeOutPago.Stop();
+                            btn_Entrada_Click(btn_Entrada, EventArgs.Empty);
+
+                            //}
+                            LimpiarDatosCobrar();
+                            //tmrTimeOutPago.Start();
+                            //}
+                        }
+                        else
+                        {
+                            MessageBox.Show(pagoNormal.ErrorMessage, "Error Pagar Mensualidad PPM", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
+                    }
+                    else
+                    {
+                        MessageBox.Show("No fué posible consultar los datos de la mensualidad", "Error Pagar Mensualidad PPM", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                    }
+
+                }
 
             }
-
-
         }
         public CardResponse ReplaceCard(string clave, string placa, string modulo, string idTransaccion, string idTipoVehiculo, string password, string horaTransaccion)
         {
@@ -2496,7 +2553,7 @@ string SoftwarePin, string tipoAmbiente)
 
                 int idTipoPago = 0;
                 int idTipoVehiculo = 0;
-                int nitCliente = 222222222;
+                string nitCliente = cliente.ObtenerValorParametroxNombre("ConsumidorFinal", _IdEstacionamiento.ToString());
                 string observaciones = string.Empty;
 
                 #endregion
@@ -2567,15 +2624,12 @@ string SoftwarePin, string tipoAmbiente)
                 InfoPagoNormalService pagoNormalContingencia = cliente.PagarFacturasContingencia(arrayPagos, cbEstacionamiento.SelectedValue.ToString(), cbPPM.SelectedValue.ToString(), ConfigurationManager.AppSettings["PrefijoFacContingencia"].ToString(), nitCliente, Convert.ToInt32(_DocumentoUsuario), observaciones);
                 if (pagoNormalContingencia.Exito)
                 {
-                    //ImprimirPagoContingencia(cbPPM.SelectedValue.ToString(), pagoNormalContingencia.NumeroFactura);
-                    MessageBox.Show("Factura registrada correctamente", "Pagar PPM", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
+                    ImprimirPagoContingencia(cbPPM.SelectedValue.ToString(), pagoNormalContingencia.NumeroFactura);
                     ReestablecerBotonesLateralDerechoPrincipal();
                 }
                 else
                 {
                     MessageBox.Show(pagoNormalContingencia.ErrorMessage, "Error Pagar PPM", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    ReestablecerBotonesLateralDerechoPrincipal();
 
                 }
             }
@@ -3569,11 +3623,11 @@ string SoftwarePin, string tipoAmbiente)
                 {
                     if (popPup.SolicitudFacturaElectronica == true)
                     {
-                        if (popPup.Nit != 0)
+                        if (popPup.Nit != "")
                         {
                             if (Convert.ToInt64(tbValorAPagarCobrar.Text.Replace("$", "").Replace(".", "")) > 0)
                             {
-                                _FacturaElectronica = true;
+                                FacturaElectronica = true;
                                 _NiCliente = popPup.Nit;
                                 tmrTimeOutPago.Start();
                             }
@@ -3591,19 +3645,6 @@ string SoftwarePin, string tipoAmbiente)
                             {
                                 tmrTimeOutPago.Start();
                             }
-                        }
-                    }
-                    else
-                    {
-                        DialogResult result3 = MessageBox.Show("No fué posible encontrar la información del cliente,\n ¿Desea imprimir la factura POS?", "Crear Salida", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2);
-                        if (result3 == DialogResult.Yes)
-                        {
-                            tmrTimeOutPago.Start();
-                            btn_ConfirmarCobro_Click(btn_ConfirmarCobro, EventArgs.Empty);
-                        }
-                        else
-                        {
-                            tmrTimeOutPago.Start();
                         }
                     }
                 }

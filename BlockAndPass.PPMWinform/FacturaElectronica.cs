@@ -17,10 +17,10 @@ namespace BlockAndPass.PPMWinform
 
         ServicesByP cliente = new ServicesByP();
 
-        public int _Nit = 0;
-        public int Nit
+        public string _Nit = "";
+        public string Nit
         {
-            get { return _Nit;}
+            get { return _Nit; }
             set { _Nit = value; }
         }
 
@@ -40,7 +40,7 @@ namespace BlockAndPass.PPMWinform
         }
 
 
-        public void ValidarInformacionCliente(int nitCliente)
+        public void ValidarInformacionCliente(string nitCliente)
         {
             try
             {
@@ -52,7 +52,7 @@ namespace BlockAndPass.PPMWinform
                     lblRtaCliente.ForeColor = Color.Green;
                     lblRtaCliente.Update();
                     _SolicitudFacturaElectronica = true;
-                    _Nit = Convert.ToInt32(bNitCliente.Text.Trim());
+                    _Nit = bNitCliente.Text.Trim();
                 }
                 else
                 {
@@ -64,7 +64,7 @@ namespace BlockAndPass.PPMWinform
                 }
 
             }
-            catch (Exception ex )
+            catch (Exception ex)
             {
 
                 MessageBox.Show(ex.ToString(), "Facturación Electrónica - PPM", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -84,7 +84,7 @@ namespace BlockAndPass.PPMWinform
 
                 if (texto.Length > 0)
                 {
-                    ValidarInformacionCliente(Convert.ToInt32(texto.Trim()));
+                    ValidarInformacionCliente((texto.Trim()));
                 }
                 else
                 {
@@ -97,7 +97,7 @@ namespace BlockAndPass.PPMWinform
 
                 bNitCliente.Focus();
             }
-       
+
         }
 
         private void btn_Ok_Click(object sender, EventArgs e)

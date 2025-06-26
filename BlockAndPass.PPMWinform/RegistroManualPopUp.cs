@@ -158,8 +158,6 @@ namespace BlockAndPass.PPMWinform
                             if (cboHora.Text != "")
                             {
 
-                                //DialogResult result3 = MessageBox.Show("¿Está seguro de confirmar el registro manual por un valor de: " + tbTotal.Text + " ?", "PPM", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2);
-
                                 MensajePopUp popUp = new MensajePopUp(tbTotal.Text.Trim());
                                 popUp.ShowDialog();
                                 if (popUp.DialogResult == DialogResult.OK)
@@ -487,7 +485,7 @@ decimal totalSinImpuestos, decimal totalImpuesto1, decimal totalImpuesto2, decim
                     {
                         if (popPup.SolicitudFacturaElectronica == true)
                         {
-                            if (popPup.Nit != 0)
+                            if (popPup.Nit != "")
                             {
                                 if (Convert.ToInt64(tbTotal.Text.Replace("$", "").Replace(".", "")) > 0)
                                 {
@@ -497,30 +495,30 @@ decimal totalSinImpuestos, decimal totalImpuesto1, decimal totalImpuesto2, decim
                             }
                             else
                             {
-                                _NitCliente = "222222222";
+                                _NitCliente = cliente.ObtenerValorParametroxNombre("ConsumidorFinal", _IdEstacionamiento);
                             }
                         }
                         else
                         {
-                            _NitCliente = "222222222";
+                            _NitCliente = cliente.ObtenerValorParametroxNombre("ConsumidorFinal", _IdEstacionamiento);
                         }
                     }
                     else
                     {
-                        _NitCliente = "222222222";
+                        _NitCliente = cliente.ObtenerValorParametroxNombre("ConsumidorFinal", _IdEstacionamiento);
 
                     }
                 }
 
                 else
                 {
-                    _NitCliente = "222222222";
+                    _NitCliente = cliente.ObtenerValorParametroxNombre("ConsumidorFinal", _IdEstacionamiento);
 
                 }
 
                 string fechaPago = DateTime.Now.ToString();
 
-                InfoPagoRegistroManualResponse oInfoPago = cliente.RegistrarPagoRegistroManual(IdEstacionamiento, IdModulo, _DocumentoUsuario, valorTotal.ToString().Trim(), _IdTransaccion.ToString(), fechaPago, 10, Convert.ToInt32(_NitCliente), tbPlaca.Text.Trim(), idtipoVehiculo, fechaEntrada, arrayDatos);
+                InfoPagoRegistroManualResponse oInfoPago = cliente.RegistrarPagoRegistroManual(_IdEstacionamiento, IdModulo, _DocumentoUsuario, valorTotal.ToString().Trim(), _IdTransaccion.ToString(), fechaPago, 10, _NitCliente, tbPlaca.Text.Trim(), idtipoVehiculo, fechaEntrada, arrayDatos);
 
                 if (oInfoPago.Exito)
                 {
@@ -542,7 +540,6 @@ decimal totalSinImpuestos, decimal totalImpuesto1, decimal totalImpuesto2, decim
             return ok;
 
         }
-
         private void CalcularTotal()
         {
             try
@@ -720,7 +717,7 @@ decimal totalSinImpuestos, decimal totalImpuesto1, decimal totalImpuesto2, decim
 
                 rowDatosFactura.DocCliente = _NitCliente.ToString();
 
-                InfoClienteFacturaElectronicaResponse oInfoCliente = cliente.ValidarClientePorNit(Convert.ToInt32(_NitCliente));
+                InfoClienteFacturaElectronicaResponse oInfoCliente = cliente.ValidarClientePorNit(_NitCliente);
                 if (oInfoCliente.Exito)
                 {
                     rowDatosFactura.RazonSocial = oInfoCliente.Nombre;
@@ -728,7 +725,7 @@ decimal totalSinImpuestos, decimal totalImpuesto1, decimal totalImpuesto2, decim
 
                 string emailIdentificacion = cliente.ObtenerValorParametroxNombre("EmiIdentificacion", IdEstacionamiento);
                 string softwarePin = cliente.ObtenerValorParametroxNombre("SoftwarePin", IdEstacionamiento);
-                string claveTecnica = cliente.ObtenerValorParametroxNombre("ClaveTecnica", IdEstacionamiento);
+                string claveTecnica = cliente.ObtenerValorParametroxNombre("ClaveTecnica" + item.Modulo + "", IdEstacionamiento);
                 string cufeCalculado = CalcularCUDE(item.NumeroFactura.Replace("-", ""), Convert.ToDateTime(item.Fecha).ToString("yyyy-MM-dd"), Convert.ToDateTime(item.Fecha).ToString("HH:mm:ss") + "-05:00", Convert.ToDecimal(subtotal), Convert.ToDecimal(0), Convert.ToDecimal(0), Convert.ToDecimal(0), Convert.ToDecimal(total), emailIdentificacion, _NitCliente.ToString(), claveTecnica, "1");
                 rowDatosFactura.CUFE = cufeCalculado;
 
@@ -846,8 +843,8 @@ decimal totalSinImpuestos, decimal totalImpuesto1, decimal totalImpuesto2, decim
 
         private void tbHoraEntrada_TextChanged(object sender, EventArgs e)
         {
-           
-            
+
+
         }
     }
 

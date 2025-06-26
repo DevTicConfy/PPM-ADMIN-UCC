@@ -30,26 +30,6 @@ namespace BlockAndPass.PPMWinform.ByPServices {
     [System.Web.Services.WebServiceBindingAttribute(Name="ServicesByPSoap", Namespace="http://tempuri.org/")]
     public partial class ServicesByP : System.Web.Services.Protocols.SoapHttpClientProtocol {
         
-        private System.Threading.SendOrPostCallback InactivarTarjetaOperationCompleted;
-        
-        private System.Threading.SendOrPostCallback InactivarMensualidadOperationCompleted;
-        
-        private System.Threading.SendOrPostCallback ValidarClientePorNitOperationCompleted;
-        
-        private System.Threading.SendOrPostCallback ObtenerDatosFacturaFEOperationCompleted;
-        
-        private System.Threading.SendOrPostCallback ValidarSalidaOperationCompleted;
-        
-        private System.Threading.SendOrPostCallback ObtenerListaMovitosRegistroManualesOperationCompleted;
-        
-        private System.Threading.SendOrPostCallback RegistrarPagoRegistroManualOperationCompleted;
-        
-        private System.Threading.SendOrPostCallback BuscarAutorizadoRecargaxPlacaOperationCompleted;
-        
-        private System.Threading.SendOrPostCallback VerificarVigenciaAutorizadoRecargaOperationCompleted;
-        
-        private System.Threading.SendOrPostCallback CrearEntradaRecargaOperationCompleted;
-        
         private System.Threading.SendOrPostCallback ObtenerInformacionUsuarioOperationCompleted;
         
         private System.Threading.SendOrPostCallback ListarEventosAplicadosPorTransaccionOperationCompleted;
@@ -176,6 +156,26 @@ namespace BlockAndPass.PPMWinform.ByPServices {
         
         private System.Threading.SendOrPostCallback ConsultarInfoTransaccionPorIdTransaccionOperationCompleted;
         
+        private System.Threading.SendOrPostCallback InactivarTarjetaOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback InactivarMensualidadOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback ValidarClientePorNitOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback ObtenerDatosFacturaFEOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback ValidarSalidaOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback ObtenerListaMovitosRegistroManualesOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback RegistrarPagoRegistroManualOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback BuscarAutorizadoRecargaxPlacaOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback VerificarVigenciaAutorizadoRecargaOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback CrearEntradaRecargaOperationCompleted;
+        
         private bool useDefaultCredentialsSetExplicitly;
         
         /// <remarks/>
@@ -213,36 +213,6 @@ namespace BlockAndPass.PPMWinform.ByPServices {
                 this.useDefaultCredentialsSetExplicitly = true;
             }
         }
-        
-        /// <remarks/>
-        public event InactivarTarjetaCompletedEventHandler InactivarTarjetaCompleted;
-        
-        /// <remarks/>
-        public event InactivarMensualidadCompletedEventHandler InactivarMensualidadCompleted;
-        
-        /// <remarks/>
-        public event ValidarClientePorNitCompletedEventHandler ValidarClientePorNitCompleted;
-        
-        /// <remarks/>
-        public event ObtenerDatosFacturaFECompletedEventHandler ObtenerDatosFacturaFECompleted;
-        
-        /// <remarks/>
-        public event ValidarSalidaCompletedEventHandler ValidarSalidaCompleted;
-        
-        /// <remarks/>
-        public event ObtenerListaMovitosRegistroManualesCompletedEventHandler ObtenerListaMovitosRegistroManualesCompleted;
-        
-        /// <remarks/>
-        public event RegistrarPagoRegistroManualCompletedEventHandler RegistrarPagoRegistroManualCompleted;
-        
-        /// <remarks/>
-        public event BuscarAutorizadoRecargaxPlacaCompletedEventHandler BuscarAutorizadoRecargaxPlacaCompleted;
-        
-        /// <remarks/>
-        public event VerificarVigenciaAutorizadoRecargaCompletedEventHandler VerificarVigenciaAutorizadoRecargaCompleted;
-        
-        /// <remarks/>
-        public event CrearEntradaRecargaCompletedEventHandler CrearEntradaRecargaCompleted;
         
         /// <remarks/>
         public event ObtenerInformacionUsuarioCompletedEventHandler ObtenerInformacionUsuarioCompleted;
@@ -434,334 +404,34 @@ namespace BlockAndPass.PPMWinform.ByPServices {
         public event ConsultarInfoTransaccionPorIdTransaccionCompletedEventHandler ConsultarInfoTransaccionPorIdTransaccionCompleted;
         
         /// <remarks/>
-        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/InactivarTarjeta", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public TarjetasResponse InactivarTarjeta(string idTarjeta, long idEstacionamiento, long idTransaccion) {
-            object[] results = this.Invoke("InactivarTarjeta", new object[] {
-                        idTarjeta,
-                        idEstacionamiento,
-                        idTransaccion});
-            return ((TarjetasResponse)(results[0]));
-        }
+        public event InactivarTarjetaCompletedEventHandler InactivarTarjetaCompleted;
         
         /// <remarks/>
-        public void InactivarTarjetaAsync(string idTarjeta, long idEstacionamiento, long idTransaccion) {
-            this.InactivarTarjetaAsync(idTarjeta, idEstacionamiento, idTransaccion, null);
-        }
+        public event InactivarMensualidadCompletedEventHandler InactivarMensualidadCompleted;
         
         /// <remarks/>
-        public void InactivarTarjetaAsync(string idTarjeta, long idEstacionamiento, long idTransaccion, object userState) {
-            if ((this.InactivarTarjetaOperationCompleted == null)) {
-                this.InactivarTarjetaOperationCompleted = new System.Threading.SendOrPostCallback(this.OnInactivarTarjetaOperationCompleted);
-            }
-            this.InvokeAsync("InactivarTarjeta", new object[] {
-                        idTarjeta,
-                        idEstacionamiento,
-                        idTransaccion}, this.InactivarTarjetaOperationCompleted, userState);
-        }
-        
-        private void OnInactivarTarjetaOperationCompleted(object arg) {
-            if ((this.InactivarTarjetaCompleted != null)) {
-                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
-                this.InactivarTarjetaCompleted(this, new InactivarTarjetaCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
-            }
-        }
+        public event ValidarClientePorNitCompletedEventHandler ValidarClientePorNitCompleted;
         
         /// <remarks/>
-        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/InactivarMensualidad", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public TarjetasResponse InactivarMensualidad(string idTarjeta, long idEstacionamiento) {
-            object[] results = this.Invoke("InactivarMensualidad", new object[] {
-                        idTarjeta,
-                        idEstacionamiento});
-            return ((TarjetasResponse)(results[0]));
-        }
+        public event ObtenerDatosFacturaFECompletedEventHandler ObtenerDatosFacturaFECompleted;
         
         /// <remarks/>
-        public void InactivarMensualidadAsync(string idTarjeta, long idEstacionamiento) {
-            this.InactivarMensualidadAsync(idTarjeta, idEstacionamiento, null);
-        }
+        public event ValidarSalidaCompletedEventHandler ValidarSalidaCompleted;
         
         /// <remarks/>
-        public void InactivarMensualidadAsync(string idTarjeta, long idEstacionamiento, object userState) {
-            if ((this.InactivarMensualidadOperationCompleted == null)) {
-                this.InactivarMensualidadOperationCompleted = new System.Threading.SendOrPostCallback(this.OnInactivarMensualidadOperationCompleted);
-            }
-            this.InvokeAsync("InactivarMensualidad", new object[] {
-                        idTarjeta,
-                        idEstacionamiento}, this.InactivarMensualidadOperationCompleted, userState);
-        }
-        
-        private void OnInactivarMensualidadOperationCompleted(object arg) {
-            if ((this.InactivarMensualidadCompleted != null)) {
-                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
-                this.InactivarMensualidadCompleted(this, new InactivarMensualidadCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
-            }
-        }
+        public event ObtenerListaMovitosRegistroManualesCompletedEventHandler ObtenerListaMovitosRegistroManualesCompleted;
         
         /// <remarks/>
-        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/ValidarClientePorNit", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public InfoClienteFacturaElectronicaResponse ValidarClientePorNit(int nit) {
-            object[] results = this.Invoke("ValidarClientePorNit", new object[] {
-                        nit});
-            return ((InfoClienteFacturaElectronicaResponse)(results[0]));
-        }
+        public event RegistrarPagoRegistroManualCompletedEventHandler RegistrarPagoRegistroManualCompleted;
         
         /// <remarks/>
-        public void ValidarClientePorNitAsync(int nit) {
-            this.ValidarClientePorNitAsync(nit, null);
-        }
+        public event BuscarAutorizadoRecargaxPlacaCompletedEventHandler BuscarAutorizadoRecargaxPlacaCompleted;
         
         /// <remarks/>
-        public void ValidarClientePorNitAsync(int nit, object userState) {
-            if ((this.ValidarClientePorNitOperationCompleted == null)) {
-                this.ValidarClientePorNitOperationCompleted = new System.Threading.SendOrPostCallback(this.OnValidarClientePorNitOperationCompleted);
-            }
-            this.InvokeAsync("ValidarClientePorNit", new object[] {
-                        nit}, this.ValidarClientePorNitOperationCompleted, userState);
-        }
-        
-        private void OnValidarClientePorNitOperationCompleted(object arg) {
-            if ((this.ValidarClientePorNitCompleted != null)) {
-                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
-                this.ValidarClientePorNitCompleted(this, new ValidarClientePorNitCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
-            }
-        }
+        public event VerificarVigenciaAutorizadoRecargaCompletedEventHandler VerificarVigenciaAutorizadoRecargaCompleted;
         
         /// <remarks/>
-        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/ObtenerDatosFacturaFE", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public InfoFacturaResponseFE ObtenerDatosFacturaFE(string idTransaccion) {
-            object[] results = this.Invoke("ObtenerDatosFacturaFE", new object[] {
-                        idTransaccion});
-            return ((InfoFacturaResponseFE)(results[0]));
-        }
-        
-        /// <remarks/>
-        public void ObtenerDatosFacturaFEAsync(string idTransaccion) {
-            this.ObtenerDatosFacturaFEAsync(idTransaccion, null);
-        }
-        
-        /// <remarks/>
-        public void ObtenerDatosFacturaFEAsync(string idTransaccion, object userState) {
-            if ((this.ObtenerDatosFacturaFEOperationCompleted == null)) {
-                this.ObtenerDatosFacturaFEOperationCompleted = new System.Threading.SendOrPostCallback(this.OnObtenerDatosFacturaFEOperationCompleted);
-            }
-            this.InvokeAsync("ObtenerDatosFacturaFE", new object[] {
-                        idTransaccion}, this.ObtenerDatosFacturaFEOperationCompleted, userState);
-        }
-        
-        private void OnObtenerDatosFacturaFEOperationCompleted(object arg) {
-            if ((this.ObtenerDatosFacturaFECompleted != null)) {
-                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
-                this.ObtenerDatosFacturaFECompleted(this, new ObtenerDatosFacturaFECompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
-            }
-        }
-        
-        /// <remarks/>
-        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/ValidarSalida", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public VerificaTransaccionAbiertaAutorizadoResponse ValidarSalida(long idTransaccion) {
-            object[] results = this.Invoke("ValidarSalida", new object[] {
-                        idTransaccion});
-            return ((VerificaTransaccionAbiertaAutorizadoResponse)(results[0]));
-        }
-        
-        /// <remarks/>
-        public void ValidarSalidaAsync(long idTransaccion) {
-            this.ValidarSalidaAsync(idTransaccion, null);
-        }
-        
-        /// <remarks/>
-        public void ValidarSalidaAsync(long idTransaccion, object userState) {
-            if ((this.ValidarSalidaOperationCompleted == null)) {
-                this.ValidarSalidaOperationCompleted = new System.Threading.SendOrPostCallback(this.OnValidarSalidaOperationCompleted);
-            }
-            this.InvokeAsync("ValidarSalida", new object[] {
-                        idTransaccion}, this.ValidarSalidaOperationCompleted, userState);
-        }
-        
-        private void OnValidarSalidaOperationCompleted(object arg) {
-            if ((this.ValidarSalidaCompleted != null)) {
-                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
-                this.ValidarSalidaCompleted(this, new ValidarSalidaCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
-            }
-        }
-        
-        /// <remarks/>
-        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/ObtenerListaMovitosRegistroManuales", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public MotivosRegistroManuales ObtenerListaMovitosRegistroManuales(string idEstacionamiento) {
-            object[] results = this.Invoke("ObtenerListaMovitosRegistroManuales", new object[] {
-                        idEstacionamiento});
-            return ((MotivosRegistroManuales)(results[0]));
-        }
-        
-        /// <remarks/>
-        public void ObtenerListaMovitosRegistroManualesAsync(string idEstacionamiento) {
-            this.ObtenerListaMovitosRegistroManualesAsync(idEstacionamiento, null);
-        }
-        
-        /// <remarks/>
-        public void ObtenerListaMovitosRegistroManualesAsync(string idEstacionamiento, object userState) {
-            if ((this.ObtenerListaMovitosRegistroManualesOperationCompleted == null)) {
-                this.ObtenerListaMovitosRegistroManualesOperationCompleted = new System.Threading.SendOrPostCallback(this.OnObtenerListaMovitosRegistroManualesOperationCompleted);
-            }
-            this.InvokeAsync("ObtenerListaMovitosRegistroManuales", new object[] {
-                        idEstacionamiento}, this.ObtenerListaMovitosRegistroManualesOperationCompleted, userState);
-        }
-        
-        private void OnObtenerListaMovitosRegistroManualesOperationCompleted(object arg) {
-            if ((this.ObtenerListaMovitosRegistroManualesCompleted != null)) {
-                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
-                this.ObtenerListaMovitosRegistroManualesCompleted(this, new ObtenerListaMovitosRegistroManualesCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
-            }
-        }
-        
-        /// <remarks/>
-        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/RegistrarPagoRegistroManual", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public InfoPagoRegistroManualResponse RegistrarPagoRegistroManual(string idEstacionamiento, string idModulo, string documentoUsuario, string total, string idTransaccion, string fechaPago, int IdFormaPago, int nitCliente, string placa, int idTipoVehiculo, string fechaEntrada, InfoPagoRegistroManualResponse[] datosLista) {
-            object[] results = this.Invoke("RegistrarPagoRegistroManual", new object[] {
-                        idEstacionamiento,
-                        idModulo,
-                        documentoUsuario,
-                        total,
-                        idTransaccion,
-                        fechaPago,
-                        IdFormaPago,
-                        nitCliente,
-                        placa,
-                        idTipoVehiculo,
-                        fechaEntrada,
-                        datosLista});
-            return ((InfoPagoRegistroManualResponse)(results[0]));
-        }
-        
-        /// <remarks/>
-        public void RegistrarPagoRegistroManualAsync(string idEstacionamiento, string idModulo, string documentoUsuario, string total, string idTransaccion, string fechaPago, int IdFormaPago, int nitCliente, string placa, int idTipoVehiculo, string fechaEntrada, InfoPagoRegistroManualResponse[] datosLista) {
-            this.RegistrarPagoRegistroManualAsync(idEstacionamiento, idModulo, documentoUsuario, total, idTransaccion, fechaPago, IdFormaPago, nitCliente, placa, idTipoVehiculo, fechaEntrada, datosLista, null);
-        }
-        
-        /// <remarks/>
-        public void RegistrarPagoRegistroManualAsync(string idEstacionamiento, string idModulo, string documentoUsuario, string total, string idTransaccion, string fechaPago, int IdFormaPago, int nitCliente, string placa, int idTipoVehiculo, string fechaEntrada, InfoPagoRegistroManualResponse[] datosLista, object userState) {
-            if ((this.RegistrarPagoRegistroManualOperationCompleted == null)) {
-                this.RegistrarPagoRegistroManualOperationCompleted = new System.Threading.SendOrPostCallback(this.OnRegistrarPagoRegistroManualOperationCompleted);
-            }
-            this.InvokeAsync("RegistrarPagoRegistroManual", new object[] {
-                        idEstacionamiento,
-                        idModulo,
-                        documentoUsuario,
-                        total,
-                        idTransaccion,
-                        fechaPago,
-                        IdFormaPago,
-                        nitCliente,
-                        placa,
-                        idTipoVehiculo,
-                        fechaEntrada,
-                        datosLista}, this.RegistrarPagoRegistroManualOperationCompleted, userState);
-        }
-        
-        private void OnRegistrarPagoRegistroManualOperationCompleted(object arg) {
-            if ((this.RegistrarPagoRegistroManualCompleted != null)) {
-                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
-                this.RegistrarPagoRegistroManualCompleted(this, new RegistrarPagoRegistroManualCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
-            }
-        }
-        
-        /// <remarks/>
-        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/BuscarAutorizadoRecargaxPlaca", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public AutorizadoRecargaxPlacaResponse BuscarAutorizadoRecargaxPlaca(string sPlaca) {
-            object[] results = this.Invoke("BuscarAutorizadoRecargaxPlaca", new object[] {
-                        sPlaca});
-            return ((AutorizadoRecargaxPlacaResponse)(results[0]));
-        }
-        
-        /// <remarks/>
-        public void BuscarAutorizadoRecargaxPlacaAsync(string sPlaca) {
-            this.BuscarAutorizadoRecargaxPlacaAsync(sPlaca, null);
-        }
-        
-        /// <remarks/>
-        public void BuscarAutorizadoRecargaxPlacaAsync(string sPlaca, object userState) {
-            if ((this.BuscarAutorizadoRecargaxPlacaOperationCompleted == null)) {
-                this.BuscarAutorizadoRecargaxPlacaOperationCompleted = new System.Threading.SendOrPostCallback(this.OnBuscarAutorizadoRecargaxPlacaOperationCompleted);
-            }
-            this.InvokeAsync("BuscarAutorizadoRecargaxPlaca", new object[] {
-                        sPlaca}, this.BuscarAutorizadoRecargaxPlacaOperationCompleted, userState);
-        }
-        
-        private void OnBuscarAutorizadoRecargaxPlacaOperationCompleted(object arg) {
-            if ((this.BuscarAutorizadoRecargaxPlacaCompleted != null)) {
-                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
-                this.BuscarAutorizadoRecargaxPlacaCompleted(this, new BuscarAutorizadoRecargaxPlacaCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
-            }
-        }
-        
-        /// <remarks/>
-        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/VerificarVigenciaAutorizadoRecarga", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public VerificaVigenciaAutorizadoRecargaResponse VerificarVigenciaAutorizadoRecarga(string idTarjeta) {
-            object[] results = this.Invoke("VerificarVigenciaAutorizadoRecarga", new object[] {
-                        idTarjeta});
-            return ((VerificaVigenciaAutorizadoRecargaResponse)(results[0]));
-        }
-        
-        /// <remarks/>
-        public void VerificarVigenciaAutorizadoRecargaAsync(string idTarjeta) {
-            this.VerificarVigenciaAutorizadoRecargaAsync(idTarjeta, null);
-        }
-        
-        /// <remarks/>
-        public void VerificarVigenciaAutorizadoRecargaAsync(string idTarjeta, object userState) {
-            if ((this.VerificarVigenciaAutorizadoRecargaOperationCompleted == null)) {
-                this.VerificarVigenciaAutorizadoRecargaOperationCompleted = new System.Threading.SendOrPostCallback(this.OnVerificarVigenciaAutorizadoRecargaOperationCompleted);
-            }
-            this.InvokeAsync("VerificarVigenciaAutorizadoRecarga", new object[] {
-                        idTarjeta}, this.VerificarVigenciaAutorizadoRecargaOperationCompleted, userState);
-        }
-        
-        private void OnVerificarVigenciaAutorizadoRecargaOperationCompleted(object arg) {
-            if ((this.VerificarVigenciaAutorizadoRecargaCompleted != null)) {
-                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
-                this.VerificarVigenciaAutorizadoRecargaCompleted(this, new VerificarVigenciaAutorizadoRecargaCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
-            }
-        }
-        
-        /// <remarks/>
-        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/CrearEntradaRecarga", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public CreaEntradaRecargaResponse CrearEntradaRecarga(string idEstacionamiento, string idTarjeta, string carril, string placa, System.DateTime fecha, string tipov, string _IdAutorizacion) {
-            object[] results = this.Invoke("CrearEntradaRecarga", new object[] {
-                        idEstacionamiento,
-                        idTarjeta,
-                        carril,
-                        placa,
-                        fecha,
-                        tipov,
-                        _IdAutorizacion});
-            return ((CreaEntradaRecargaResponse)(results[0]));
-        }
-        
-        /// <remarks/>
-        public void CrearEntradaRecargaAsync(string idEstacionamiento, string idTarjeta, string carril, string placa, System.DateTime fecha, string tipov, string _IdAutorizacion) {
-            this.CrearEntradaRecargaAsync(idEstacionamiento, idTarjeta, carril, placa, fecha, tipov, _IdAutorizacion, null);
-        }
-        
-        /// <remarks/>
-        public void CrearEntradaRecargaAsync(string idEstacionamiento, string idTarjeta, string carril, string placa, System.DateTime fecha, string tipov, string _IdAutorizacion, object userState) {
-            if ((this.CrearEntradaRecargaOperationCompleted == null)) {
-                this.CrearEntradaRecargaOperationCompleted = new System.Threading.SendOrPostCallback(this.OnCrearEntradaRecargaOperationCompleted);
-            }
-            this.InvokeAsync("CrearEntradaRecarga", new object[] {
-                        idEstacionamiento,
-                        idTarjeta,
-                        carril,
-                        placa,
-                        fecha,
-                        tipov,
-                        _IdAutorizacion}, this.CrearEntradaRecargaOperationCompleted, userState);
-        }
-        
-        private void OnCrearEntradaRecargaOperationCompleted(object arg) {
-            if ((this.CrearEntradaRecargaCompleted != null)) {
-                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
-                this.CrearEntradaRecargaCompleted(this, new CrearEntradaRecargaCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
-            }
-        }
+        public event CrearEntradaRecargaCompletedEventHandler CrearEntradaRecargaCompleted;
         
         /// <remarks/>
         [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/ObtenerInformacionUsuario", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
@@ -1127,7 +797,7 @@ namespace BlockAndPass.PPMWinform.ByPServices {
         
         /// <remarks/>
         [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/PagarClienteParticular", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public InfoPagoNormalService PagarClienteParticular(string pagosstring, string idEstacionamiento, string idTransaccion, string idModulo, string fecha, string total, string documentoUsuario, int IdFormaPago, int nitCliente) {
+        public InfoPagoNormalService PagarClienteParticular(string pagosstring, string idEstacionamiento, string idTransaccion, string idModulo, string fecha, string total, string documentoUsuario, int IdFormaPago, string nitCliente) {
             object[] results = this.Invoke("PagarClienteParticular", new object[] {
                         pagosstring,
                         idEstacionamiento,
@@ -1142,12 +812,12 @@ namespace BlockAndPass.PPMWinform.ByPServices {
         }
         
         /// <remarks/>
-        public void PagarClienteParticularAsync(string pagosstring, string idEstacionamiento, string idTransaccion, string idModulo, string fecha, string total, string documentoUsuario, int IdFormaPago, int nitCliente) {
+        public void PagarClienteParticularAsync(string pagosstring, string idEstacionamiento, string idTransaccion, string idModulo, string fecha, string total, string documentoUsuario, int IdFormaPago, string nitCliente) {
             this.PagarClienteParticularAsync(pagosstring, idEstacionamiento, idTransaccion, idModulo, fecha, total, documentoUsuario, IdFormaPago, nitCliente, null);
         }
         
         /// <remarks/>
-        public void PagarClienteParticularAsync(string pagosstring, string idEstacionamiento, string idTransaccion, string idModulo, string fecha, string total, string documentoUsuario, int IdFormaPago, int nitCliente, object userState) {
+        public void PagarClienteParticularAsync(string pagosstring, string idEstacionamiento, string idTransaccion, string idModulo, string fecha, string total, string documentoUsuario, int IdFormaPago, string nitCliente, object userState) {
             if ((this.PagarClienteParticularOperationCompleted == null)) {
                 this.PagarClienteParticularOperationCompleted = new System.Threading.SendOrPostCallback(this.OnPagarClienteParticularOperationCompleted);
             }
@@ -1306,7 +976,7 @@ namespace BlockAndPass.PPMWinform.ByPServices {
         
         /// <remarks/>
         [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/PagarMensualidad", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public InfoPagoMensualidadService PagarMensualidad(string pagosstring, string idEstacionamiento, string idModulo, string fecha, string total, string idTarjeta, string documentoUsuario, int IdFormaPago, int nitCliente) {
+        public InfoPagoMensualidadService PagarMensualidad(string pagosstring, string idEstacionamiento, string idModulo, string fecha, string total, string idTarjeta, string documentoUsuario, int IdFormaPago, string nitCliente) {
             object[] results = this.Invoke("PagarMensualidad", new object[] {
                         pagosstring,
                         idEstacionamiento,
@@ -1321,12 +991,12 @@ namespace BlockAndPass.PPMWinform.ByPServices {
         }
         
         /// <remarks/>
-        public void PagarMensualidadAsync(string pagosstring, string idEstacionamiento, string idModulo, string fecha, string total, string idTarjeta, string documentoUsuario, int IdFormaPago, int nitCliente) {
+        public void PagarMensualidadAsync(string pagosstring, string idEstacionamiento, string idModulo, string fecha, string total, string idTarjeta, string documentoUsuario, int IdFormaPago, string nitCliente) {
             this.PagarMensualidadAsync(pagosstring, idEstacionamiento, idModulo, fecha, total, idTarjeta, documentoUsuario, IdFormaPago, nitCliente, null);
         }
         
         /// <remarks/>
-        public void PagarMensualidadAsync(string pagosstring, string idEstacionamiento, string idModulo, string fecha, string total, string idTarjeta, string documentoUsuario, int IdFormaPago, int nitCliente, object userState) {
+        public void PagarMensualidadAsync(string pagosstring, string idEstacionamiento, string idModulo, string fecha, string total, string idTarjeta, string documentoUsuario, int IdFormaPago, string nitCliente, object userState) {
             if ((this.PagarMensualidadOperationCompleted == null)) {
                 this.PagarMensualidadOperationCompleted = new System.Threading.SendOrPostCallback(this.OnPagarMensualidadOperationCompleted);
             }
@@ -2688,7 +2358,7 @@ namespace BlockAndPass.PPMWinform.ByPServices {
         
         /// <remarks/>
         [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/PagarFacturasContingencia", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public InfoPagoNormalService PagarFacturasContingencia(string[] pagosFinal, string idEstacionamiento, string idModulo, string prefijo, int nitCliente, int documentoUsuario, string numeroFactura) {
+        public InfoPagoNormalService PagarFacturasContingencia(string[] pagosFinal, string idEstacionamiento, string idModulo, string prefijo, string nitCliente, int documentoUsuario, string numeroFactura) {
             object[] results = this.Invoke("PagarFacturasContingencia", new object[] {
                         pagosFinal,
                         idEstacionamiento,
@@ -2701,12 +2371,12 @@ namespace BlockAndPass.PPMWinform.ByPServices {
         }
         
         /// <remarks/>
-        public void PagarFacturasContingenciaAsync(string[] pagosFinal, string idEstacionamiento, string idModulo, string prefijo, int nitCliente, int documentoUsuario, string numeroFactura) {
+        public void PagarFacturasContingenciaAsync(string[] pagosFinal, string idEstacionamiento, string idModulo, string prefijo, string nitCliente, int documentoUsuario, string numeroFactura) {
             this.PagarFacturasContingenciaAsync(pagosFinal, idEstacionamiento, idModulo, prefijo, nitCliente, documentoUsuario, numeroFactura, null);
         }
         
         /// <remarks/>
-        public void PagarFacturasContingenciaAsync(string[] pagosFinal, string idEstacionamiento, string idModulo, string prefijo, int nitCliente, int documentoUsuario, string numeroFactura, object userState) {
+        public void PagarFacturasContingenciaAsync(string[] pagosFinal, string idEstacionamiento, string idModulo, string prefijo, string nitCliente, int documentoUsuario, string numeroFactura, object userState) {
             if ((this.PagarFacturasContingenciaOperationCompleted == null)) {
                 this.PagarFacturasContingenciaOperationCompleted = new System.Threading.SendOrPostCallback(this.OnPagarFacturasContingenciaOperationCompleted);
             }
@@ -2819,6 +2489,336 @@ namespace BlockAndPass.PPMWinform.ByPServices {
         }
         
         /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/InactivarTarjeta", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public TarjetasResponse InactivarTarjeta(string idTarjeta, long idEstacionamiento, long idTransaccion) {
+            object[] results = this.Invoke("InactivarTarjeta", new object[] {
+                        idTarjeta,
+                        idEstacionamiento,
+                        idTransaccion});
+            return ((TarjetasResponse)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void InactivarTarjetaAsync(string idTarjeta, long idEstacionamiento, long idTransaccion) {
+            this.InactivarTarjetaAsync(idTarjeta, idEstacionamiento, idTransaccion, null);
+        }
+        
+        /// <remarks/>
+        public void InactivarTarjetaAsync(string idTarjeta, long idEstacionamiento, long idTransaccion, object userState) {
+            if ((this.InactivarTarjetaOperationCompleted == null)) {
+                this.InactivarTarjetaOperationCompleted = new System.Threading.SendOrPostCallback(this.OnInactivarTarjetaOperationCompleted);
+            }
+            this.InvokeAsync("InactivarTarjeta", new object[] {
+                        idTarjeta,
+                        idEstacionamiento,
+                        idTransaccion}, this.InactivarTarjetaOperationCompleted, userState);
+        }
+        
+        private void OnInactivarTarjetaOperationCompleted(object arg) {
+            if ((this.InactivarTarjetaCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.InactivarTarjetaCompleted(this, new InactivarTarjetaCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/InactivarMensualidad", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public TarjetasResponse InactivarMensualidad(string idTarjeta, long idEstacionamiento) {
+            object[] results = this.Invoke("InactivarMensualidad", new object[] {
+                        idTarjeta,
+                        idEstacionamiento});
+            return ((TarjetasResponse)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void InactivarMensualidadAsync(string idTarjeta, long idEstacionamiento) {
+            this.InactivarMensualidadAsync(idTarjeta, idEstacionamiento, null);
+        }
+        
+        /// <remarks/>
+        public void InactivarMensualidadAsync(string idTarjeta, long idEstacionamiento, object userState) {
+            if ((this.InactivarMensualidadOperationCompleted == null)) {
+                this.InactivarMensualidadOperationCompleted = new System.Threading.SendOrPostCallback(this.OnInactivarMensualidadOperationCompleted);
+            }
+            this.InvokeAsync("InactivarMensualidad", new object[] {
+                        idTarjeta,
+                        idEstacionamiento}, this.InactivarMensualidadOperationCompleted, userState);
+        }
+        
+        private void OnInactivarMensualidadOperationCompleted(object arg) {
+            if ((this.InactivarMensualidadCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.InactivarMensualidadCompleted(this, new InactivarMensualidadCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/ValidarClientePorNit", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public InfoClienteFacturaElectronicaResponse ValidarClientePorNit(string nit) {
+            object[] results = this.Invoke("ValidarClientePorNit", new object[] {
+                        nit});
+            return ((InfoClienteFacturaElectronicaResponse)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void ValidarClientePorNitAsync(string nit) {
+            this.ValidarClientePorNitAsync(nit, null);
+        }
+        
+        /// <remarks/>
+        public void ValidarClientePorNitAsync(string nit, object userState) {
+            if ((this.ValidarClientePorNitOperationCompleted == null)) {
+                this.ValidarClientePorNitOperationCompleted = new System.Threading.SendOrPostCallback(this.OnValidarClientePorNitOperationCompleted);
+            }
+            this.InvokeAsync("ValidarClientePorNit", new object[] {
+                        nit}, this.ValidarClientePorNitOperationCompleted, userState);
+        }
+        
+        private void OnValidarClientePorNitOperationCompleted(object arg) {
+            if ((this.ValidarClientePorNitCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.ValidarClientePorNitCompleted(this, new ValidarClientePorNitCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/ObtenerDatosFacturaFE", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public InfoFacturaResponseFE ObtenerDatosFacturaFE(string idTransaccion) {
+            object[] results = this.Invoke("ObtenerDatosFacturaFE", new object[] {
+                        idTransaccion});
+            return ((InfoFacturaResponseFE)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void ObtenerDatosFacturaFEAsync(string idTransaccion) {
+            this.ObtenerDatosFacturaFEAsync(idTransaccion, null);
+        }
+        
+        /// <remarks/>
+        public void ObtenerDatosFacturaFEAsync(string idTransaccion, object userState) {
+            if ((this.ObtenerDatosFacturaFEOperationCompleted == null)) {
+                this.ObtenerDatosFacturaFEOperationCompleted = new System.Threading.SendOrPostCallback(this.OnObtenerDatosFacturaFEOperationCompleted);
+            }
+            this.InvokeAsync("ObtenerDatosFacturaFE", new object[] {
+                        idTransaccion}, this.ObtenerDatosFacturaFEOperationCompleted, userState);
+        }
+        
+        private void OnObtenerDatosFacturaFEOperationCompleted(object arg) {
+            if ((this.ObtenerDatosFacturaFECompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.ObtenerDatosFacturaFECompleted(this, new ObtenerDatosFacturaFECompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/ValidarSalida", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public VerificaTransaccionAbiertaAutorizadoResponse ValidarSalida(long idTransaccion) {
+            object[] results = this.Invoke("ValidarSalida", new object[] {
+                        idTransaccion});
+            return ((VerificaTransaccionAbiertaAutorizadoResponse)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void ValidarSalidaAsync(long idTransaccion) {
+            this.ValidarSalidaAsync(idTransaccion, null);
+        }
+        
+        /// <remarks/>
+        public void ValidarSalidaAsync(long idTransaccion, object userState) {
+            if ((this.ValidarSalidaOperationCompleted == null)) {
+                this.ValidarSalidaOperationCompleted = new System.Threading.SendOrPostCallback(this.OnValidarSalidaOperationCompleted);
+            }
+            this.InvokeAsync("ValidarSalida", new object[] {
+                        idTransaccion}, this.ValidarSalidaOperationCompleted, userState);
+        }
+        
+        private void OnValidarSalidaOperationCompleted(object arg) {
+            if ((this.ValidarSalidaCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.ValidarSalidaCompleted(this, new ValidarSalidaCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/ObtenerListaMovitosRegistroManuales", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public MotivosRegistroManuales ObtenerListaMovitosRegistroManuales(string idEstacionamiento) {
+            object[] results = this.Invoke("ObtenerListaMovitosRegistroManuales", new object[] {
+                        idEstacionamiento});
+            return ((MotivosRegistroManuales)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void ObtenerListaMovitosRegistroManualesAsync(string idEstacionamiento) {
+            this.ObtenerListaMovitosRegistroManualesAsync(idEstacionamiento, null);
+        }
+        
+        /// <remarks/>
+        public void ObtenerListaMovitosRegistroManualesAsync(string idEstacionamiento, object userState) {
+            if ((this.ObtenerListaMovitosRegistroManualesOperationCompleted == null)) {
+                this.ObtenerListaMovitosRegistroManualesOperationCompleted = new System.Threading.SendOrPostCallback(this.OnObtenerListaMovitosRegistroManualesOperationCompleted);
+            }
+            this.InvokeAsync("ObtenerListaMovitosRegistroManuales", new object[] {
+                        idEstacionamiento}, this.ObtenerListaMovitosRegistroManualesOperationCompleted, userState);
+        }
+        
+        private void OnObtenerListaMovitosRegistroManualesOperationCompleted(object arg) {
+            if ((this.ObtenerListaMovitosRegistroManualesCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.ObtenerListaMovitosRegistroManualesCompleted(this, new ObtenerListaMovitosRegistroManualesCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/RegistrarPagoRegistroManual", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public InfoPagoRegistroManualResponse RegistrarPagoRegistroManual(string idEstacionamiento, string idModulo, string documentoUsuario, string total, string idTransaccion, string fechaPago, int IdFormaPago, string nitCliente, string placa, int idTipoVehiculo, string fechaEntrada, InfoPagoRegistroManualResponse[] datosLista) {
+            object[] results = this.Invoke("RegistrarPagoRegistroManual", new object[] {
+                        idEstacionamiento,
+                        idModulo,
+                        documentoUsuario,
+                        total,
+                        idTransaccion,
+                        fechaPago,
+                        IdFormaPago,
+                        nitCliente,
+                        placa,
+                        idTipoVehiculo,
+                        fechaEntrada,
+                        datosLista});
+            return ((InfoPagoRegistroManualResponse)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void RegistrarPagoRegistroManualAsync(string idEstacionamiento, string idModulo, string documentoUsuario, string total, string idTransaccion, string fechaPago, int IdFormaPago, string nitCliente, string placa, int idTipoVehiculo, string fechaEntrada, InfoPagoRegistroManualResponse[] datosLista) {
+            this.RegistrarPagoRegistroManualAsync(idEstacionamiento, idModulo, documentoUsuario, total, idTransaccion, fechaPago, IdFormaPago, nitCliente, placa, idTipoVehiculo, fechaEntrada, datosLista, null);
+        }
+        
+        /// <remarks/>
+        public void RegistrarPagoRegistroManualAsync(string idEstacionamiento, string idModulo, string documentoUsuario, string total, string idTransaccion, string fechaPago, int IdFormaPago, string nitCliente, string placa, int idTipoVehiculo, string fechaEntrada, InfoPagoRegistroManualResponse[] datosLista, object userState) {
+            if ((this.RegistrarPagoRegistroManualOperationCompleted == null)) {
+                this.RegistrarPagoRegistroManualOperationCompleted = new System.Threading.SendOrPostCallback(this.OnRegistrarPagoRegistroManualOperationCompleted);
+            }
+            this.InvokeAsync("RegistrarPagoRegistroManual", new object[] {
+                        idEstacionamiento,
+                        idModulo,
+                        documentoUsuario,
+                        total,
+                        idTransaccion,
+                        fechaPago,
+                        IdFormaPago,
+                        nitCliente,
+                        placa,
+                        idTipoVehiculo,
+                        fechaEntrada,
+                        datosLista}, this.RegistrarPagoRegistroManualOperationCompleted, userState);
+        }
+        
+        private void OnRegistrarPagoRegistroManualOperationCompleted(object arg) {
+            if ((this.RegistrarPagoRegistroManualCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.RegistrarPagoRegistroManualCompleted(this, new RegistrarPagoRegistroManualCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/BuscarAutorizadoRecargaxPlaca", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public AutorizadoRecargaxPlacaResponse BuscarAutorizadoRecargaxPlaca(string sPlaca) {
+            object[] results = this.Invoke("BuscarAutorizadoRecargaxPlaca", new object[] {
+                        sPlaca});
+            return ((AutorizadoRecargaxPlacaResponse)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void BuscarAutorizadoRecargaxPlacaAsync(string sPlaca) {
+            this.BuscarAutorizadoRecargaxPlacaAsync(sPlaca, null);
+        }
+        
+        /// <remarks/>
+        public void BuscarAutorizadoRecargaxPlacaAsync(string sPlaca, object userState) {
+            if ((this.BuscarAutorizadoRecargaxPlacaOperationCompleted == null)) {
+                this.BuscarAutorizadoRecargaxPlacaOperationCompleted = new System.Threading.SendOrPostCallback(this.OnBuscarAutorizadoRecargaxPlacaOperationCompleted);
+            }
+            this.InvokeAsync("BuscarAutorizadoRecargaxPlaca", new object[] {
+                        sPlaca}, this.BuscarAutorizadoRecargaxPlacaOperationCompleted, userState);
+        }
+        
+        private void OnBuscarAutorizadoRecargaxPlacaOperationCompleted(object arg) {
+            if ((this.BuscarAutorizadoRecargaxPlacaCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.BuscarAutorizadoRecargaxPlacaCompleted(this, new BuscarAutorizadoRecargaxPlacaCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/VerificarVigenciaAutorizadoRecarga", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public VerificaVigenciaAutorizadoRecargaResponse VerificarVigenciaAutorizadoRecarga(string idTarjeta) {
+            object[] results = this.Invoke("VerificarVigenciaAutorizadoRecarga", new object[] {
+                        idTarjeta});
+            return ((VerificaVigenciaAutorizadoRecargaResponse)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void VerificarVigenciaAutorizadoRecargaAsync(string idTarjeta) {
+            this.VerificarVigenciaAutorizadoRecargaAsync(idTarjeta, null);
+        }
+        
+        /// <remarks/>
+        public void VerificarVigenciaAutorizadoRecargaAsync(string idTarjeta, object userState) {
+            if ((this.VerificarVigenciaAutorizadoRecargaOperationCompleted == null)) {
+                this.VerificarVigenciaAutorizadoRecargaOperationCompleted = new System.Threading.SendOrPostCallback(this.OnVerificarVigenciaAutorizadoRecargaOperationCompleted);
+            }
+            this.InvokeAsync("VerificarVigenciaAutorizadoRecarga", new object[] {
+                        idTarjeta}, this.VerificarVigenciaAutorizadoRecargaOperationCompleted, userState);
+        }
+        
+        private void OnVerificarVigenciaAutorizadoRecargaOperationCompleted(object arg) {
+            if ((this.VerificarVigenciaAutorizadoRecargaCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.VerificarVigenciaAutorizadoRecargaCompleted(this, new VerificarVigenciaAutorizadoRecargaCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/CrearEntradaRecarga", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public CreaEntradaRecargaResponse CrearEntradaRecarga(string idEstacionamiento, string idTarjeta, string carril, string placa, System.DateTime fecha, string tipov, string _IdAutorizacion) {
+            object[] results = this.Invoke("CrearEntradaRecarga", new object[] {
+                        idEstacionamiento,
+                        idTarjeta,
+                        carril,
+                        placa,
+                        fecha,
+                        tipov,
+                        _IdAutorizacion});
+            return ((CreaEntradaRecargaResponse)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void CrearEntradaRecargaAsync(string idEstacionamiento, string idTarjeta, string carril, string placa, System.DateTime fecha, string tipov, string _IdAutorizacion) {
+            this.CrearEntradaRecargaAsync(idEstacionamiento, idTarjeta, carril, placa, fecha, tipov, _IdAutorizacion, null);
+        }
+        
+        /// <remarks/>
+        public void CrearEntradaRecargaAsync(string idEstacionamiento, string idTarjeta, string carril, string placa, System.DateTime fecha, string tipov, string _IdAutorizacion, object userState) {
+            if ((this.CrearEntradaRecargaOperationCompleted == null)) {
+                this.CrearEntradaRecargaOperationCompleted = new System.Threading.SendOrPostCallback(this.OnCrearEntradaRecargaOperationCompleted);
+            }
+            this.InvokeAsync("CrearEntradaRecarga", new object[] {
+                        idEstacionamiento,
+                        idTarjeta,
+                        carril,
+                        placa,
+                        fecha,
+                        tipov,
+                        _IdAutorizacion}, this.CrearEntradaRecargaOperationCompleted, userState);
+        }
+        
+        private void OnCrearEntradaRecargaOperationCompleted(object arg) {
+            if ((this.CrearEntradaRecargaCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.CrearEntradaRecargaCompleted(this, new CrearEntradaRecargaCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
         public new void CancelAsync(object userState) {
             base.CancelAsync(userState);
         }
@@ -2834,6 +2834,534 @@ namespace BlockAndPass.PPMWinform.ByPServices {
                 return true;
             }
             return false;
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9037.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://tempuri.org/")]
+    public partial class InfoUsuarioResponse {
+        
+        private bool exitoField;
+        
+        private string errorMessageField;
+        
+        private string documentoField;
+        
+        private string nombresField;
+        
+        private string usuarioField;
+        
+        private string cargoField;
+        
+        /// <remarks/>
+        public bool Exito {
+            get {
+                return this.exitoField;
+            }
+            set {
+                this.exitoField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string ErrorMessage {
+            get {
+                return this.errorMessageField;
+            }
+            set {
+                this.errorMessageField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string Documento {
+            get {
+                return this.documentoField;
+            }
+            set {
+                this.documentoField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string Nombres {
+            get {
+                return this.nombresField;
+            }
+            set {
+                this.nombresField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string Usuario {
+            get {
+                return this.usuarioField;
+            }
+            set {
+                this.usuarioField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string Cargo {
+            get {
+                return this.cargoField;
+            }
+            set {
+                this.cargoField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9037.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://tempuri.org/")]
+    public partial class CreaEntradaRecargaResponse {
+        
+        private bool exitoField;
+        
+        private string errorMessageField;
+        
+        /// <remarks/>
+        public bool Exito {
+            get {
+                return this.exitoField;
+            }
+            set {
+                this.exitoField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string ErrorMessage {
+            get {
+                return this.errorMessageField;
+            }
+            set {
+                this.errorMessageField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9037.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://tempuri.org/")]
+    public partial class VerificaVigenciaAutorizadoRecargaResponse {
+        
+        private bool exitoField;
+        
+        private string errorMessageField;
+        
+        private int cantidadDiasField;
+        
+        /// <remarks/>
+        public bool Exito {
+            get {
+                return this.exitoField;
+            }
+            set {
+                this.exitoField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string ErrorMessage {
+            get {
+                return this.errorMessageField;
+            }
+            set {
+                this.errorMessageField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public int CantidadDias {
+            get {
+                return this.cantidadDiasField;
+            }
+            set {
+                this.cantidadDiasField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9037.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://tempuri.org/")]
+    public partial class AutorizadoRecargaxPlacaResponse {
+        
+        private bool exitoField;
+        
+        private string errorMessageField;
+        
+        private string idTarjetaField;
+        
+        private string idAutorizacionField;
+        
+        private string idPagoField;
+        
+        /// <remarks/>
+        public bool Exito {
+            get {
+                return this.exitoField;
+            }
+            set {
+                this.exitoField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string ErrorMessage {
+            get {
+                return this.errorMessageField;
+            }
+            set {
+                this.errorMessageField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string IdTarjeta {
+            get {
+                return this.idTarjetaField;
+            }
+            set {
+                this.idTarjetaField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string IdAutorizacion {
+            get {
+                return this.idAutorizacionField;
+            }
+            set {
+                this.idAutorizacionField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string IdPago {
+            get {
+                return this.idPagoField;
+            }
+            set {
+                this.idPagoField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9037.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://tempuri.org/")]
+    public partial class InfoPagoRegistroManualResponse {
+        
+        private bool exitoField;
+        
+        private string errorMessageField;
+        
+        private int numeroFacturaField;
+        
+        private string observacionField;
+        
+        private int idMotivoField;
+        
+        private string fechaYHoraField;
+        
+        private int idTipoVehiculoField;
+        
+        private long idTransaccionField;
+        
+        private int idTipoPagoField;
+        
+        private string idModuloField;
+        
+        private double ivaField;
+        
+        private double totalField;
+        
+        private double subtotalField;
+        
+        private string placaField;
+        
+        /// <remarks/>
+        public bool Exito {
+            get {
+                return this.exitoField;
+            }
+            set {
+                this.exitoField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string ErrorMessage {
+            get {
+                return this.errorMessageField;
+            }
+            set {
+                this.errorMessageField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public int NumeroFactura {
+            get {
+                return this.numeroFacturaField;
+            }
+            set {
+                this.numeroFacturaField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string Observacion {
+            get {
+                return this.observacionField;
+            }
+            set {
+                this.observacionField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public int IdMotivo {
+            get {
+                return this.idMotivoField;
+            }
+            set {
+                this.idMotivoField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string FechaYHora {
+            get {
+                return this.fechaYHoraField;
+            }
+            set {
+                this.fechaYHoraField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public int IdTipoVehiculo {
+            get {
+                return this.idTipoVehiculoField;
+            }
+            set {
+                this.idTipoVehiculoField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public long IdTransaccion {
+            get {
+                return this.idTransaccionField;
+            }
+            set {
+                this.idTransaccionField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public int IdTipoPago {
+            get {
+                return this.idTipoPagoField;
+            }
+            set {
+                this.idTipoPagoField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string IdModulo {
+            get {
+                return this.idModuloField;
+            }
+            set {
+                this.idModuloField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public double Iva {
+            get {
+                return this.ivaField;
+            }
+            set {
+                this.ivaField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public double Total {
+            get {
+                return this.totalField;
+            }
+            set {
+                this.totalField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public double Subtotal {
+            get {
+                return this.subtotalField;
+            }
+            set {
+                this.subtotalField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string Placa {
+            get {
+                return this.placaField;
+            }
+            set {
+                this.placaField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9037.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://tempuri.org/")]
+    public partial class InfoMotivosRegistroManuales {
+        
+        private int valueField;
+        
+        private string displayField;
+        
+        /// <remarks/>
+        public int Value {
+            get {
+                return this.valueField;
+            }
+            set {
+                this.valueField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string Display {
+            get {
+                return this.displayField;
+            }
+            set {
+                this.displayField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9037.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://tempuri.org/")]
+    public partial class MotivosRegistroManuales {
+        
+        private bool exitoField;
+        
+        private string errorMessageField;
+        
+        private InfoMotivosRegistroManuales[] lstMotivosRegistrosManualesField;
+        
+        /// <remarks/>
+        public bool Exito {
+            get {
+                return this.exitoField;
+            }
+            set {
+                this.exitoField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string ErrorMessage {
+            get {
+                return this.errorMessageField;
+            }
+            set {
+                this.errorMessageField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public InfoMotivosRegistroManuales[] LstMotivosRegistrosManuales {
+            get {
+                return this.lstMotivosRegistrosManualesField;
+            }
+            set {
+                this.lstMotivosRegistrosManualesField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9037.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://tempuri.org/")]
+    public partial class InfoClienteFacturaElectronicaResponse {
+        
+        private int identificacionField;
+        
+        private bool exitoField;
+        
+        private string nombreField;
+        
+        /// <remarks/>
+        public int Identificacion {
+            get {
+                return this.identificacionField;
+            }
+            set {
+                this.identificacionField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public bool Exito {
+            get {
+                return this.exitoField;
+            }
+            set {
+                this.exitoField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string Nombre {
+            get {
+                return this.nombreField;
+            }
+            set {
+                this.nombreField = value;
+            }
         }
     }
     
@@ -3511,6 +4039,63 @@ namespace BlockAndPass.PPMWinform.ByPServices {
             }
             set {
                 this.errorMessageField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9037.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://tempuri.org/")]
+    public partial class VerificaTransaccionAbiertaAutorizadoResponse {
+        
+        private bool exitoField;
+        
+        private string errorMessageField;
+        
+        private string placaEntradaField;
+        
+        private string idTransaccionField;
+        
+        /// <remarks/>
+        public bool Exito {
+            get {
+                return this.exitoField;
+            }
+            set {
+                this.exitoField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string ErrorMessage {
+            get {
+                return this.errorMessageField;
+            }
+            set {
+                this.errorMessageField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string PlacaEntrada {
+            get {
+                return this.placaEntradaField;
+            }
+            set {
+                this.placaEntradaField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string IdTransaccion {
+            get {
+                return this.idTransaccionField;
+            }
+            set {
+                this.idTransaccionField = value;
             }
         }
     }
@@ -4886,7 +5471,7 @@ namespace BlockAndPass.PPMWinform.ByPServices {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://tempuri.org/")]
-    public partial class InfoFacturaResponse {
+    public partial class InfoFacturaResponseFE {
         
         private bool exitoField;
         
@@ -5383,6 +5968,63 @@ namespace BlockAndPass.PPMWinform.ByPServices {
             }
             set {
                 this.vigenciaField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9037.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://tempuri.org/")]
+    public partial class InfoFacturaResponse {
+        
+        private bool exitoField;
+        
+        private string errorMessageField;
+        
+        private InfoItemsFacturaResponse[] lstItemsField;
+        
+        private InfoItemsFacturaMensualidadResponse[] lstItemsMensualidadField;
+        
+        /// <remarks/>
+        public bool Exito {
+            get {
+                return this.exitoField;
+            }
+            set {
+                this.exitoField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string ErrorMessage {
+            get {
+                return this.errorMessageField;
+            }
+            set {
+                this.errorMessageField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public InfoItemsFacturaResponse[] LstItems {
+            get {
+                return this.lstItemsField;
+            }
+            set {
+                this.lstItemsField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public InfoItemsFacturaMensualidadResponse[] LstItemsMensualidad {
+            get {
+                return this.lstItemsMensualidadField;
+            }
+            set {
+                this.lstItemsMensualidadField = value;
             }
         }
     }
@@ -5899,908 +6541,6 @@ namespace BlockAndPass.PPMWinform.ByPServices {
             }
             set {
                 this.cargoField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9037.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://tempuri.org/")]
-    public partial class InfoUsuarioResponse {
-        
-        private bool exitoField;
-        
-        private string errorMessageField;
-        
-        private string documentoField;
-        
-        private string nombresField;
-        
-        private string usuarioField;
-        
-        private string cargoField;
-        
-        /// <remarks/>
-        public bool Exito {
-            get {
-                return this.exitoField;
-            }
-            set {
-                this.exitoField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string ErrorMessage {
-            get {
-                return this.errorMessageField;
-            }
-            set {
-                this.errorMessageField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string Documento {
-            get {
-                return this.documentoField;
-            }
-            set {
-                this.documentoField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string Nombres {
-            get {
-                return this.nombresField;
-            }
-            set {
-                this.nombresField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string Usuario {
-            get {
-                return this.usuarioField;
-            }
-            set {
-                this.usuarioField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string Cargo {
-            get {
-                return this.cargoField;
-            }
-            set {
-                this.cargoField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9037.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://tempuri.org/")]
-    public partial class CreaEntradaRecargaResponse {
-        
-        private bool exitoField;
-        
-        private string errorMessageField;
-        
-        /// <remarks/>
-        public bool Exito {
-            get {
-                return this.exitoField;
-            }
-            set {
-                this.exitoField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string ErrorMessage {
-            get {
-                return this.errorMessageField;
-            }
-            set {
-                this.errorMessageField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9037.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://tempuri.org/")]
-    public partial class VerificaVigenciaAutorizadoRecargaResponse {
-        
-        private bool exitoField;
-        
-        private string errorMessageField;
-        
-        private int cantidadDiasField;
-        
-        /// <remarks/>
-        public bool Exito {
-            get {
-                return this.exitoField;
-            }
-            set {
-                this.exitoField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string ErrorMessage {
-            get {
-                return this.errorMessageField;
-            }
-            set {
-                this.errorMessageField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public int CantidadDias {
-            get {
-                return this.cantidadDiasField;
-            }
-            set {
-                this.cantidadDiasField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9037.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://tempuri.org/")]
-    public partial class AutorizadoRecargaxPlacaResponse {
-        
-        private bool exitoField;
-        
-        private string errorMessageField;
-        
-        private string idTarjetaField;
-        
-        private string idAutorizacionField;
-        
-        private string idPagoField;
-        
-        /// <remarks/>
-        public bool Exito {
-            get {
-                return this.exitoField;
-            }
-            set {
-                this.exitoField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string ErrorMessage {
-            get {
-                return this.errorMessageField;
-            }
-            set {
-                this.errorMessageField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string IdTarjeta {
-            get {
-                return this.idTarjetaField;
-            }
-            set {
-                this.idTarjetaField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string IdAutorizacion {
-            get {
-                return this.idAutorizacionField;
-            }
-            set {
-                this.idAutorizacionField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string IdPago {
-            get {
-                return this.idPagoField;
-            }
-            set {
-                this.idPagoField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9037.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://tempuri.org/")]
-    public partial class InfoPagoRegistroManualResponse {
-        
-        private bool exitoField;
-        
-        private string errorMessageField;
-        
-        private int numeroFacturaField;
-        
-        private string observacionField;
-        
-        private int idMotivoField;
-        
-        private string fechaYHoraField;
-        
-        private int idTipoVehiculoField;
-        
-        private long idTransaccionField;
-        
-        private int idTipoPagoField;
-        
-        private string idModuloField;
-        
-        private double ivaField;
-        
-        private double totalField;
-        
-        private double subtotalField;
-        
-        private string placaField;
-        
-        /// <remarks/>
-        public bool Exito {
-            get {
-                return this.exitoField;
-            }
-            set {
-                this.exitoField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string ErrorMessage {
-            get {
-                return this.errorMessageField;
-            }
-            set {
-                this.errorMessageField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public int NumeroFactura {
-            get {
-                return this.numeroFacturaField;
-            }
-            set {
-                this.numeroFacturaField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string Observacion {
-            get {
-                return this.observacionField;
-            }
-            set {
-                this.observacionField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public int IdMotivo {
-            get {
-                return this.idMotivoField;
-            }
-            set {
-                this.idMotivoField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string FechaYHora {
-            get {
-                return this.fechaYHoraField;
-            }
-            set {
-                this.fechaYHoraField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public int IdTipoVehiculo {
-            get {
-                return this.idTipoVehiculoField;
-            }
-            set {
-                this.idTipoVehiculoField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public long IdTransaccion {
-            get {
-                return this.idTransaccionField;
-            }
-            set {
-                this.idTransaccionField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public int IdTipoPago {
-            get {
-                return this.idTipoPagoField;
-            }
-            set {
-                this.idTipoPagoField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string IdModulo {
-            get {
-                return this.idModuloField;
-            }
-            set {
-                this.idModuloField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public double Iva {
-            get {
-                return this.ivaField;
-            }
-            set {
-                this.ivaField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public double Total {
-            get {
-                return this.totalField;
-            }
-            set {
-                this.totalField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public double Subtotal {
-            get {
-                return this.subtotalField;
-            }
-            set {
-                this.subtotalField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string Placa {
-            get {
-                return this.placaField;
-            }
-            set {
-                this.placaField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9037.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://tempuri.org/")]
-    public partial class InfoMotivosRegistroManuales {
-        
-        private int valueField;
-        
-        private string displayField;
-        
-        /// <remarks/>
-        public int Value {
-            get {
-                return this.valueField;
-            }
-            set {
-                this.valueField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string Display {
-            get {
-                return this.displayField;
-            }
-            set {
-                this.displayField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9037.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://tempuri.org/")]
-    public partial class MotivosRegistroManuales {
-        
-        private bool exitoField;
-        
-        private string errorMessageField;
-        
-        private InfoMotivosRegistroManuales[] lstMotivosRegistrosManualesField;
-        
-        /// <remarks/>
-        public bool Exito {
-            get {
-                return this.exitoField;
-            }
-            set {
-                this.exitoField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string ErrorMessage {
-            get {
-                return this.errorMessageField;
-            }
-            set {
-                this.errorMessageField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public InfoMotivosRegistroManuales[] LstMotivosRegistrosManuales {
-            get {
-                return this.lstMotivosRegistrosManualesField;
-            }
-            set {
-                this.lstMotivosRegistrosManualesField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9037.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://tempuri.org/")]
-    public partial class VerificaTransaccionAbiertaAutorizadoResponse {
-        
-        private bool exitoField;
-        
-        private string errorMessageField;
-        
-        private string placaEntradaField;
-        
-        private string idTransaccionField;
-        
-        /// <remarks/>
-        public bool Exito {
-            get {
-                return this.exitoField;
-            }
-            set {
-                this.exitoField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string ErrorMessage {
-            get {
-                return this.errorMessageField;
-            }
-            set {
-                this.errorMessageField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string PlacaEntrada {
-            get {
-                return this.placaEntradaField;
-            }
-            set {
-                this.placaEntradaField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string IdTransaccion {
-            get {
-                return this.idTransaccionField;
-            }
-            set {
-                this.idTransaccionField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9037.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://tempuri.org/")]
-    public partial class InfoFacturaResponseFE {
-        
-        private bool exitoField;
-        
-        private string errorMessageField;
-        
-        private InfoItemsFacturaResponse[] lstItemsField;
-        
-        private InfoItemsFacturaMensualidadResponse[] lstItemsMensualidadField;
-        
-        /// <remarks/>
-        public bool Exito {
-            get {
-                return this.exitoField;
-            }
-            set {
-                this.exitoField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string ErrorMessage {
-            get {
-                return this.errorMessageField;
-            }
-            set {
-                this.errorMessageField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public InfoItemsFacturaResponse[] LstItems {
-            get {
-                return this.lstItemsField;
-            }
-            set {
-                this.lstItemsField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public InfoItemsFacturaMensualidadResponse[] LstItemsMensualidad {
-            get {
-                return this.lstItemsMensualidadField;
-            }
-            set {
-                this.lstItemsMensualidadField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9037.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://tempuri.org/")]
-    public partial class InfoClienteFacturaElectronicaResponse {
-        
-        private int identificacionField;
-        
-        private bool exitoField;
-        
-        private string nombreField;
-        
-        /// <remarks/>
-        public int Identificacion {
-            get {
-                return this.identificacionField;
-            }
-            set {
-                this.identificacionField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public bool Exito {
-            get {
-                return this.exitoField;
-            }
-            set {
-                this.exitoField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string Nombre {
-            get {
-                return this.nombreField;
-            }
-            set {
-                this.nombreField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
-    public delegate void InactivarTarjetaCompletedEventHandler(object sender, InactivarTarjetaCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class InactivarTarjetaCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal InactivarTarjetaCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public TarjetasResponse Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((TarjetasResponse)(this.results[0]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
-    public delegate void InactivarMensualidadCompletedEventHandler(object sender, InactivarMensualidadCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class InactivarMensualidadCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal InactivarMensualidadCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public TarjetasResponse Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((TarjetasResponse)(this.results[0]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
-    public delegate void ValidarClientePorNitCompletedEventHandler(object sender, ValidarClientePorNitCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class ValidarClientePorNitCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal ValidarClientePorNitCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public InfoClienteFacturaElectronicaResponse Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((InfoClienteFacturaElectronicaResponse)(this.results[0]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
-    public delegate void ObtenerDatosFacturaFECompletedEventHandler(object sender, ObtenerDatosFacturaFECompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class ObtenerDatosFacturaFECompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal ObtenerDatosFacturaFECompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public InfoFacturaResponseFE Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((InfoFacturaResponseFE)(this.results[0]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
-    public delegate void ValidarSalidaCompletedEventHandler(object sender, ValidarSalidaCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class ValidarSalidaCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal ValidarSalidaCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public VerificaTransaccionAbiertaAutorizadoResponse Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((VerificaTransaccionAbiertaAutorizadoResponse)(this.results[0]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
-    public delegate void ObtenerListaMovitosRegistroManualesCompletedEventHandler(object sender, ObtenerListaMovitosRegistroManualesCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class ObtenerListaMovitosRegistroManualesCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal ObtenerListaMovitosRegistroManualesCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public MotivosRegistroManuales Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((MotivosRegistroManuales)(this.results[0]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
-    public delegate void RegistrarPagoRegistroManualCompletedEventHandler(object sender, RegistrarPagoRegistroManualCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class RegistrarPagoRegistroManualCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal RegistrarPagoRegistroManualCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public InfoPagoRegistroManualResponse Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((InfoPagoRegistroManualResponse)(this.results[0]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
-    public delegate void BuscarAutorizadoRecargaxPlacaCompletedEventHandler(object sender, BuscarAutorizadoRecargaxPlacaCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class BuscarAutorizadoRecargaxPlacaCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal BuscarAutorizadoRecargaxPlacaCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public AutorizadoRecargaxPlacaResponse Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((AutorizadoRecargaxPlacaResponse)(this.results[0]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
-    public delegate void VerificarVigenciaAutorizadoRecargaCompletedEventHandler(object sender, VerificarVigenciaAutorizadoRecargaCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class VerificarVigenciaAutorizadoRecargaCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal VerificarVigenciaAutorizadoRecargaCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public VerificaVigenciaAutorizadoRecargaResponse Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((VerificaVigenciaAutorizadoRecargaResponse)(this.results[0]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
-    public delegate void CrearEntradaRecargaCompletedEventHandler(object sender, CrearEntradaRecargaCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class CrearEntradaRecargaCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal CrearEntradaRecargaCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public CreaEntradaRecargaResponse Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((CreaEntradaRecargaResponse)(this.results[0]));
             }
         }
     }
@@ -8439,6 +8179,266 @@ namespace BlockAndPass.PPMWinform.ByPServices {
             get {
                 this.RaiseExceptionIfNecessary();
                 return ((InfoTransaccionResponse)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
+    public delegate void InactivarTarjetaCompletedEventHandler(object sender, InactivarTarjetaCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class InactivarTarjetaCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal InactivarTarjetaCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public TarjetasResponse Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((TarjetasResponse)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
+    public delegate void InactivarMensualidadCompletedEventHandler(object sender, InactivarMensualidadCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class InactivarMensualidadCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal InactivarMensualidadCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public TarjetasResponse Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((TarjetasResponse)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
+    public delegate void ValidarClientePorNitCompletedEventHandler(object sender, ValidarClientePorNitCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class ValidarClientePorNitCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal ValidarClientePorNitCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public InfoClienteFacturaElectronicaResponse Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((InfoClienteFacturaElectronicaResponse)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
+    public delegate void ObtenerDatosFacturaFECompletedEventHandler(object sender, ObtenerDatosFacturaFECompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class ObtenerDatosFacturaFECompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal ObtenerDatosFacturaFECompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public InfoFacturaResponseFE Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((InfoFacturaResponseFE)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
+    public delegate void ValidarSalidaCompletedEventHandler(object sender, ValidarSalidaCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class ValidarSalidaCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal ValidarSalidaCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public VerificaTransaccionAbiertaAutorizadoResponse Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((VerificaTransaccionAbiertaAutorizadoResponse)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
+    public delegate void ObtenerListaMovitosRegistroManualesCompletedEventHandler(object sender, ObtenerListaMovitosRegistroManualesCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class ObtenerListaMovitosRegistroManualesCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal ObtenerListaMovitosRegistroManualesCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public MotivosRegistroManuales Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((MotivosRegistroManuales)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
+    public delegate void RegistrarPagoRegistroManualCompletedEventHandler(object sender, RegistrarPagoRegistroManualCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class RegistrarPagoRegistroManualCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal RegistrarPagoRegistroManualCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public InfoPagoRegistroManualResponse Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((InfoPagoRegistroManualResponse)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
+    public delegate void BuscarAutorizadoRecargaxPlacaCompletedEventHandler(object sender, BuscarAutorizadoRecargaxPlacaCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class BuscarAutorizadoRecargaxPlacaCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal BuscarAutorizadoRecargaxPlacaCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public AutorizadoRecargaxPlacaResponse Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((AutorizadoRecargaxPlacaResponse)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
+    public delegate void VerificarVigenciaAutorizadoRecargaCompletedEventHandler(object sender, VerificarVigenciaAutorizadoRecargaCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class VerificarVigenciaAutorizadoRecargaCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal VerificarVigenciaAutorizadoRecargaCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public VerificaVigenciaAutorizadoRecargaResponse Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((VerificaVigenciaAutorizadoRecargaResponse)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
+    public delegate void CrearEntradaRecargaCompletedEventHandler(object sender, CrearEntradaRecargaCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.9037.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class CrearEntradaRecargaCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal CrearEntradaRecargaCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public CreaEntradaRecargaResponse Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((CreaEntradaRecargaResponse)(this.results[0]));
             }
         }
     }
