@@ -6,16 +6,18 @@ editando este archivo MSBuild. Para conocer más acerca de esto, visite http://g
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <TimeStampOfAssociatedLegacyPublishXmlFile />
-    <_PublishTargetUrl>C:\Users\cechece\Desktop\WPPM</_PublishTargetUrl>
+    <_PublishTargetUrl>C:\Users\Administrador\Desktop\WPPM</_PublishTargetUrl>
     <LastUsedBuildConfiguration>Debug</LastUsedBuildConfiguration>
     <LastUsedPlatform>Any CPU</LastUsedPlatform>
+    <History>True|2025-06-26T19:19:50.2253879Z||;</History>
+    <LastFailureDetails />
   </PropertyGroup>
   <ItemGroup>
     <File Include="bin/BlockAndPass.WebService.dll">
-      <publishTime>06/04/2024 09:16:03</publishTime>
+      <publishTime>06/26/2025 14:46:46</publishTime>
     </File>
     <File Include="bin/BlockAndPass.WebService.pdb">
-      <publishTime>06/04/2024 09:16:03</publishTime>
+      <publishTime>06/26/2025 14:46:46</publishTime>
     </File>
     <File Include="Service References/LiquidacionWR/BlockAndPass.WebService.LiquidacionWR.Liquidacion_Response.datasource">
       <publishTime>01/15/2021 08:53:26</publishTime>
@@ -24,7 +26,7 @@ editando este archivo MSBuild. Para conocer más acerca de esto, visite http://g
       <publishTime>05/08/2019 08:56:36</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>06/04/2024 09:19:19</publishTime>
+      <publishTime>06/26/2025 14:46:46</publishTime>
     </File>
   </ItemGroup>
 </Project>

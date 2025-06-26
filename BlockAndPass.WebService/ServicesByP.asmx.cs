@@ -1272,7 +1272,7 @@ namespace BlockAndPass.WebService
         }
 
         [WebMethod]
-        public InfoPagoMensualidadService PagarMensualidad(string pagosstring, string idEstacionamiento, string idModulo, string fecha, string total, string idTarjeta, string documentoUsuario, int IdFormaPago, int nitCliente)
+        public InfoPagoMensualidadService PagarMensualidad(string pagosstring, string idEstacionamiento, string idModulo, string fecha, string total, string idTarjeta, string documentoUsuario, int IdFormaPago, string nitCliente)
         {
 
             ArrayList pagosFinal = new ArrayList();
@@ -1320,9 +1320,6 @@ namespace BlockAndPass.WebService
             {
 
                 query = "select top (1) Documento, IdAutorizacion from T_PersonasAutorizadas where IdTarjeta='" + idTarjeta + "'";
-
-
-
                 using (SqlConnection connection = new SqlConnection(connectionString))
                 {
                     using (SqlCommand cmd = new SqlCommand(query, connection))
@@ -1339,6 +1336,50 @@ namespace BlockAndPass.WebService
                                     documentoAutorizado = reader[0].ToString();
                                     idAutorizacion = reader[1].ToString();
                                 }
+                            }
+                        }
+                    }
+                }
+                query = "SELECT DocumentoUsuario FROM T_MovimientosUsuarios WHERE DocumentoUsuario=" + documentoUsuario + " AND IdModulo='" + idModulo + "'";
+                string documentousuarioEncontrado = string.Empty;
+                bool usuarioCreado = false;
+                using (SqlConnection connection = new SqlConnection(connectionString))
+                {
+                    using (SqlCommand cmd = new SqlCommand(query, connection))
+                    {
+                        connection.Open();
+                        using (SqlDataReader reader = cmd.ExecuteReader())
+                        {
+                            // Check is the reader has any rows at all before starting to read.
+                            if (reader.HasRows)
+                            {
+                                // Read advances to the next row.
+                                while (reader.Read())
+                                {
+                                    documentousuarioEncontrado = reader[0].ToString();
+                                    usuarioCreado = true;
+                                }
+                            }
+                            else
+                            {
+                                usuarioCreado = false;
+                            }
+                        }
+                    }
+                }
+
+                if (!usuarioCreado)
+                {
+                    query = "INSERT INTO T_MovimientosUsuarios(IdEstacionamiento,DocumentoUsuario,IdModulo,DineroActual,Estado)VALUES(" + idEstacionamiento + "," + documentoUsuario + ",'" + idModulo + "',0,1)";
+                    using (SqlConnection connection = new SqlConnection(connectionString))
+                    {
+                        using (SqlCommand cmd = new SqlCommand(query, connection))
+                        {
+                            connection.Open();
+                            int result = cmd.ExecuteNonQuery();
+                            if (result <= 0)
+                            {
+
                             }
                         }
                     }
@@ -1369,45 +1410,55 @@ namespace BlockAndPass.WebService
 
                         try
                         {
-                            command.CommandText =
-                                "update T_Facturacion set facturaActual = " + Convert.ToInt32(Convert.ToInt32(facturaActual) + 1) + " where idfacturacion = " + idFacturacion;
-                            command.ExecuteNonQuery();
 
-
-
-                            foreach (string[] item in pagosFinal)
+                            if (documentoAutorizado != string.Empty || documentoAutorizado != "" || documentoAutorizado != null)
                             {
+
                                 command.CommandText =
-                                    "Insert into T_Pagos (IdTransaccion, IdEstacionamiento, IdModulo, IdFacturacion, IdTipoPago, FechaPago, Subtotal, Iva, Total, NumeroFactura, IdAutorizado, DocumentoUsuario) VALUES "
-                                    + "('" + documentoAutorizado + "', '" + idEstacionamiento + "', '" + idModulo + "', '" + idFacturacion + "', '" + item[0] + "', getdate(), '" + item[1] + "', '" + item[2] + "', '" + item[3] + "', '" + item[4] + "','" + idAutorizacion + "', '" + documentoUsuario + "')";
+                                    "update T_Facturacion set facturaActual = " + Convert.ToInt32(Convert.ToInt32(facturaActual) + 1) + " where idfacturacion = " + idFacturacion;
                                 command.ExecuteNonQuery();
+
+
+
+                                foreach (string[] item in pagosFinal)
+                                {
+                                    command.CommandText =
+                                        "Insert into T_Pagos (IdTransaccion, IdEstacionamiento, IdModulo, IdFacturacion, IdTipoPago, FechaPago, Subtotal, Iva, Total, NumeroFactura, IdAutorizado, DocumentoUsuario) VALUES "
+                                        + "('" + documentoAutorizado + "', '" + idEstacionamiento + "', '" + idModulo + "', '" + idFacturacion + "', '" + item[0] + "', getdate(), '" + item[1] + "', '" + item[2] + "', '" + item[3] + "', '" + item[4] + "','" + idAutorizacion + "', '" + documentoUsuario + "')";
+                                    command.ExecuteNonQuery();
+                                }
+
+                                //FacturacionElectronica
+
+                                foreach (string[] item in pagosFinal)
+                                {
+                                    command.CommandText =
+                                        "Insert into T_PagosFE (IdTransaccion, IdAutorizado, IdEstacionamiento, IdModulo, IdFacturacion, IdTipoPago, IdFormaPago, FechaPago, Subtotal, Iva, Total, NumeroFactura,Sincronizacion,PagoMensual, DocumentoUsuario,IdentificacionCliente, Anulada) VALUES "
+                                        + "('" + documentoAutorizado + "', '" + idAutorizacion + "', '" + idEstacionamiento + "', '" + idModulo + "', '" + idFacturacion + "', '" + item[0] + "', '" + IdFormaPago + "', convert(datetime,'" + fecha + "',103), '" + item[1] + "', '" + item[2] + "', '" + item[3] + "', '" + item[4] + "', 0,0," + documentoUsuario + ", " + nitCliente + ", 0)";
+                                    command.ExecuteNonQuery();
+                                }
+
+                                command.CommandText =
+                                    "Insert into T_Movimientos (IdTransaccion, IdEstacionamiento, IdModulo, Parte, Accion, Denominacion, Cantidad, Valor, FechaMovimiento) VALUES "
+                                    + "('" + documentoAutorizado + "','" + idEstacionamiento + "','" + idModulo + "','CM','Entrada','" + total + "','1','" + total + "',GETDATE())";
+                                command.ExecuteNonQuery();
+
+                                //command.CommandText =
+                                //    "update T_Partes set DineroActual=(select DineroActual from T_Partes where IdModulo='" + idModulo + "' and IdEstacionamiento='" + idEstacionamiento + "' and NombreParte='CM')+" + total + ", sincronizacion = 0  where IdModulo='" + idModulo + "' and IdEstacionamiento='" + idEstacionamiento + "' and NombreParte='CM'";
+                                //command.ExecuteNonQuery();
+
+                                command.CommandText =
+                                "UPDATE T_MovimientosUsuarios SET DineroActual=(SELECT TOP(1) DineroActual FROM T_MovimientosUsuarios WHERE IdModulo = '" + idModulo + "' and IdEstacionamiento='" + idEstacionamiento + "' and DocumentoUsuario='" + documentoUsuario + "' ORDER BY IdMovimientoUsuario DESC) + " + total + "  WHERE IdModulo = '" + idModulo + "' and IdEstacionamiento='" + idEstacionamiento + "' and DocumentoUsuario='" + documentoUsuario + "'";
+                                command.ExecuteNonQuery();
+
+                                // Attempt to commit the transaction.
+                                transaction.Commit();
                             }
-
-                            //FacturacionElectronica
-
-                            foreach (string[] item in pagosFinal)
+                            else
                             {
-                                command.CommandText =
-                                    "Insert into T_PagosFE (IdTransaccion, IdAutorizado, IdEstacionamiento, IdModulo, IdFacturacion, IdTipoPago, IdFormaPago, FechaPago, Subtotal, Iva, Total, NumeroFactura,Sincronizacion,PagoMensual, DocumentoUsuario,IdentificacionCliente, Anulada) VALUES "
-                                    + "('" + documentoAutorizado + "', '" + idAutorizacion + "', '" + idEstacionamiento + "', '" + idModulo + "', '" + idFacturacion + "', '" + item[0] + "', '" + IdFormaPago + "', convert(datetime,'" + fecha + "',103), '" + item[1] + "', '" + item[2] + "', '" + item[3] + "', '" + item[4] + "', 0,0," + documentoUsuario + ", " + nitCliente + ", 0)";
-                                command.ExecuteNonQuery();
+                                oInfoPagoMensualidadService.Exito = false;
+                                oInfoPagoMensualidadService.ErrorMessage = "No encontro facturas disponibles o autorizaciones asociadas a ese idTarjeta";
                             }
-
-                            command.CommandText =
-                                "Insert into T_Movimientos (IdTransaccion, IdEstacionamiento, IdModulo, Parte, Accion, Denominacion, Cantidad, Valor, FechaMovimiento) VALUES "
-                                + "('" + documentoAutorizado + "','" + idEstacionamiento + "','" + idModulo + "','CM','Entrada','" + total + "','1','" + total + "',GETDATE())";
-                            command.ExecuteNonQuery();
-
-                            //command.CommandText =
-                            //    "update T_Partes set DineroActual=(select DineroActual from T_Partes where IdModulo='" + idModulo + "' and IdEstacionamiento='" + idEstacionamiento + "' and NombreParte='CM')+" + total + ", sincronizacion = 0  where IdModulo='" + idModulo + "' and IdEstacionamiento='" + idEstacionamiento + "' and NombreParte='CM'";
-                            //command.ExecuteNonQuery();
-
-                            command.CommandText =
-                            "UPDATE T_MovimientosUsuarios SET DineroActual=(SELECT TOP(1) DineroActual FROM T_MovimientosUsuarios WHERE IdModulo = '" + idModulo + "' and IdEstacionamiento='" + idEstacionamiento + "' and DocumentoUsuario='" + documentoUsuario + "' ORDER BY IdMovimientoUsuario DESC) + " + total + "  WHERE IdModulo = '" + idModulo + "' and IdEstacionamiento='" + idEstacionamiento + "' and DocumentoUsuario='" + documentoUsuario + "'";
-                            command.ExecuteNonQuery();
-
-                            // Attempt to commit the transaction.
-                            transaction.Commit();
 
                         }
                         catch (Exception ex)
@@ -2494,6 +2545,7 @@ namespace BlockAndPass.WebService
             var connectionString = ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString;
 
             string query = string.Empty;
+            int dineroActual = 0;
 
             string FechaAntes = string.Empty;
             string FechaDespues = string.Empty;
@@ -2523,20 +2575,79 @@ namespace BlockAndPass.WebService
                 }
             }
 
+            //string queryCantidad = "(select (case when COUNT(IdTipoPago) is null then 0 else COUNT(IdTipoPago) end) " +
+            //                      "from T_Pagos as P inner join T_Transacciones as T on CAST(T.IdTransaccion as varchar) = P.IdTransaccion " +
+            //                      "where  P.IdModulo = '" + idModulo + "' and T.IdEstacionamiento='" + idEstacionamiento + "'" +
+            //                      "and P.FechaPago between (select max(FechaFin) from T_Arqueos where  IdModulo = '" + idModulo + "' and Valor != 0 and IdEstacionamiento='" + idEstacionamiento + "' and IdUsuario='" + documentoUsuario + "') and getdate() AND P.DocumentoUsuario='" + documentoUsuario + "')";
+
             string queryCantidad = "(select (case when COUNT(IdTipoPago) is null then 0 else COUNT(IdTipoPago) end) " +
-                                  "from T_Pagos as P inner join T_Transacciones as T on CAST(T.IdTransaccion as varchar) = P.IdTransaccion " +
-                                  "where  P.IdModulo = '" + idModulo + "' and T.IdEstacionamiento='" + idEstacionamiento + "'" +
-                                  "and P.FechaPago between (select max(FechaFin) from T_Arqueos where  IdModulo = '" + idModulo + "' and Valor != 0 and IdEstacionamiento='" + idEstacionamiento + "' and IdUsuario='" + documentoUsuario + "') and getdate() AND P.DocumentoUsuario='" + documentoUsuario + "')";
+                      "from T_Pagos as P inner join T_Transacciones as T on CAST(T.IdTransaccion as varchar) = P.IdTransaccion " +
+                      "where P.IdModulo = '" + idModulo + "' " +
+                      "and T.IdEstacionamiento = '" + idEstacionamiento + "' " +
+                      "and P.FechaPago between " +
+                      "(select COALESCE(" +
+                          "(select max(FechaFin) from T_Arqueos where IdModulo = '" + idModulo + "' and Valor != 0 and IdEstacionamiento = '" + idEstacionamiento + "' and IdUsuario = '" + documentoUsuario + "'), " +
+                          "(select min(FechaPago) from T_Pagos where DocumentoUsuario = '" + documentoUsuario + "')" +
+                      ") " +
+                      ") " +
+                      "and getdate() AND P.DocumentoUsuario = '" + documentoUsuario + "')";
 
-            string queryValor = "(select (case when SUM(P.Total) is null then 0 else SUM(P.Total) end)  " +
-                                  "from T_Pagos as P inner join T_Transacciones as T on CAST(T.IdTransaccion as varchar) = P.IdTransaccion " +
-                                  "where  P.IdModulo = '" + idModulo + "' and T.IdEstacionamiento='" + idEstacionamiento + "'" +
-                                  "and P.FechaPago between (select max(FechaFin) from T_Arqueos where  IdModulo = '" + idModulo + "' and Valor != 0 and IdEstacionamiento='" + idEstacionamiento + "' and IdUsuario='" + documentoUsuario + "') and getdate() AND P.DocumentoUsuario='" + documentoUsuario + "')";
+            //string queryValor = "(select (case when SUM(P.Total) is null then 0 else SUM(P.Total) end)  " +
+            //                      "from T_Pagos as P inner join T_Transacciones as T on CAST(T.IdTransaccion as varchar) = P.IdTransaccion " +
+            //                      "where  P.IdModulo = '" + idModulo + "' and T.IdEstacionamiento='" + idEstacionamiento + "'" +
+            //                      "and P.FechaPago between (select max(FechaFin) from T_Arqueos where  IdModulo = '" + idModulo + "' and Valor != 0 and IdEstacionamiento='" + idEstacionamiento + "' and IdUsuario='" + documentoUsuario + "') and getdate() AND P.DocumentoUsuario='" + documentoUsuario + "')";
 
-            string queryValorFE = "(select (case when SUM(P.Total) is null then 0 else SUM(P.Total) end)  " +
-                                  "from T_PagosFE as P inner join T_Transacciones as T on CAST(T.IdTransaccion as varchar) = P.IdTransaccion " +
-                                  "where  P.IdModulo = '" + idModulo + "' and T.IdEstacionamiento='" + idEstacionamiento + "'" +
-                                  "and P.FechaPago between (select max(FechaFin) from T_Arqueos where  IdModulo = '" + idModulo + "' and Valor != 0 and IdEstacionamiento='" + idEstacionamiento + "' and IdUsuario='" + documentoUsuario + "') and getdate() AND P.DocumentoUsuario='" + documentoUsuario + "')";
+            //string queryValor = "(select (case when SUM(P.Total) is null then 0 else SUM(P.Total) end) " +
+            //        "from T_Pagos as P inner join T_Transacciones as T on CAST(T.IdTransaccion as varchar) = P.IdTransaccion " +
+            //        "where P.IdModulo = '" + idModulo + "' " +
+            //        "and T.IdEstacionamiento = '" + idEstacionamiento + "' " +
+            //        "and P.FechaPago between " +
+            //        "(select COALESCE(" +
+            //            "(select max(FechaFin) from T_Arqueos where IdModulo = '" + idModulo + "' and Valor != 0 and IdEstacionamiento = '" + idEstacionamiento + "' and IdUsuario = '" + documentoUsuario + "'), " +
+            //            "(select min(FechaPago) from T_Pagos where DocumentoUsuario = '" + documentoUsuario + "')" +
+            //        ") " +
+            //        ") " +
+            //        "and getdate() AND P.DocumentoUsuario = '" + documentoUsuario + "')";
+
+
+            //string queryValorFE = "(select (case when SUM(P.Total) is null then 0 else SUM(P.Total) end)  " +
+            //                      "from T_PagosFE as P inner join T_Transacciones as T on CAST(T.IdTransaccion as varchar) = P.IdTransaccion " +
+            //                      "where  P.IdModulo = '" + idModulo + "' and T.IdEstacionamiento='" + idEstacionamiento + "'" +
+            //                      "and P.FechaPago between (select max(FechaFin) from T_Arqueos where  IdModulo = '" + idModulo + "' and Valor != 0 and IdEstacionamiento='" + idEstacionamiento + "' and IdUsuario='" + documentoUsuario + "') and getdate() AND P.DocumentoUsuario='" + documentoUsuario + "')";
+
+            string queryValorFE = "(select (case when SUM(P.Total) is null then 0 else SUM(P.Total) end) " +
+        "from T_PagosFE as P inner join T_Transacciones as T on CAST(T.IdTransaccion as varchar) = P.IdTransaccion " +
+        "where P.IdModulo = '" + idModulo + "' " +
+        "and T.IdEstacionamiento = '" + idEstacionamiento + "' " +
+        "and P.FechaPago between " +
+        "(select COALESCE(" +
+            "(select max(FechaFin) from T_Arqueos where IdModulo = '" + idModulo + "' and Valor != 0 and IdEstacionamiento = '" + idEstacionamiento + "' and IdUsuario = '" + documentoUsuario + "'), " +
+            "(select min(FechaPago) from T_PagosFE where DocumentoUsuario = '" + documentoUsuario + "')" +
+        ") " +
+        ") " +
+        "and getdate() AND P.DocumentoUsuario = '" + documentoUsuario + "')";
+
+            string valor = "select DineroActual from T_MovimientosUsuarios where IdModulo='" + idModulo + "' and IdEstacionamiento='" + idEstacionamiento + "' and DocumentoUsuario='" + documentoUsuario + "'";
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                using (SqlCommand cmd = new SqlCommand(valor, connection))
+                {
+                    connection.Open();
+                    using (SqlDataReader reader = cmd.ExecuteReader())
+                    {
+                        // Check is the reader has any rows at all before starting to read.
+                        if (reader.HasRows)
+                        {
+                            // Read advances to the next row.
+                            while (reader.Read())
+                            {
+                                dineroActual = Convert.ToInt32(reader[0]);
+
+                            }
+                        }
+                    }
+                }
+            }
 
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
@@ -2561,7 +2672,7 @@ namespace BlockAndPass.WebService
                     command.ExecuteNonQuery();
 
                     command.CommandText =
-                            "update T_Arqueos set FechaFin=GetDate(), Valor=(select DineroActual from T_MovimientosUsuarios where IdModulo='" + idModulo + "' and IdEstacionamiento='" + idEstacionamiento + "' and DocumentoUsuario='" + documentoUsuario + "'), CantTransacciones=" + queryCantidad + " , Producido=(" + queryValor + ")+(" + queryValorFE + "), Conteo = " + manual + ", Sincronizacion = 'false' where IdModulo='" + idModulo + "' and IdEstacionamiento='" + idEstacionamiento + "' and idArqueo=" + idArqueo;
+                            "update T_Arqueos set FechaFin=GetDate(),  Valor=" + dineroActual + ", CantTransacciones=" + queryCantidad + " , Producido=(" + queryValorFE + "), Conteo = " + manual + ", Sincronizacion = 'false' where IdModulo='" + idModulo + "' and IdEstacionamiento='" + idEstacionamiento + "' and idArqueo=" + idArqueo;
                     command.ExecuteNonQuery();
 
                     command.CommandText =

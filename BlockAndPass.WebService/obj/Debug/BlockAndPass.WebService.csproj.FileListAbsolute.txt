@@ -68,3 +68,8 @@ D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\Ucc\ADMIN&PPM - cop
 D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\Ucc\ADMIN&PPM - copia\BlockAndPass.WebService\obj\Debug\BlockAndPass.WebService.dll
 D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\Ucc\ADMIN&PPM - copia\BlockAndPass.WebService\obj\Debug\BlockAndPass.WebService.pdb
 D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\Ucc\ADMIN&PPM - copia\BlockAndPass.WebService\obj\Debug\BlockAndPass.WebService.csprojResolveAssemblyReference.cache
+E:\PROYECTOS\PARQUEARSE\UCC CARROS\PUNTO DE PAGO\ADMIN&PPM - copia\BlockAndPass.WebService\bin\BlockAndPass.WebService.dll
+E:\PROYECTOS\PARQUEARSE\UCC CARROS\PUNTO DE PAGO\ADMIN&PPM - copia\BlockAndPass.WebService\bin\BlockAndPass.WebService.pdb
+E:\PROYECTOS\PARQUEARSE\UCC CARROS\PUNTO DE PAGO\ADMIN&PPM - copia\BlockAndPass.WebService\obj\Debug\BlockAndPass.WebService.dll
+E:\PROYECTOS\PARQUEARSE\UCC CARROS\PUNTO DE PAGO\ADMIN&PPM - copia\BlockAndPass.WebService\obj\Debug\BlockAndPass.WebService.pdb
+E:\PROYECTOS\PARQUEARSE\UCC CARROS\PUNTO DE PAGO\ADMIN&PPM - copia\BlockAndPass.WebService\obj\Debug\BlockAndPass.WebService.csprojResolveAssemblyReference.cache

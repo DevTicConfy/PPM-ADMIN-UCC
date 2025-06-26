@@ -266,3 +266,21 @@ D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\Ucc\ADMIN&PPM - cop
 D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\Ucc\ADMIN&PPM - copia\BlockAndPass.WebServiceLocalReader\obj\Debug\BlockAndPass.WebServiceLocalReader.dll
 D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\Ucc\ADMIN&PPM - copia\BlockAndPass.WebServiceLocalReader\obj\Debug\BlockAndPass.WebServiceLocalReader.pdb
 D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\Ucc\ADMIN&PPM - copia\BlockAndPass.WebServiceLocalReader\obj\Debug\BlockAndPass.WebServiceLocalReader.csprojResolveAssemblyReference.cache
+E:\PROYECTOS\PARQUEARSE\UCC CARROS\PUNTO DE PAGO\ADMIN&PPM - copia\BlockAndPass.WebServiceLocalReader\bin\Tickets\ticketPagoM.rdlc
+E:\PROYECTOS\PARQUEARSE\UCC CARROS\PUNTO DE PAGO\ADMIN&PPM - copia\BlockAndPass.WebServiceLocalReader\bin\Tickets\ticketCarga.rdlc
+E:\PROYECTOS\PARQUEARSE\UCC CARROS\PUNTO DE PAGO\ADMIN&PPM - copia\BlockAndPass.WebServiceLocalReader\bin\Tickets\ticketArqueo.rdlc
+E:\PROYECTOS\PARQUEARSE\UCC CARROS\PUNTO DE PAGO\ADMIN&PPM - copia\BlockAndPass.WebServiceLocalReader\bin\Tickets\ticketPago.rdlc
+E:\PROYECTOS\PARQUEARSE\UCC CARROS\PUNTO DE PAGO\ADMIN&PPM - copia\BlockAndPass.WebServiceLocalReader\bin\BlockAndPass.WebServiceLocalReader.dll
+E:\PROYECTOS\PARQUEARSE\UCC CARROS\PUNTO DE PAGO\ADMIN&PPM - copia\BlockAndPass.WebServiceLocalReader\bin\BlockAndPass.WebServiceLocalReader.pdb
+E:\PROYECTOS\PARQUEARSE\UCC CARROS\PUNTO DE PAGO\ADMIN&PPM - copia\BlockAndPass.WebServiceLocalReader\bin\EGlobalT.Device.SmartCard.dll
+E:\PROYECTOS\PARQUEARSE\UCC CARROS\PUNTO DE PAGO\ADMIN&PPM - copia\BlockAndPass.WebServiceLocalReader\bin\EGlobalT.Device.SmartCardFeeders.dll
+E:\PROYECTOS\PARQUEARSE\UCC CARROS\PUNTO DE PAGO\ADMIN&PPM - copia\BlockAndPass.WebServiceLocalReader\bin\EGlobalT.Device.SmartCardReaders.dll
+E:\PROYECTOS\PARQUEARSE\UCC CARROS\PUNTO DE PAGO\ADMIN&PPM - copia\BlockAndPass.WebServiceLocalReader\bin\EGlobalT.Device.Tools.dll
+E:\PROYECTOS\PARQUEARSE\UCC CARROS\PUNTO DE PAGO\ADMIN&PPM - copia\BlockAndPass.WebServiceLocalReader\bin\System.Web.Helpers.dll
+E:\PROYECTOS\PARQUEARSE\UCC CARROS\PUNTO DE PAGO\ADMIN&PPM - copia\BlockAndPass.WebServiceLocalReader\bin\System.Web.Helpers.xml
+E:\PROYECTOS\PARQUEARSE\UCC CARROS\PUNTO DE PAGO\ADMIN&PPM - copia\BlockAndPass.WebServiceLocalReader\bin\es\System.Web.Helpers.resources.dll
+E:\PROYECTOS\PARQUEARSE\UCC CARROS\PUNTO DE PAGO\ADMIN&PPM - copia\BlockAndPass.WebServiceLocalReader\obj\Debug\BlockAndPass.WebServiceLocalReader.csprojResolveAssemblyReference.cache
+E:\PROYECTOS\PARQUEARSE\UCC CARROS\PUNTO DE PAGO\ADMIN&PPM - copia\BlockAndPass.WebServiceLocalReader\obj\Debug\RdlCompile.cache
+E:\PROYECTOS\PARQUEARSE\UCC CARROS\PUNTO DE PAGO\ADMIN&PPM - copia\BlockAndPass.WebServiceLocalReader\obj\Debug\RdlCompile.compiled
+E:\PROYECTOS\PARQUEARSE\UCC CARROS\PUNTO DE PAGO\ADMIN&PPM - copia\BlockAndPass.WebServiceLocalReader\obj\Debug\BlockAndPass.WebServiceLocalReader.dll
+E:\PROYECTOS\PARQUEARSE\UCC CARROS\PUNTO DE PAGO\ADMIN&PPM - copia\BlockAndPass.WebServiceLocalReader\obj\Debug\BlockAndPass.WebServiceLocalReader.pdb

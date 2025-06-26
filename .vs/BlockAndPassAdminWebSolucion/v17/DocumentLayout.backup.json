@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\PROYECTOS\\PARQUEARSE\\UCC CARROS\\PUNTO DE PAGO\\ADMIN\u0026PPM - copia\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B5BAA89E-F97E-493A-83FD-677414C3B901}|BlockAndPass.WebService\\BlockAndPass.WebService.csproj|e:\\proyectos\\parquearse\\ucc carros\\punto de pago\\admin\u0026ppm - copia\\blockandpass.webservice\\servicesbyp.asmx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B5BAA89E-F97E-493A-83FD-677414C3B901}|BlockAndPass.WebService\\BlockAndPass.WebService.csproj|solutionrelative:blockandpass.webservice\\servicesbyp.asmx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ServicesByP.asmx.cs",
+              "DocumentMoniker": "E:\\PROYECTOS\\PARQUEARSE\\UCC CARROS\\PUNTO DE PAGO\\ADMIN\u0026PPM - copia\\BlockAndPass.WebService\\ServicesByP.asmx.cs",
+              "RelativeDocumentMoniker": "BlockAndPass.WebService\\ServicesByP.asmx.cs",
+              "ToolTip": "E:\\PROYECTOS\\PARQUEARSE\\UCC CARROS\\PUNTO DE PAGO\\ADMIN\u0026PPM - copia\\BlockAndPass.WebService\\ServicesByP.asmx.cs",
+              "RelativeToolTip": "BlockAndPass.WebService\\ServicesByP.asmx.cs",
+              "ViewState": "AgIAAAwFAAAAAAAAAAAgwNgFAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-26T19:18:02.892Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -172,3 +172,19 @@ D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\Ucc\ADMIN&PPM - cop
 D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\Ucc\ADMIN&PPM - copia\BlockAndPass.ValetWinform\obj\Debug\BlockAndPass.ValetWinform.csproj.GenerateResource.Cache
 D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\Ucc\ADMIN&PPM - copia\BlockAndPass.ValetWinform\obj\Debug\BlockAndPass.ValetWinform.exe
 D:\PROYECTOS\FACTURACIÓN ELECTRONICA\DESARROLLOS\Parquearse\Ucc\ADMIN&PPM - copia\BlockAndPass.ValetWinform\obj\Debug\BlockAndPass.ValetWinform.pdb
+E:\PROYECTOS\PARQUEARSE\UCC CARROS\PUNTO DE PAGO\ADMIN&PPM - copia\BlockAndPass.ValetWinform\bin\Debug\BlockAndPass.ValetWinform.exe.config
+E:\PROYECTOS\PARQUEARSE\UCC CARROS\PUNTO DE PAGO\ADMIN&PPM - copia\BlockAndPass.ValetWinform\bin\Debug\BlockAndPass.ValetWinform.exe
+E:\PROYECTOS\PARQUEARSE\UCC CARROS\PUNTO DE PAGO\ADMIN&PPM - copia\BlockAndPass.ValetWinform\bin\Debug\BlockAndPass.ValetWinform.pdb
+E:\PROYECTOS\PARQUEARSE\UCC CARROS\PUNTO DE PAGO\ADMIN&PPM - copia\BlockAndPass.ValetWinform\bin\Debug\EGlobalT.Device.SmartCard.dll
+E:\PROYECTOS\PARQUEARSE\UCC CARROS\PUNTO DE PAGO\ADMIN&PPM - copia\BlockAndPass.ValetWinform\bin\Debug\EGlobalT.Device.SmartCardFeeders.dll
+E:\PROYECTOS\PARQUEARSE\UCC CARROS\PUNTO DE PAGO\ADMIN&PPM - copia\BlockAndPass.ValetWinform\bin\Debug\EGlobalT.Device.SmartCardReaders.dll
+E:\PROYECTOS\PARQUEARSE\UCC CARROS\PUNTO DE PAGO\ADMIN&PPM - copia\BlockAndPass.ValetWinform\bin\Debug\EGlobalT.Device.Tools.dll
+E:\PROYECTOS\PARQUEARSE\UCC CARROS\PUNTO DE PAGO\ADMIN&PPM - copia\BlockAndPass.ValetWinform\obj\Debug\BlockAndPass.ValetWinform.csprojResolveAssemblyReference.cache
+E:\PROYECTOS\PARQUEARSE\UCC CARROS\PUNTO DE PAGO\ADMIN&PPM - copia\BlockAndPass.ValetWinform\obj\Debug\BlockAndPass.ValetWinform.CustomKeyBoard.resources
+E:\PROYECTOS\PARQUEARSE\UCC CARROS\PUNTO DE PAGO\ADMIN&PPM - copia\BlockAndPass.ValetWinform\obj\Debug\BlockAndPass.ValetWinform.Ingresar.resources
+E:\PROYECTOS\PARQUEARSE\UCC CARROS\PUNTO DE PAGO\ADMIN&PPM - copia\BlockAndPass.ValetWinform\obj\Debug\BlockAndPass.ValetWinform.Login.resources
+E:\PROYECTOS\PARQUEARSE\UCC CARROS\PUNTO DE PAGO\ADMIN&PPM - copia\BlockAndPass.ValetWinform\obj\Debug\BlockAndPass.ValetWinform.Properties.Resources.resources
+E:\PROYECTOS\PARQUEARSE\UCC CARROS\PUNTO DE PAGO\ADMIN&PPM - copia\BlockAndPass.ValetWinform\obj\Debug\BlockAndPass.ValetWinform.Valet.resources
+E:\PROYECTOS\PARQUEARSE\UCC CARROS\PUNTO DE PAGO\ADMIN&PPM - copia\BlockAndPass.ValetWinform\obj\Debug\BlockAndPass.ValetWinform.csproj.GenerateResource.Cache
+E:\PROYECTOS\PARQUEARSE\UCC CARROS\PUNTO DE PAGO\ADMIN&PPM - copia\BlockAndPass.ValetWinform\obj\Debug\BlockAndPass.ValetWinform.exe
+E:\PROYECTOS\PARQUEARSE\UCC CARROS\PUNTO DE PAGO\ADMIN&PPM - copia\BlockAndPass.ValetWinform\obj\Debug\BlockAndPass.ValetWinform.pdb
